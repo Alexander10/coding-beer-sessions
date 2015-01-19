@@ -1,8 +1,10 @@
 package com.erni.java8.answers.chapter1;
 
 
-import com.erni.java8.model.Artist;
-import com.erni.java8.model.SampleData;
+import com.answers.chapter1.Question1;
+
+import com.model.Artist;
+import com.model.SampleData;
 import org.junit.Test;
 
 import java.util.Calendar;

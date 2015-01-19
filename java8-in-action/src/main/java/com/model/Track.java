@@ -1,4 +1,4 @@
-package com.erni.java8.model;
+package com.model;
 
 /**
  * User: ban

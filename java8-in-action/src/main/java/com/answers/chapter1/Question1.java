@@ -1,10 +1,14 @@
-package com.erni.java8.answers.chapter1;
+package com.answers.chapter1;
 
-import com.erni.java8.model.Artist;
+
+
+import com.model.Artist;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -39,15 +43,38 @@ public class Question1 {
 
 	public static Function<List<Artist>, Artist> getFuncForTheOldestArtist() {
 		return (List<Artist> artists) -> {
-			final Artist returnArtist;
-			artists.forEach(art -> {
+			for(Artist art : artists){
 				if (isSpecificItem(artists, (Artist artInner) -> artInner.getYearOfBirth() > art.getYearOfBirth())) {
-					returnArtist = art;
+					return art;
 				}
-			});
-			return returnArtist;
+			}
+			return null;
 		};
 	}
 
+
+
+	/**
+	 * Method creates new Artist object, but by using following syntax Artist::new
+	 * you have to create proper Functional interface
+	 * @return
+	 */
+	public static Artist createArtistWithLambdas(){
+
+		FourFunction<String, String, Integer, String, Artist> fourFunctions = Artist::new;
+		return fourFunctions.apply("Meky", "Zbirka", 1960, "SK");
+	}
+
+	/**
+	 * Sort artist by first name
+	 * Because there can exist more items with the same name sort artist also by second name
+	 * @return
+	 */
+	public static List<Artist> doubleSort(List<Artist> artists){
+		artists.sort(Comparator.comparing(Artist::getFirstName).thenComparing(Artist::getSecondName));
+		return artists;
+	}
+
+	public static List<Artist>
 
 }
