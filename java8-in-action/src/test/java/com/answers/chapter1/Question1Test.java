@@ -1,4 +1,4 @@
-package com.erni.java8.answers.chapter1;
+package com.answers.chapter1;
 
 
 import com.answers.chapter1.Question1;

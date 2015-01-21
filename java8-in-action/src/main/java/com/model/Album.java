@@ -17,14 +17,17 @@ public final class Album {
 
 	private String id;
 	private String name;
+	private Integer productionYear;
 	private List<Track> tracks;
 	private List<Artist> musicians;
 
-	public Album(String name, List<Track> tracks, List<Artist> musicians) {
+	public Album(String name, Integer productionYear, List<Track> tracks, List<Artist> musicians) {
 		Objects.requireNonNull(name);
 		Objects.requireNonNull(tracks);
 		Objects.requireNonNull(musicians);
+		Objects.requireNonNull(productionYear);
 
+		this.productionYear = productionYear;
 		this.name = name;
 		this.tracks = new ArrayList<>(tracks);
 		this.musicians = new ArrayList<>(musicians);
@@ -69,10 +72,18 @@ public final class Album {
 		return musicians.get(0);
 	}
 
+	public Integer getProductionYear() {
+		return productionYear;
+	}
+
 	public Album copy() {
 		List<Track> tracks = getTracks().map(Track::copy).collect(toList());
 		List<Artist> musicians = getMusicians().map(Artist::copy).collect(toList());
-		return new Album(name, tracks, musicians);
+		return new Album(name, productionYear, tracks, musicians);
+	}
+	@Override
+	public String toString(){
+		return name + productionYear;
 	}
 
 }

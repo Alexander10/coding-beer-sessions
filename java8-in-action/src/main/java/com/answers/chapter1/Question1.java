@@ -67,14 +67,13 @@ public class Question1 {
 
 	/**
 	 * Sort artist by first name
-	 * Because there can exist more items with the same name sort artist also by second name
+	 * Because there can exist more artists with the same name sort artists also by second name
 	 * @return
 	 */
 	public static List<Artist> doubleSort(List<Artist> artists){
-		artists.sort(Comparator.comparing(Artist::getFirstName).thenComparing(Artist::getSecondName));
+		artists.sort(Comparator.comparing((Artist a) -> a.getFirstName()).thenComparing(Artist::getSecondName));
 		return artists;
 	}
 
-	public static List<Artist>
 
 }

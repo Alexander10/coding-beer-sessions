@@ -1,508 +1,789 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+	<title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="Coding Beer Session Java 8">
-		<meta name="author" content="Roman Badura">
+	<meta name="description" content="Coding Beer Session Java 8">
+	<meta name="author" content="Roman Badura">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Java 8 in Action</h1>
-					<img width="300" height="200" data-src="assets/java8.png" alt="Up arrow" style="background: transparent;">
-					<h3>Coding Beer Session</h3>
-					<p>
-						<small>Created by <a href="#">Roman Badura</a> </small>
-					</p>
-				</section>
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section>
+	<h1>Java 8 in Action</h1>
+	<img width="300" height="200" data-src="assets/java8.png" alt="Up arrow" style="background: transparent;">
 
-				<section>
-					<h2>Content</h2>
-					<p>
-						<ul>
-							<li>Functions in Java</li>
-							<li>Streams</li>
-							<li>Default Methods</li>
-						</ul>
-					</p>
-				</section>
+	<h3>Coding Beer Session</h3>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Functional Interfaces & Lambdas </h2>
-						<p>Lambdas</p>
-						<p>New view on Java methods.</p>
-						<p>Functional interface (What is it?)</p>
-						<p>Method references</p>
-						<p></p>
-						<p></p>
-						<br>
-						<a href="#" class="navigate-down">
+	<p>
+		<small>Created by <a href="#">Roman Badura</a></small>
+	</p>
+</section>
 
-						</a>
-					</section>
-					<section>
-						<h2>New view on Java methods</h2>
-						<br/>
-						<p>Old View</p>
-						<p>New View</p>
-					</section>
-					<section>
-						<h2>Lambdas</h2>
-						<img width="450" height="160" data-src="assets/lambda_body.png" alt="Up arrow" >
-						<br/>
-						<ul>
-							<li>Anonymous</li> <!-- it doesn't have explicit name like a method-->
-							<li>Function</li> <!-- lambda isn't associated with a particular class like a method -->
-							<li>Passed Around</li><!-- can be passed as argument to a method or stored in variable -->
-							<li>Concise</li><!-- not so much boilerplate code like for anonymous classes -->
-						</ul>
-					</section>
+<section>
+	<h2>Content</h2>
 
-					<section>
-						<h2>Functional interfaces</h2>
-						<p>Only one abstract method.</p>
-						<p>Annotation is not required. (Similar like an override)</p>
-						<p>Interface can contain also default methods.</p>
-						<p>Functional descriptor</p> <!--Signature of the abstract method of the functional interface essentially describes the signature of the lambda expression -->
-						<pre><code data-trim contenteditable>
+	<p>
+	<ul>
+		<li>Functions in Java</li>
+		<li>Streams</li>
+		<li>Default Methods</li>
+	</ul>
+	</p>
+</section>
+
+<!-- Example of nested vertical slides -->
+<section>
+	<section>
+		<h2>Functional Interfaces & Lambdas </h2>
+
+		<p>New view on Java methods.</p>
+
+		<p>Functional interface (What is it?)</p>
+
+		<p>Lambdas</p>
+
+		<p>Method references</p>
+		<br>
+		<a href="#" class="navigate-down">
+
+		</a>
+	</section>
+	<section>
+		<h2>New view on Java methods</h2>
+		<br/>
+
+		<p>Old View</p>
+
+		<p>New View</p>
+	</section>
+	<section>
+		<h2>Functional interfaces</h2>
+
+		<p>Only one abstract method.</p>
+
+		<p>Annotation is not required. (Similar like an override)</p>
+
+		<p>Interface can contain also default methods.</p>
+
+		<p>They can be instantiated using lambdas</p>
+
+		<p>Functional descriptor</p>
+		<!--Signature of the abstract method of the functional interface essentially describes the signature of the lambda expression -->
+		<pre><code data-trim contenteditable>
 () -> System.out.println("Run method");
-						</code></pre>
-						<br>
+		</code></pre>
+		<br>
 
-					</section>
-					<section>
-						<h2>Functional interfaces</h2>
-
-
-						<pre><code data-trim contenteditable>
+	</section>
+	<section>
+		<h2>Functional interfaces</h2>
+		<pre><code data-trim contenteditable>
 public Funciton&lt;T, R> { R apply(T t); }
 public Predicate&lt;T> { boolean test(T t); }
 public Consumer&lt;T> { void accept(T t); }
 public Supplier&lt;T> { T get(); }
-public BiFunction&lt;T, U, R> {  R apply(T t, U u); }
-						</code></pre>
-						<p>In package: java.util.function (42-43)</p>
-						<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">http://docs.oracle.com/...</a>.
-					</section>
-					<section>
-						<h2>Method references</h2>
-						<p>Reuse existing method definitions</p><!--and pass them just like a lambdas-->
-						<p>More readable</p>
-						<br/>
-						<br/>
-						<!-- it is actually not calling the method (it is a shorthand for lambda expression) -->
-						<table style="font-size: 22px;">
-							<thead>
-							<tr>
-								<th>Lambda</th>
-								<th>Method reference equivalent</th>
-							</tr>
-							</thead>
-							<tbody style="font-size: 18px">
-							<tr>
-								<td>(Apple a) -> a.getWeight()</td>
-								<td>Apple::getWeight</td>
-							<tr>
-							<tr>
-								<td>(str, i) -> str.substring(i)</td>
-								<td>String::substring</td>
-							<tr>
-							<tr>
-								<td>(String s) -> System.out.println(s)</td>
-								<td>System.out::println</td>
-							<tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<h2>How to construct method references</h2>
-						<p>A method reference to a static method</p>
-						<pre><code data-trim contenteditable>
+public BiFunction&lt;T, U, R> { R apply(T t, U u); }
+		</code></pre>
+		<p>In package: java.util.function (42-43)</p>
+		<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">http://docs.oracle.com/...</a>.
+	</section>
+	<section>
+		<h2>Lambdas</h2>
+		<img width="450" height="160" data-src="assets/lambda_body.png" alt="Up arrow">
+		<br/>
+		<ul>
+			<li>Anonymous</li>
+			<!-- it doesn't have explicit name like a method-->
+			<li>Function</li>
+			<!-- lambda isn't associated with a particular class like a method -->
+			<li>Passed Around</li>
+			<!-- can be passed as argument to a method or stored in variable -->
+			<li>Concise</li>
+			<!-- not so much boilerplate code like for anonymous classes -->
+		</ul>
+	</section>
+	<section>
+		<h2>Method references</h2>
+
+		<p>Reuse existing method definitions</p>
+		<!--and pass them just like a lambdas , when lambda does notthing but call existing method-->
+		<p>More readable</p>
+		<br/>
+		<br/>
+		<!-- it is actually not calling the method (it is a shorthand for lambda expression) -->
+		<table style="font-size: 22px;">
+			<thead>
+			<tr>
+				<th>Lambda</th>
+				<th>Method reference equivalent</th>
+			</tr>
+			</thead>
+			<tbody style="font-size: 18px">
+			<tr>
+				<td>(Apple a) -> a.getWeight()</td>
+				<td>Apple::getWeight</td>
+			<tr>
+			<tr>
+				<td>(str, i) -> str.substring(i)</td>
+				<td>String::substring</td>
+			<tr>
+			<tr>
+				<td>(String s) -> System.out.println(s)</td>
+				<td>System.out::println</td>
+			<tr>
+			</tbody>
+		</table>
+	</section>
+	<section>
+		<h2>How to construct method references</h2>
+
+		<p>A method reference to a static method</p>
+		<pre><code data-trim contenteditable>
 Integer::parseInt
-						</code></pre>
-						<p>A method reference to an instance of an arbitrary type</p>
-						<pre><code data-trim contenteditable>
+		</code></pre>
+		<p>A method reference to an instance of an arbitrary type</p>
+		<pre><code data-trim contenteditable>
 String::length
-						</code></pre>
-						<p>A method reference to an instance method of an existing object</p>
-						<pre><code data-trim contenteditable>
+		</code></pre>
+		<p>A method reference to an instance method of an existing object</p>
+		<pre><code data-trim contenteditable>
 Transaction expensiveTransaction = Transaction::new;
 expensiveTransaction::getValue
-						</code></pre>
-						<br>
+		</code></pre>
+		<p>Reference to constructor</p>
+		<pre><code data-trim contenteditable>
+ClassName::new
+		</code></pre>
+		<br>
 
-					</section>
-				</section>
-				<section>
-					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-						<h2>Streams</h2>
-						<p>
-							What are streams? <!-- update of java Api that lets you manipulate collections of data in a declarative way ( you express query rather than conde an ad hoc implementation for it -->
-						</p>
-						<a href="#" class="navigate-down">
+	</section>
+</section>
+<section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Streams</h2>
 
-						</a>
-					</section>
-					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-						<h2>What are streams?</h2>
-						<p>
-							Fancy iterators over a collection of data
-						</p>
+		<p>
+			Fancy iterators over a collection of data
+			<!-- update of java Api that lets you manipulate collections of data in a declarative way ( you express query rather than code an ad hoc implementation for it -->
+		</p>
 
-					</section>
-				</section>
+		<p>Sequence of elements from a source that supports data processing operations</p>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+		<h3>Two important characteristics</h3>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+		<p>Pipelining</p>
+		<!-- many stream operations return themselves => operations can be chained (operations can be view like a database-like query) -->
+		<p>Internal iteration</p><!-- iteration is behind the scene , Sofia example-->
+		<p>Declarative</p> <!-- More concise and readable -->
+		<p>Composable</p> <!-- Greater flexibility -->
+		<p>Parallelizable</p> <!-- Better perfomance -->
+		<!-- Stream can be consumed only once -->
+		<p>java.util.stream.Stream</p>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+		<p>Old approach Java 7</p>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+		<p>New approach Java 8</p>
+		<a href="#" class="navigate-down">
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+		</a>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65">
+		<h2>Comparision Streams Vs Collections</h2>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+		<p>Collections are about data</p> <!-- collection are eagerly constructed -->
+		<p>Collection is an in-memory</p>
+		<!--you can add values, remove ... ; elements are computing before becoming part of the collection -->
+		<p>Streams are about computation</p>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+		<p>Streams is a fixed data structure whose elements are computed on demand</p>
+		<!--  you can't add or remove data from it , stream is like a lazy constructed collection-->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Java 7 approach</h2>
+		<!-- return names of dishes that are low in calories, sorted by number of calories -->
+		<!-- 1 filter the elements 2. sort 3. process sorted list to select names of dishes -->
+		<pre><code data-trim contenteditable>
+List&lt;Dish> lowCaloricDishes = new ArrayList<>();
+for(Dish d: menu){
+	if(d.getCalories() < 400){
+		lowCaloricDishes.add(d);
+	}
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+Collections.sort(lowCaloricDishes, new Comparator&lt;Dish>() {
+	public int compare(Dish d1, Dish d2){
+		return Integer.compare(d1.getCalories(), d2.getCalories());
+	}
+});
+List&lt;String> lowCaloricDishesName = new ArrayList<>();
+for(Dish d: lowCaloricDishes){
+	lowCaloricDishesName.add(d.getName());
+}
+		</code></pre>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Java 8 approach</h2>
+		<pre><code data-trim contenteditable>
+List&lt;String> lowCaloricDishesName =
+			menu.stream()
+			.filter(d -> d.getCalories() < 400)
+			.sorted(comparing(Dish::getCalories))
+			.map(Dish::getName)
+			.collect(toList());
+		</code></pre>
+		<pre><code data-trim contenteditable>
+List&lt;String> lowCaloricDishesName =
+			menu.parallelStream()
+			.filter(d -> d.getCalories() < 400)
+			.sorted(comparing(Dish::getCalories))
+			.map(Dish::getName)
+			.collect(toList());
+		</code></pre>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Stream pipeline</h2>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+		<p>Intermediate operations</p>
+		<!-- can be pipelined , they don't performe any operations until a terminal operation is invoked (they are lazy) -->
+		<p>Terminal operations
+		<ul>
+			<li>Result is any non-stream value (List, Integer, void ...)</li>
+		</ul>
+		</p>
+		<img width="550" height="160" data-src="assets/stream_pipeline.png" alt="Up arrow">
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Filter</h2>
+		<pre><code data-trim contenteditable>
+Stream&lt;T> filter(Predicate<? super T> predicate);
+		</code></pre>
+		<p>filter(d -> d->getCalories() > 300).skip(2)</p>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
+		<p>filter(d -> d->getCalories() > 300).distinct()</p> <!-- it depends on equals implementation of elements -->
+		<p>filter(d -> d->getCalories() > 300).limit(3)</p>
+		<!-- also works for unordered lists (for sets we don't know exactly which elements will be returned -->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Mapping</h2>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+		<p>Select information from certain objects</p> <!-- in sql you can select particular column from a table -->
+		<p>Can be chained</p>
+		<pre><code data-trim contenteditable>
+&lt;R> Stream&lt;R> map(Function&lt;? super T, ? extends R> mapper);
+		</code></pre>
+		<p>Flat map</p>
+		<!-- lets you replace each value of a stream with another stream and then concatenates all the generated streams into a single stream -->
+		<pre><code data-trim contenteditable>
+&lt;R> Stream&lt;R> flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R>> mapper);
+		</code> </pre>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Finding and Matching</h2>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+		<p>Another data processing idiom is finding whether some elements in a set of data match a given property</p>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+		<p>All operations are short circuiting (also limit)</p>
+		<ul>
+			<li>allMatch</li>
+			<!-- check to see if all the elements of the stream match the given predicate (Short circuiting)-->
+			<li>anyMatch</li>
+			<!-- Return boolean and it is terminal operations. Is there an element in the stream matching the given predicate? (Short circuiting) -->
+			<li>noneMatch</li>
+			<!-- oposite to allMatch (Short circuiting) -->
+			<li>findFirst</li>
+			<!-- By parallelism -->
+			<li>findAny</li>
+			<!-- By parallelism -->
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+		</ul>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Reducing</h2> <!-- in functional programming "fold" -->
+		<pre><code data-trim>
+			<!-- first parameter is initial value; second A lambda to combine two stream elements and produce a new value -->
+T reduce(T identity, BinaryOperator&lt;T> accumulator);
+		</code>	</pre>
+		<!-- reduce operation can be performed by parallel -->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Stream operations: stateless Vs. stateful</h2>
+		<!-- Operations like map and filter take each element from the input stream and produce zero or one result in the output stream.
+			These operations are thus in general stateless: they don’t have an internal state -->
+		<!-- But operations like reduce, sum, and max need to have internal state to accumulate the result. In this case the internal state is small.
+			In our example it consisted of an int or double. The internal state is of bounded size no matter how many elements are in the stream being processed. -->
+		<!-- By contrast, some operations such as sorted or distinct.
+			 Both sorting and removing duplicates from a stream require knowing the previous history to do their job
+			 he storage requirement of the operation is unbounded. We call this operations stateful-->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Primitive stream specializations</h2>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+		<p>Avoid hidden boxing costs</p>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+		<p>When stream is empty return 0.</p>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+		<p>map, sum</p>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+		<p>IntStream | mapToInt | max, min, average</p>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+		<p>DoubleStream | mapToDouble</p>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+		<p>LongStream | mapToLong</p>
+	</section>
 
-			</div>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Numeric ranges</h2>
+		<p>range (exclusive), rangeClosed (inclusive)</p>
+		<pre><code data-trim contenteditable>
+IntStream evenNumbers = IntStream.rangeClosed(1,100).filter(n -> n%2 == 0);
+System.out.println(evenNumbers.count());
+		</code></pre>
+	</section>
+	<!-- you can also create stream with explicit values by using the static method Stream.of or create empty stream by using Stream.empty() -->
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Creation of streams</h2>
+		<p>From explicit values - static method Stream.of</p>
+		<p>Emtpy stream - Stream.empty</p>
+		<p>From array - Arrays.stream(arr)</p>
+		<p>Streams from files - Files.lines(Paths.get("newSong.txt"))</p>
+		<p>Streams from functions - Stream.iterate and Stream.generate</p>
+		<!-- with those two we can create infinite stream, because values are produced on demand and can be computed forever - Stream.iterate(0, n -> n + 2) -->
+	</section>
 
+</section>
+<section>
+	<section data-background="#b5533c">
+		<h2>Collecting data with streams</h2>
+
+
+	</section>
+
+</section>
+<section>
+	<section>
+		<h2>Optional</h2>
+
+		<p>java.util.Optional</p>
+
+		<p>Is a container class to represent the existence or absence of a value</p>
+		<ul>
+			<li>isPresent</li>
+			<!-- returns true if Optional contains a value, false otherwise -->
+			<li>ifPresent(Consumer&lt;T> block)</li>
+			<!-- Executes the given block if a value is present -->
+			<li>T get()</li>
+			<!-- return the value if present; otherwise it throws a NoSuchElementException -->
+			<li>T orElse(T other)</li>
+			<!--return the value if present, otherwise it returns default value -->
+		</ul>
+		<p>Primitive specialized version</p>
+		<p>OptionalInt, OptionalDouble, OptionalLong</p>
+		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
+	</section>
+
+</section>
+
+<section data-markdown>
+	<script type="text/template">
+		## Markdown support
+
+		Write content using inline or external Markdown.
+		Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+		```
+		<section data-markdown>
+			## Markdown support
+
+			Write content using inline or external Markdown.
+			Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+		</section>
+		```
+	</script>
+</section>
+
+<section>
+	<section id="fragments">
+		<h2>Fragments</h2>
+
+		<p>Hit the next arrow...</p>
+
+		<p class="fragment">... to step through ...</p>
+
+		<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span
+				class="fragment">slide.</span></p>
+
+		<aside class="notes">
+			This slide has fragments which are also stepped through in the notes window.
+		</aside>
+	</section>
+	<section>
+		<h2>Fragment Styles</h2>
+
+		<p>There's different types of fragments, like:</p>
+
+		<p class="fragment grow">grow</p>
+
+		<p class="fragment shrink">shrink</p>
+
+		<p class="fragment roll-in">roll-in</p>
+
+		<p class="fragment fade-out">fade-out</p>
+
+		<p class="fragment current-visible">current-visible</p>
+
+		<p class="fragment highlight-red">highlight-red</p>
+
+		<p class="fragment highlight-blue">highlight-blue</p>
+	</section>
+</section>
+
+<section id="transitions">
+	<h2>Transition Styles</h2>
+
+	<p>
+		You can select from different transitions, like: <br>
+		<a href="?transition=none#/transitions">None</a> -
+		<a href="?transition=fade#/transitions">Fade</a> -
+		<a href="?transition=slide#/transitions">Slide</a> -
+		<a href="?transition=convex#/transitions">Convex</a> -
+		<a href="?transition=concave#/transitions">Concave</a> -
+		<a href="?transition=zoom#/transitions">Zoom</a>
+	</p>
+</section>
+
+<section id="themes">
+	<h2>Themes</h2>
+
+	<p>
+		reveal.js comes with a few themes built in: <br>
+		<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
+			(default)</a> -
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+		-
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+		-
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+		-
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+		-
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
+		<br>
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
+		-
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
+		-
+		<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+		-
+		<a href="#"
+		   onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+	</p>
+</section>
+
+<section>
+	<section data-background="#dddddd">
+		<h2>Slide Backgrounds</h2>
+
+		<p>
+			Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats
+			are supported.
+		</p>
+		<a href="#" class="navigate-down">
+			<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+				 alt="Down arrow">
+		</a>
+	</section>
+	<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+		<h2>Image Backgrounds</h2>
+		<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+	</section>
+	<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png"
+			 data-background-repeat="repeat" data-background-size="100px">
+		<h2>Tiled Backgrounds</h2>
+		<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png"
+			data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+	</section>
+	<section
+			data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
+			data-background-color="#000000">
+		<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+			<h2>Video Backgrounds</h2>
+			<pre><code style="word-wrap: break-word;">&lt;section
+				data-background-video="video.mp4,video.webm"&gt;</code></pre>
 		</div>
+	</section>
+</section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+	<h2>Background Transitions</h2>
 
-		<script>
+	<p>
+		Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+	</p>
+	<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+</section>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+	<h2>Background Transitions</h2>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+	<p>
+		You can override background transitions per-slide.
+	</p>
+	<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+</section>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+<section>
+	<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+						function linkify( selector ) {
+						if( supports3DTransforms ) {
 
-		</script>
+						var nodes = document.querySelectorAll( selector );
 
-	</body>
+						for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+						var node = nodes[i];
+
+						if( !node.className ) {
+						node.className += ' roll';
+						}
+						}
+						}
+						}
+					</code></pre>
+	<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.
+	</p>
+</section>
+
+<section>
+	<h2>Marvelous List</h2>
+	<ul>
+		<li>No order here</li>
+		<li>Or here</li>
+		<li>Or here</li>
+		<li>Or here</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Fantastic Ordered List</h2>
+	<ol>
+		<li>One is smaller than...</li>
+		<li>Two is smaller than...</li>
+		<li>Three!</li>
+	</ol>
+</section>
+
+<section>
+	<h2>Tabular Tables</h2>
+	<table>
+		<thead>
+		<tr>
+			<th>Item</th>
+			<th>Value</th>
+			<th>Quantity</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Apples</td>
+			<td>$1</td>
+			<td>7</td>
+		<tr>
+		<tr>
+			<td>Lemonade</td>
+			<td>$2</td>
+			<td>18</td>
+		<tr>
+		<tr>
+			<td>Bread</td>
+			<td>$3</td>
+			<td>2</td>
+		<tr>
+		</tbody>
+	</table>
+</section>
+
+<section>
+	<h2>Clever Quotes</h2>
+
+	<p>
+		These guys come in two forms, inline: <q
+			cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+		&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+	</p>
+	<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+		&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters
+		would
+		reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+	</blockquote>
+</section>
+
+<section>
+	<h2>Intergalactic Interconnections</h2>
+
+	<p>
+		You can link between slides internally,
+		<a href="#/2/3">like this</a>.
+	</p>
+</section>
+
+<section>
+	<h2>Speaker View</h2>
+
+	<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer,
+		preview of the upcoming slide as well as your speaker notes.</p>
+
+	<p>Press the <em>S</em> key to try it out.</p>
+
+	<aside class="notes">
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the
+		speaker notes window (hit 's' on your keyboard).
+	</aside>
+</section>
+
+<section>
+	<h2>Export to PDF</h2>
+
+	<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an
+		example:</p>
+	<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0"
+			marginwidth="0" marginheight="0" scrolling="no"
+			style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+</section>
+
+<section>
+	<h2>Global State</h2>
+
+	<p>
+		Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+		will be added as a class to the document element when the slide is open. This lets you
+		apply broader style changes, like switching the page background.
+	</p>
+</section>
+
+<section data-state="customevent">
+	<h2>State Events</h2>
+
+	<p>
+		Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+	</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+						Reveal.addEventListener( 'customevent', function() {
+						console.log( '"customevent" has fired' );
+						} );
+					</code></pre>
+</section>
+
+<section>
+	<h2>Take a Moment</h2>
+
+	<p>
+		Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take
+		distracting slides off the screen.
+	</p>
+</section>
+
+<section>
+	<h2>Much more</h2>
+	<ul>
+		<li>Right-to-left support</li>
+		<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+		<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+	</ul>
+</section>
+
+<section style="text-align: left;">
+	<h1>THE END</h1>
+
+	<p>
+		- <a href="http://slides.com">Try the online editor</a> <br>
+		- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+	</p>
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function () {
+				return !document.body.classList;
+			} },
+			{ src: 'plugin/markdown/marked.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			} },
+			{ src: 'plugin/markdown/markdown.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			} },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+				return !!document.querySelector('pre code');
+			}, callback: function () {
+				hljs.initHighlightingOnLoad();
+			} },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+</script>
+
+</body>
 </html>
