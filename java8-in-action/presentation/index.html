@@ -103,7 +103,7 @@
 		<p>Functional descriptor</p>
 		<!--Signature of the abstract method of the functional interface essentially describes the signature of the lambda expression -->
 		<pre><code data-trim contenteditable>
-() -> System.out.println("Run method");
+			() -> System.out.println("Run method");
 		</code></pre>
 		<br>
 
@@ -111,11 +111,11 @@
 	<section>
 		<h2>Functional interfaces</h2>
 		<pre><code data-trim contenteditable>
-public Funciton&lt;T, R> { R apply(T t); }
-public Predicate&lt;T> { boolean test(T t); }
-public Consumer&lt;T> { void accept(T t); }
-public Supplier&lt;T> { T get(); }
-public BiFunction&lt;T, U, R> { R apply(T t, U u); }
+			public Funciton&lt;T, R> { R apply(T t); }
+			public Predicate&lt;T> { boolean test(T t); }
+			public Consumer&lt;T> { void accept(T t); }
+			public Supplier&lt;T> { T get(); }
+			public BiFunction&lt;T, U, R> { R apply(T t, U u); }
 		</code></pre>
 		<p>In package: java.util.function (42-43)</p>
 		<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">http://docs.oracle.com/...</a>.
@@ -172,20 +172,20 @@ public BiFunction&lt;T, U, R> { R apply(T t, U u); }
 
 		<p>A method reference to a static method</p>
 		<pre><code data-trim contenteditable>
-Integer::parseInt
+			Integer::parseInt
 		</code></pre>
 		<p>A method reference to an instance of an arbitrary type</p>
 		<pre><code data-trim contenteditable>
-String::length
+			String::length
 		</code></pre>
 		<p>A method reference to an instance method of an existing object</p>
 		<pre><code data-trim contenteditable>
-Transaction expensiveTransaction = Transaction::new;
-expensiveTransaction::getValue
+			Transaction expensiveTransaction = Transaction::new;
+			expensiveTransaction::getValue
 		</code></pre>
 		<p>Reference to constructor</p>
 		<pre><code data-trim contenteditable>
-ClassName::new
+			ClassName::new
 		</code></pre>
 		<br>
 
@@ -236,27 +236,27 @@ ClassName::new
 		<!-- return names of dishes that are low in calories, sorted by number of calories -->
 		<!-- 1 filter the elements 2. sort 3. process sorted list to select names of dishes -->
 		<pre><code data-trim contenteditable>
-List&lt;Dish> lowCaloricDishes = new ArrayList<>();
-for(Dish d: menu){
-	if(d.getCalories() < 400){
-		lowCaloricDishes.add(d);
-	}
-}
-Collections.sort(lowCaloricDishes, new Comparator&lt;Dish>() {
-	public int compare(Dish d1, Dish d2){
-		return Integer.compare(d1.getCalories(), d2.getCalories());
-	}
-});
-List&lt;String> lowCaloricDishesName = new ArrayList<>();
-for(Dish d: lowCaloricDishes){
-	lowCaloricDishesName.add(d.getName());
-}
+			List&lt;Dish> lowCaloricDishes = new ArrayList<>();
+			for(Dish d: menu){
+			if(d.getCalories() < 400){
+			lowCaloricDishes.add(d);
+			}
+			}
+			Collections.sort(lowCaloricDishes, new Comparator&lt;Dish>() {
+			public int compare(Dish d1, Dish d2){
+			return Integer.compare(d1.getCalories(), d2.getCalories());
+			}
+			});
+			List&lt;String> lowCaloricDishesName = new ArrayList<>();
+			for(Dish d: lowCaloricDishes){
+			lowCaloricDishesName.add(d.getName());
+			}
 		</code></pre>
 	</section>
 	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 		<h2>Java 8 approach</h2>
 		<pre><code data-trim contenteditable>
-List&lt;String> lowCaloricDishesName =
+			List&lt;String> lowCaloricDishesName =
 			menu.stream()
 			.filter(d -> d.getCalories() < 400)
 			.sorted(comparing(Dish::getCalories))
@@ -264,7 +264,7 @@ List&lt;String> lowCaloricDishesName =
 			.collect(toList());
 		</code></pre>
 		<pre><code data-trim contenteditable>
-List&lt;String> lowCaloricDishesName =
+			List&lt;String> lowCaloricDishesName =
 			menu.parallelStream()
 			.filter(d -> d.getCalories() < 400)
 			.sorted(comparing(Dish::getCalories))
@@ -288,7 +288,7 @@ List&lt;String> lowCaloricDishesName =
 	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 		<h2>Filter</h2>
 		<pre><code data-trim contenteditable>
-Stream&lt;T> filter(Predicate<? super T> predicate);
+			Stream&lt;T> filter(Predicate<? super T> predicate);
 		</code></pre>
 		<p>filter(d -> d->getCalories() > 300).skip(2)</p>
 
@@ -302,12 +302,12 @@ Stream&lt;T> filter(Predicate<? super T> predicate);
 		<p>Select information from certain objects</p> <!-- in sql you can select particular column from a table -->
 		<p>Can be chained</p>
 		<pre><code data-trim contenteditable>
-&lt;R> Stream&lt;R> map(Function&lt;? super T, ? extends R> mapper);
+			&lt;R> Stream&lt;R> map(Function&lt;? super T, ? extends R> mapper);
 		</code></pre>
 		<p>Flat map</p>
 		<!-- lets you replace each value of a stream with another stream and then concatenates all the generated streams into a single stream -->
 		<pre><code data-trim contenteditable>
-&lt;R> Stream&lt;R> flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R>> mapper);
+			&lt;R> Stream&lt;R> flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R>> mapper);
 		</code> </pre>
 	</section>
 	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
@@ -334,7 +334,7 @@ Stream&lt;T> filter(Predicate<? super T> predicate);
 		<h2>Reducing</h2> <!-- in functional programming "fold" -->
 		<pre><code data-trim>
 			<!-- first parameter is initial value; second A lambda to combine two stream elements and produce a new value -->
-T reduce(T identity, BinaryOperator&lt;T> accumulator);
+			T reduce(T identity, BinaryOperator&lt;T> accumulator);
 		</code>	</pre>
 		<!-- reduce operation can be performed by parallel -->
 	</section>
@@ -366,19 +366,25 @@ T reduce(T identity, BinaryOperator&lt;T> accumulator);
 
 	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 		<h2>Numeric ranges</h2>
+
 		<p>range (exclusive), rangeClosed (inclusive)</p>
 		<pre><code data-trim contenteditable>
-IntStream evenNumbers = IntStream.rangeClosed(1,100).filter(n -> n%2 == 0);
-System.out.println(evenNumbers.count());
+			IntStream evenNumbers = IntStream.rangeClosed(1,100).filter(n -> n%2 == 0);
+			System.out.println(evenNumbers.count());
 		</code></pre>
 	</section>
 	<!-- you can also create stream with explicit values by using the static method Stream.of or create empty stream by using Stream.empty() -->
 	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 		<h2>Creation of streams</h2>
+
 		<p>From explicit values - static method Stream.of</p>
+
 		<p>Emtpy stream - Stream.empty</p>
+
 		<p>From array - Arrays.stream(arr)</p>
+
 		<p>Streams from files - Files.lines(Paths.get("newSong.txt"))</p>
+
 		<p>Streams from functions - Stream.iterate and Stream.generate</p>
 		<!-- with those two we can create infinite stream, because values are produced on demand and can be computed forever - Stream.iterate(0, n -> n + 2) -->
 	</section>
@@ -386,11 +392,239 @@ System.out.println(evenNumbers.count());
 </section>
 <section>
 	<section data-background="#b5533c">
-		<h2>Collecting data with streams</h2>
+		<h2>Collecting data with streams : Collectors</h2>
 
-
+		<p>Parameters to Stream method collect</p> <!-- collect is a terminal operation that takes as argument various recipes (called collectors)
+														for accumulating the elements of a stream into a summary result. -->
+		<p>Main functionalities</p>
+		<ul>
+			<li>Reducing and summarizing stream elements to a single value</li>
+			<li>Grouping elements</li>
+			<li>Partitioning elements</li>
+		</ul>
 	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Reducing and summarizing</h2>
 
+		<p>Finding max and min</p>
+		<ul>
+			<li>Collectors.counting()</li>
+			<li>Collectors.maxBy</li>
+			<li>Collectors.minBy</li>
+		</ul>
+		<p>Summarization</p>
+		<ul>
+			<li>Collectors.summing [Int, Double, Long]</li>
+			<li>Collectors.averaging [Int, Double, Long]</li>
+			<li>Collectors.summarizingIng [Int, Double, Long]</li>
+			<!-- return all statistics average, min, max, count; return type is [Int, Double, Long] SummaryStatistics -->
+		</ul>
+		<p>Joining Strings</p>
+		<ul>
+			<li>Collectors.joining()</li>
+		</ul>
+		<!-- All operations above can be replaced with reduce method but there is a problem with readability -->
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Grouping</h2>
+
+		<p>Grouping can be multilevel</p> <!-- result is always Map<Ele1, List<Obj1>> -->
+		<p>After grouping we can use every collector</p>
+
+		<p>Partitioning</p>
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Collector interface</h2>
+		<pre><code data-trim contenteditable>
+			public interface Collector&lt;T, A, R> {
+			Supplier&lt;A> supplier();
+			BiConsumer&lt;A, T> accumulator(); <!-- perform reduction process -->
+			Function&lt;A, R> finisher();     <!-- the last executed method and this method call method identify() -->
+			BinaryOperator&lt;A> combiner();
+			<!-- combine divided results into one part this is done for parallel processing if we don't use parallel stream this method could be empty-->
+			Set&lt;Characteristics> characteristics();
+			<!-- Provide hints about whether the stream can be reduced in parallel and which optimizations are valid Contain three items. It is enum with 3 valus
+				 1) UNORDERED - the result of the reduction isn't affected by the order in which are items processed
+				2) CONCURRENT - the accumulator function can be called concurrently from multiple threads;
+								 the stream will be processed in parallel only if its underlying data source is unordered.
+				3) IDENTITY_FINISH - this also implies that it is safe to do an unchecked cast from the accumulator A to the result B -->
+			}
+		</code></pre>
+		<ul>
+			<li>T</li>
+			<!-- is a generic type of the items in the stream to be collected -->
+			<li>A</li>
+			<!-- is a type of accumulator, the object on which the partial result will be accumulated during the collection process -->
+			<li>R</li>
+			<!-- is a type of object resulting from the collect operation -->
+		</ul>
+		<p>You can create own collector but you can also utilize option of Stream that has overloaded collect method</p>
+		<!-- thi overloaded method accept three functions supplier, accumulator, combiner -->
+	</section>
+</section>
+<section>
+	<section>
+		<h2>Parallel Streams</h2>
+
+		<p>Stream is internally divided multiple chunks</p>
+
+		<p>You can decide which part can be performed parallel or seqeuntial</p>
+		<pre><code data-trim>
+			stream.parallel()
+			.filter(...)
+			.sequential()
+			.map(...)
+			.parallel()
+			.reduce();
+		</code></pre>
+		<p>Internally use the default ForkJoinPool</p>
+		<!-- how many threads process data is fetched from - Runtime.getRuntime().availableProcessor() -->
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<p>Using parallel streams correctly</p>
+		<ul>
+			<li>Don't use in algorithm that mutate some shared state
+				<!-- race condition -->
+				<pre><code data-trim>
+					public static long sideEffectSum(long n) {
+					Accumulator accumulator = new Accumulator();
+					LongStream.rangeClosed(1, n).forEach(accumulator::add);
+					return accumulator.total;
+					}
+					public class Accumulator {
+					public long total = 0;
+					public void add(long value) { total += value; }
+					}
+					measurePerf(ParallelStreams::sideEffectParallelSum, 10_000_000L);
+				</code></pre>
+			</li>
+		</ul>
+		<p>Using parallel stream effectively</p>
+		<ul>
+			<li>None quantitative meassure</li>
+			<li>Don't use operation with automatic boxing, unboxing</li>
+			<!-- IntStream, LongStream, DoubleStream -->
+			<li>Operations such as: limit, findFirst are to expensive</li>
+			<!-- because rely on the order of the elements -->
+			<li>You can always turn the ordered stream into an unordered</li>
+			<!-- Invoking method unordered -->
+			<table style="font-size: 22px;">
+				<thead>
+				<tr>
+					<th>Source</th>
+					<th>Decomposability</th>
+				</tr>
+				</thead>
+				<tbody style="font-size: 18px">
+				<tr>
+					<td>ArrayList</td>
+					<td>Excellent</td>
+				<tr>
+				<tr>
+					<td>LinkedList</td>
+					<td>Poor</td>
+				<tr>
+				<tr>
+					<td>IntStream.range</td>
+					<td>Excellent</td>
+				<tr>
+				<tr>
+					<td>Stream.iterate</td>
+					<td>Poor</td>
+				<tr>
+				<tr>
+					<td>HashSet</td>
+					<td>Good</td>
+				<tr>
+				<tr>
+					<td>TreeSet</td>
+					<td>Good</td>
+				<tr>
+				</tbody>
+			</table>
+		</ul>
+	</section>
+	<section>
+		<h2>Fork/join Framework</h2>
+
+		<p>Recursively split a parallelizable task into smaller tasks and then combine the results</p>
+		<!-- implementation of ExecutorService interface , which distributes those subtasks to worker thread in a thread pool, call ForkJoinPool
+		 To submit tasks to this pool, you have to create a subclass of RecursiveTask<R>, where R is the type of the result produced by the parallelized
+		 task (and each of its subtasks) or of RecursiveAction if the task returns no result (it could be updating other nonlocal structures, though).
+		 To define RecursiveTasks you need only implement its single abstract method, compute:
+		 if (task is small enough or no longer divisible) {
+			compute task sequentially
+		} else {
+			split task in two subtasks
+			call this method recursively possibly further splitting each subtask
+			wait for the completion of all subtasks
+			combine the results of each subtask
+		}
+		-->
+		<p>Work stealing</p>
+		<!-- Tasks are more or less evenly divided on all the threads in the ForkJoinPool. Each of these threads hold queue of tasks. If one queue is empty earlier
+			instead of becoming idle randomly queue of different thread and steal a task-->
+	</section>
+	<section>
+		<h2>Spliterator</h2>
+		<p>An object for traversing and partitioning elements of a source</p>
+		<pre><code data-trim>
+public interface Spliterator&lt;T> {
+	boolean tryAdvance(Consumer&lt;? super T> action); 	<!-- like a normal Iterator return true if there are still other elements to be traversed -->
+	Spliterator&lt;T> trySplit();						<!-- split elements to the second Spliterator - those two can be processed in parallel -->
+	long estimateSize();								<!-- estimate of number elements remaining to traverse -->
+	int characteristics();  							<!-- Unfortunately, although these conceptually overlap with characteristics of a collector, they’re coded differently.) -->
+}
+<!-- T is type of elements traversed by the Spliterator -->
+		</code></pre>
+	</section>
+</section>
+<section>
+	<section>
+	<h2>Effective Java 8 Programming</h2>
+	<p>Refactoring</p>
+	<ul>
+		<li>Refactoring anonymous classes to lambda expressions</li>
+		<li>Refactoring lambda expressions to method references</li>
+		<li>Refactoring imperative-style data processing to streams</li>
+	</ul>
+	<p>To log intermediate values in lambda use peek method</p>
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Design Patterns</h2>
+		<ul>
+			<li>Strategy</li>
+			<li>Template Method</li>
+			<li>Observer</li>
+			<li>Chain of responsibility</li>
+			<li>Factory</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section>
+		<h2>Default Methods</h2>
+		<ul>
+			<li>Static methods are allows in interface</li> <!-- Collection and Collections, now Collections class is not needed because we can move all methods from this class to interface -->
+			<li>Default methods - allows you to provide default implementation for methods in an interface</li>
+
+		</ul>
+		<pre><code data-trim>
+default void sort(Comparator<? super E> c){
+	Collections.sort(this, c);
+}
+		</code></pre>
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Design Patterns</h2>
+		<ul>
+			<li>Strategy</li>
+			<li>Template Method</li>
+			<li>Observer</li>
+			<li>Chain of responsibility</li>
+			<li>Factory</li>
+		</ul>
+	</section>
 </section>
 <section>
 	<section>
@@ -410,6 +644,32 @@ System.out.println(evenNumbers.count());
 			<!--return the value if present, otherwise it returns default value -->
 		</ul>
 		<p>Primitive specialized version</p>
+
+		<p>OptionalInt, OptionalDouble, OptionalLong</p>
+		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>Optional</h2>
+
+		<p>java.util.Optional</p>
+
+		<p>Is a container class to represent the existence or absence of a value</p>
+		<ul>
+			<li>isPresent</li>
+			<!-- returns true if Optional contains a value, false otherwise -->
+			<li>ifPresent(Consumer&lt;T> block)</li>
+			<!-- Executes the given block if a value is present -->
+			<li>T get()</li>
+			<!-- return the value if present; otherwise it throws a NoSuchElementException -->
+			<li>T orElse(T other)</li>
+			<!--return the value if present, otherwise it returns default value -->
+		</ul>
+		<p>Primitive specialized version</p>
+
 		<p>OptionalInt, OptionalDouble, OptionalLong</p>
 		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
 	</section>

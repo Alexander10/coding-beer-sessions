@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toList;
  */
 public final class Album {
 
-	private String id;
+
 	private String name;
 	private Integer productionYear;
 	private List<Track> tracks;

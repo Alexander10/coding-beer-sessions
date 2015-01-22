@@ -2,6 +2,7 @@ package com.answers.chapter1;
 
 
 
+import com.model.Album;
 import com.model.Artist;
 
 import java.text.SimpleDateFormat;
@@ -9,8 +10,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.groupingBy;
 
 /**
  * User: ban
@@ -50,6 +55,10 @@ public class Question1 {
 			}
 			return null;
 		};
+	}
+
+	public Map<Artist, List<Album>> albumsByArtist(Stream<Album> albums) {
+		return albums.collect(groupingBy(Album::getMainMusician));
 	}
 
 
