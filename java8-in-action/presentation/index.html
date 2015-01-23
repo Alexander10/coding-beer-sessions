@@ -603,7 +603,7 @@ public interface Spliterator&lt;T> {
 </section>
 <section>
 	<section>
-		<h2>Default Methods</h2>
+		<h2>Interface changes</h2>
 		<ul>
 			<li>Static methods are allows in interface</li> <!-- Collection and Collections, now Collections class is not needed because we can move all methods from this class to interface -->
 			<li>Default methods - allows you to provide default implementation for methods in an interface</li>
@@ -614,6 +614,19 @@ default void sort(Comparator<? super E> c){
 	Collections.sort(this, c);
 }
 		</code></pre>
+		<p>sort method int list, stream method in collection</p>
+		<p>Abstract class Vs. Interface</p>
+		<!-- 1) Class can extend only from one abstract class, but class can implement multiple interfaces
+			 2) Abstract class can enforce common state through instance variables -->
+		<p>Class can inherit more than one methods with the same signature</p>
+		<!-- two interfaces have methods with the same signature, which method should be used?
+		 	1) Classes always win. (method declaration in the class or a superclass takes priority)
+		 	2) Sub-interface win. (method in most-specific interface win)
+		 	3) It it is still not clear, Class has to explicitly select (overriding method and calling method from proper interface )
+		-->
+		<p>New syntax: X.super.method()</p>
+		<!-- X is super interface -->
+		<p>For interface is not possible to implement methods from Object</p> <!-- toString(); equals;.... because this method are about state and interface has no state-->
 	</section>
 	<section data-transition="slide" data-background="#b5533c">
 		<h2>Design Patterns</h2>
@@ -628,27 +641,79 @@ default void sort(Comparator<? super E> c){
 </section>
 <section>
 	<section>
+		<h2>Null references</h2>
+		<p>Introduced by Tony Hoare in 1965</p><!-- Because it was so simple to implement -->
+		<p>"my billion-dollar mistake"</p>
+		<!-- Java always hides pointers from developers except in one case: the null pointer -->
+		<p>How to solve null pointer other languages</p>
+		<p>Groovy (def variable = person?.car?.insurance?.name</p> <!-- miracle letter ? :) -->
+		<p>Haskel (Maybe type)</p>
+		<p>Scala (Option[T])</p>
 		<h2>Optional</h2>
-
+		<!-- model if some object can be or can not be null class Car{} class Person{ private Optional<Car> car;} person can has or can not has a car -->
+		 <!-- You can think of Optional like a stream with at most a single element -->
 		<p>java.util.Optional</p>
-
 		<p>Is a container class to represent the existence or absence of a value</p>
+		<p>Purpose of optional is to help design more comprehensible API</p>
 		<ul>
 			<li>isPresent</li>
 			<!-- returns true if Optional contains a value, false otherwise -->
 			<li>ifPresent(Consumer&lt;T> block)</li>
 			<!-- Executes the given block if a value is present -->
 			<li>T get()</li>
-			<!-- return the value if present; otherwise it throws a NoSuchElementException -->
+			<!-- return the value if present; otherwise it throws a NoSuchElementException, it is not good idea to use this method -->
 			<li>T orElse(T other)</li>
 			<!--return the value if present, otherwise it returns default value -->
+			<li>&lt;U> Optional&lt;U> map(Function&lt;? super T, ? extends U> mapper))</li>
+			<!-- if value is present return value if value is not present return empty -->
+			<li>&lt;U> Optional&lt;U> flatMap(Function&lt;? super T, Optional&lt;U>> mapper)</li>
+			<!-- Optional<Optional<Car>> statement flatten to Optional<Car> statement -->
+			<li>Optional&lt;T> filter(Predicate&lt;? super T> predicate)</li>
 		</ul>
+		<pre><code>
+			person.getCar().getInsurance().getName()
+		</code></pre>
+		<pre><code>
+			person.flatMap(Person::getCar).flatMap(Car::getInsurance)
+					.map(Insurance::getName).orElse("Unknown");
+		</code></pre>
+		<p>Filter</p>
+		<pre><code>
+			Insurance insurance = ...;
+			if(insurance != null && "CambridgeInsurance".equals(insurance.getName())){
+			System.out.println("ok");
+			}
+		</code></pre>
+		<pre><code>
+			Optional&lt;Insurance> optInsurance = ...;
+			optInsurance.filter(insurance -> "CambridgeInsurance".equals(insurance.getName()))
+					.ifPresent(x -> System.out.println("ok"));
+		</code></pre>
+		<p>Doesn't implement Serializable</p>
 		<p>Primitive specialized version</p>
-
 		<p>OptionalInt, OptionalDouble, OptionalLong</p>
 		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
 	</section>
-
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Creating Optional objects</h2>
+		<ul>
+			<li>Empty optional
+				<pre><code data-trim>
+					Optional&lt;Car> optCar = Optional.empty();
+				</code></pre>
+			</li>
+			<li>Optional from a non-null value
+				<pre><code data-trim>
+					Optional&lt;Car> optCar = Optional.of(car); <!-- if car were null => NPE -->
+				</code></pre>
+			</li>
+			<li>Optional from null
+				<pre><code data-trim>
+					Optional&lt;Car> optCar = Optional.ofNullable(car); <!-- if car were null => the Optional object would be empty -->
+				</code></pre>
+			</li>
+		</ul>
+	</section>
 </section>
 
 <section>
@@ -672,8 +737,27 @@ default void sort(Comparator<? super E> c){
 
 		<p>OptionalInt, OptionalDouble, OptionalLong</p>
 		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
+		<p>Optional&lt;Object> value = Optional.ofNullable(map.get("key"));</p>
+		<!--  Use this method every time you want to safely transform a value that could be potentially null into na optional -->
+		<pre><code>
+			public static Optional&lt;Integer> stringToInt(String s) {
+			try {
+			return Optional.of(Integer.parseInt(s));
+			} catch (NumberFormatException e) {
+			return Optional.empty();
+			}
+			}
+		</code></pre>
 	</section>
 
+</section>
+<section>
+	<h2>Future</h2> <!-- represent result of asynchronous computation -->
+	<!-- Concurrently executed code You can think of it as taking a bag of clothes to your favorite dry cleaner. They will give
+		you a receipt to tell you when your clothes are cleaned (a Future). In the meantime,
+		you can do some other activities
+	-->
+	<p>CompletableFuture</p> <!-- CompletableFuture is to Future the same as Stream to Collection -->
 </section>
 
 <section data-markdown>
