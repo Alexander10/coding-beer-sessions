@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.Collectors.toSet;
 
 /**
  * User: ban
@@ -26,6 +25,59 @@ public class Question2 {
 	private static List<Album> albumList = SampleData.albums;
 
 
+	public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> input) {
+		return input.stream()
+				.filter(album -> album.getTrackList().size() <= 3)
+				.collect(toList());
+	}
+
+	public static int countBandMembersInternal(List<Artist> artists) {
+		return artists.stream()
+				.map(artist -> artist.getMembers().count())
+				.reduce(0L, Long::sum)
+				.intValue();
+	}
+
+
+	public static Artist findArtistByName(String name) {
+		return artistList.stream().filter(a -> a.getFirstName().equalsIgnoreCase(name)).limit(0).findFirst().get();
+	}
+
+	/**
+	 * return unique date of birth
+	 */
+	public static List<Integer> getUniqueDatesOfBirth() {
+		List<Integer> result = artistList.stream().map((a) -> a.getYearOfBirth()).distinct().collect(Collectors.toList());
+		result.forEach(System.out::println);
+		return null;
+	}
+
+	public static List<String> getNamesAndOrigins(List<Artist> artists) {
+		return artists.stream()
+				.flatMap(artist -> Stream.of(artist.getFirstName() + " " + artist.getSecondName(), artist.getNationality()))
+				.collect(toList());
+	}
+
+
+	public List<String> originsOfBands(Album album) {
+
+		List<String> origins = album.getMusicians()
+				.filter(artist -> artist.getFirstName().startsWith("The"))
+				.map(artist -> artist.getNationality())
+				.collect(toList());
+
+		return origins;
+	}
+
+	public List<String> findLongTracks(List<Album> albums) {
+		return albums.stream()
+				.flatMap(album -> album.getTracks())
+				.filter(track -> track.getLength() > 60)
+				.map(track -> track.getName())
+				.collect(toList());
+	}
+
+
 	public static List<Integer> getLengthOfNames() {
 
 		List<Integer> result = artistList.stream().map(Artist::getFirstName).map(String::length).collect(Collectors.toList());
@@ -33,18 +85,6 @@ public class Question2 {
 		return null;
 	}
 
-	/**
-	 * return unique date of birth
-	 */
-	public static List<Integer> getUniqueDateOfBirth() {
-		List<Integer> result = artistList.stream().map((a) -> a.getYearOfBirth()).distinct().collect(Collectors.toList());
-		result.forEach(System.out::println);
-		return null;
-	}
-
-	public static void findMekyZbirka() {
-		artistList.stream().filter(a -> a.getFirstName().equalsIgnoreCase("Meky")).findAny().ifPresent(d -> System.out.println(d.getFirstName()));
-	}
 
 	/**
 	 * By this task please use reduce and map functions and ....
@@ -102,25 +142,6 @@ public class Question2 {
 	}
 
 
-	public static List<String> getNamesAndOrigins(List<Artist> artists) {
-		return artists.stream()
-				.flatMap(artist -> Stream.of(artist.getFirstName(), artist.getSecondName(), artist.getNationality()))
-				.collect(toList());
-	}
-
-	public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> input) {
-		return input.stream()
-				.filter(album -> album.getTrackList().size() <= 3)
-				.collect(toList());
-	}
-
-	public static int countBandMembersInternal(List<Artist> artists) {
-		return artists.stream()
-				.map(artist -> artist.getMembers().count())
-				.reduce(0L, Long::sum)
-				.intValue();
-	}
-
 	public Map<Artist, Integer> countAlbums(Map<Artist, List<Album>> albumsByArtist) {
 
 		Map<Artist, Integer> countOfAlbums = new HashMap<>();
@@ -129,34 +150,6 @@ public class Question2 {
 		});
 
 		return countOfAlbums;
-	}
-
-	public static String formatArtists(List<Artist> artists) {
-
-		String result =
-				artists.stream()
-						.map(a -> a.getFirstName() + " " + a.getSecondName())
-						.collect(Collectors.joining(", ", "[", "]"));
-
-		return result;
-	}
-
-	public Set<String> originsOfBands(Album album) {
-
-		Set<String> origins = album.getMusicians()
-				.filter(artist -> artist.getFirstName().startsWith("The"))
-				.map(artist -> artist.getNationality())
-				.collect(toSet());
-
-		return origins;
-	}
-
-	public Set<String> findLongTracks(List<Album> albums) {
-		return albums.stream()
-				.flatMap(album -> album.getTracks())
-				.filter(track -> track.getLength() > 60)
-				.map(track -> track.getName())
-				.collect(toSet());
 	}
 
 

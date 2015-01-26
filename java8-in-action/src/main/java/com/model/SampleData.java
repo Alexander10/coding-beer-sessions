@@ -22,6 +22,11 @@ public class SampleData {
 	public static final Artist georgeHarrison = new Artist("George", "Harrison", 1943, "UK");
 	public static final Artist ringoStarr = new Artist("Ringo", "Starr", 1945, "UK");
 
+	public static final Artist pavolHamel = new Artist("Pavol","Hamel", 1945, "SK");
+	public static final Artist mekyZbirka = new Artist("Miro", "Zbirka", 1943,"SK");
+
+	public static final List<Artist> slovakStars = Arrays.asList(pavolHamel, mekyZbirka);
+
 	public static final List<Artist> membersOfTheBeatles = Arrays.asList(johnLennon, paulMcCartney, georgeHarrison, ringoStarr);
 
 	public static final Artist theBeatles = new Artist("The Beatles", "The Beatles", 1980, membersOfTheBeatles, "UK");
@@ -30,7 +35,7 @@ public class SampleData {
 
 	public static final Album sampleShortAlbum = new Album("sample Short Album", 1980, asList(new Track("short track", 30)), asList(johnColtrane));
 
-	public static final Album manyTrackAlbum = new Album("sample Short Album", 1990, asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("short track 4", 80), new Track("short track 5", 105)), asList(johnLennon));
+	public static final Album manyTrackAlbum = new Album("sample Short Album", 1990, asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("long track 4", 80), new Track("long track 5", 105)), asList(johnLennon));
 
 	public static final List<Album> albums = Arrays.asList(aLoveSupreme,sampleShortAlbum,manyTrackAlbum);
 

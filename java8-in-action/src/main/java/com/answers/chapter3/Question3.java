@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
-import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
 
 /**
@@ -142,15 +141,13 @@ public class Question3 {
 				.collect(averagingInt(album -> album.getTrackList().size()));
 	}
 
-	public void soloAndNoneSoloArtists(){
+	public void soloAndNoneSoloArtists() {
 		Map<Boolean, List<Artist>> byContinentDivided = artistList.stream().collect(partitioningBy(Artist::isSolo));
 	}
 
-	public void findOldestArtistForSoloAndNoneSolo(){
+	public void findOldestArtistForSoloAndNoneSolo() {
 //		Map<Boolean, Artist> oldestArtists = artistList.stream().collect(partitioningBy(Artist::isSolo, maxBy(comparingInt(Artist::getYearOfBirth))));
 	}
-
-
 
 
 }

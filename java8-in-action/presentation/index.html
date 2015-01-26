@@ -567,28 +567,34 @@
 	</section>
 	<section>
 		<h2>Spliterator</h2>
+
 		<p>An object for traversing and partitioning elements of a source</p>
 		<pre><code data-trim>
-public interface Spliterator&lt;T> {
-	boolean tryAdvance(Consumer&lt;? super T> action); 	<!-- like a normal Iterator return true if there are still other elements to be traversed -->
-	Spliterator&lt;T> trySplit();						<!-- split elements to the second Spliterator - those two can be processed in parallel -->
-	long estimateSize();								<!-- estimate of number elements remaining to traverse -->
-	int characteristics();  							<!-- Unfortunately, although these conceptually overlap with characteristics of a collector, they’re coded differently.) -->
-}
-<!-- T is type of elements traversed by the Spliterator -->
+			public interface Spliterator&lt;T> {
+			boolean tryAdvance(Consumer&lt;? super T> action);
+			<!-- like a normal Iterator return true if there are still other elements to be traversed -->
+			Spliterator&lt;T> trySplit();
+			<!-- split elements to the second Spliterator - those two can be processed in parallel -->
+			long estimateSize();
+			<!-- estimate of number elements remaining to traverse -->
+			int characteristics();
+			<!-- Unfortunately, although these conceptually overlap with characteristics of a collector, they’re coded differently.) -->
+			}
+			<!-- T is type of elements traversed by the Spliterator -->
 		</code></pre>
 	</section>
 </section>
 <section>
 	<section>
-	<h2>Effective Java 8 Programming</h2>
-	<p>Refactoring</p>
-	<ul>
-		<li>Refactoring anonymous classes to lambda expressions</li>
-		<li>Refactoring lambda expressions to method references</li>
-		<li>Refactoring imperative-style data processing to streams</li>
-	</ul>
-	<p>To log intermediate values in lambda use peek method</p>
+		<h2>Effective Java 8 Programming</h2>
+
+		<p>Refactoring</p>
+		<ul>
+			<li>Refactoring anonymous classes to lambda expressions</li>
+			<li>Refactoring lambda expressions to method references</li>
+			<li>Refactoring imperative-style data processing to streams</li>
+		</ul>
+		<p>To log intermediate values in lambda use peek method</p>
 	</section>
 	<section data-transition="slide" data-background="#b5533c">
 		<h2>Design Patterns</h2>
@@ -605,16 +611,18 @@ public interface Spliterator&lt;T> {
 	<section>
 		<h2>Interface changes</h2>
 		<ul>
-			<li>Static methods are allows in interface</li> <!-- Collection and Collections, now Collections class is not needed because we can move all methods from this class to interface -->
+			<li>Static methods are allows in interface</li>
+			<!-- Collection and Collections, now Collections class is not needed because we can move all methods from this class to interface -->
 			<li>Default methods - allows you to provide default implementation for methods in an interface</li>
 
 		</ul>
 		<pre><code data-trim>
-default void sort(Comparator<? super E> c){
-	Collections.sort(this, c);
-}
+			default void sort(Comparator<? super E> c){
+			Collections.sort(this, c);
+			}
 		</code></pre>
 		<p>sort method int list, stream method in collection</p>
+
 		<p>Abstract class Vs. Interface</p>
 		<!-- 1) Class can extend only from one abstract class, but class can implement multiple interfaces
 			 2) Abstract class can enforce common state through instance variables -->
@@ -626,7 +634,8 @@ default void sort(Comparator<? super E> c){
 		-->
 		<p>New syntax: X.super.method()</p>
 		<!-- X is super interface -->
-		<p>For interface is not possible to implement methods from Object</p> <!-- toString(); equals;.... because this method are about state and interface has no state-->
+		<p>For interface is not possible to implement methods from Object</p>
+		<!-- toString(); equals;.... because this method are about state and interface has no state-->
 	</section>
 	<section data-transition="slide" data-background="#b5533c">
 		<h2>Design Patterns</h2>
@@ -642,18 +651,24 @@ default void sort(Comparator<? super E> c){
 <section>
 	<section>
 		<h2>Null references</h2>
+
 		<p>Introduced by Tony Hoare in 1965</p><!-- Because it was so simple to implement -->
 		<p>"my billion-dollar mistake"</p>
 		<!-- Java always hides pointers from developers except in one case: the null pointer -->
 		<p>How to solve null pointer other languages</p>
+
 		<p>Groovy (def variable = person?.car?.insurance?.name</p> <!-- miracle letter ? :) -->
 		<p>Haskel (Maybe type)</p>
+
 		<p>Scala (Option[T])</p>
+
 		<h2>Optional</h2>
 		<!-- model if some object can be or can not be null class Car{} class Person{ private Optional<Car> car;} person can has or can not has a car -->
-		 <!-- You can think of Optional like a stream with at most a single element -->
+		<!-- You can think of Optional like a stream with at most a single element -->
 		<p>java.util.Optional</p>
+
 		<p>Is a container class to represent the existence or absence of a value</p>
+
 		<p>Purpose of optional is to help design more comprehensible API</p>
 		<ul>
 			<li>isPresent</li>
@@ -675,7 +690,7 @@ default void sort(Comparator<? super E> c){
 		</code></pre>
 		<pre><code>
 			person.flatMap(Person::getCar).flatMap(Car::getInsurance)
-					.map(Insurance::getName).orElse("Unknown");
+			.map(Insurance::getName).orElse("Unknown");
 		</code></pre>
 		<p>Filter</p>
 		<pre><code>
@@ -687,10 +702,12 @@ default void sort(Comparator<? super E> c){
 		<pre><code>
 			Optional&lt;Insurance> optInsurance = ...;
 			optInsurance.filter(insurance -> "CambridgeInsurance".equals(insurance.getName()))
-					.ifPresent(x -> System.out.println("ok"));
+			.ifPresent(x -> System.out.println("ok"));
 		</code></pre>
 		<p>Doesn't implement Serializable</p>
+
 		<p>Primitive specialized version</p>
+
 		<p>OptionalInt, OptionalDouble, OptionalLong</p>
 		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
 	</section>
@@ -709,7 +726,8 @@ default void sort(Comparator<? super E> c){
 			</li>
 			<li>Optional from null
 				<pre><code data-trim>
-					Optional&lt;Car> optCar = Optional.ofNullable(car); <!-- if car were null => the Optional object would be empty -->
+					Optional&lt;Car> optCar = Optional.ofNullable(car);
+					<!-- if car were null => the Optional object would be empty -->
 				</code></pre>
 			</li>
 		</ul>
@@ -758,6 +776,44 @@ default void sort(Comparator<? super E> c){
 		you can do some other activities
 	-->
 	<p>CompletableFuture</p> <!-- CompletableFuture is to Future the same as Stream to Collection -->
+</section>
+
+<section>
+	<h2>Date and Time API</h2>
+
+	<p>LocalDate </p>
+	<!-- immutable date without time part, it doesn't carry any information about time zone
+		 You can also obtain the current date from system clock LocalDate.now-->
+	<p>TemporalField</p><!-- interface defining how to access the value of a specific field of a temporal object -->
+	<p>ChronoField</p><!-- enumaration which implements TemporalField interface, with chronoField we can obtain
+						via get all values date.get(ChronoField.Year); -->
+	<p>LocalTime</p><!-- represents time of day. you can create it using of methods -->
+	<!-- both localDate and localTime can be created from string -->
+	<p>LocalDateTime</p> <!-- composite class of LocalDate and LocalTime, withou time zone  -->
+	<p>Instant</p> <!-- number of seconds pass from 1970 january 1 januar -->
+	<p>Duration</p> <!-- not allow to mix LocalDateTime with Instant -->
+	<p>Period</p>
+
+	<p>TemporalAdjusters</p>
+	<!-- allow you to manipulate a date in a more complex way than just changing one of its values, custom date transformations -->
+	<p>DateTimeFormatter</p>
+
+	<p>DateTimeFormatterBuilder</p><!-- case insensitive parsing, lanient parsing (not precisely match) -->
+	<section>
+		<h2>Different Time Zones and Calendars</h2>
+
+		<p>java.time.ZoneId</p>
+		<img width="300" height="150" data-src="assets/date_time.png"/>
+		<!-- replacement for old java.util.TimeZone
+			 specific ZoneId is identified by a region Id
+			 Convert old TimeZone to ZoneId => ZoneId zoneId = TimeZone.getDefault().toZoneId();
+			 Zone works with LocalDate, LocalTime via ZoneLocalDate, ZoneLocalTime
+			 ZonedDateTime zonedDateTime = date1.atStartOfDay(zone);
+			-->
+		<p>ZoneOffset</p>
+
+		<p>ThaiBuddhistDate, MinguoDate, JapaneseDate, and Hijrah-Date</p>
+	</section>
 </section>
 
 <section data-markdown>
@@ -907,14 +963,6 @@ default void sort(Comparator<? super E> c){
 	<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
 </section>
 
-<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-	<h2>Background Transitions</h2>
-
-	<p>
-		You can override background transitions per-slide.
-	</p>
-	<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-</section>
 
 <section>
 	<h2>Pretty Code</h2>
@@ -938,54 +986,6 @@ default void sort(Comparator<? super E> c){
 	</p>
 </section>
 
-<section>
-	<h2>Marvelous List</h2>
-	<ul>
-		<li>No order here</li>
-		<li>Or here</li>
-		<li>Or here</li>
-		<li>Or here</li>
-	</ul>
-</section>
-
-<section>
-	<h2>Fantastic Ordered List</h2>
-	<ol>
-		<li>One is smaller than...</li>
-		<li>Two is smaller than...</li>
-		<li>Three!</li>
-	</ol>
-</section>
-
-<section>
-	<h2>Tabular Tables</h2>
-	<table>
-		<thead>
-		<tr>
-			<th>Item</th>
-			<th>Value</th>
-			<th>Quantity</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>Apples</td>
-			<td>$1</td>
-			<td>7</td>
-		<tr>
-		<tr>
-			<td>Lemonade</td>
-			<td>$2</td>
-			<td>18</td>
-		<tr>
-		<tr>
-			<td>Bread</td>
-			<td>$3</td>
-			<td>2</td>
-		<tr>
-		</tbody>
-	</table>
-</section>
 
 <section>
 	<h2>Clever Quotes</h2>

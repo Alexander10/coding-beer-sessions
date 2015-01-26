@@ -27,7 +27,14 @@ public class Question1 {
 
 	public static ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("dd.MMM.yyyy"));
 
-	public static <T> boolean isSpecificItem(List<T> items, Predicate<T> predicate) {
+	/**
+	 * Simple method for checking if item match witch the predicate condition
+	 * @param items
+	 * @param predicate -
+	 * @param <T>
+	 * @return
+	 */
+	public static <T> boolean itemMatchPredicate(List<T> items, Predicate<T> predicate) {
 		for (T item : items) {
 			if (predicate.test(item)) {
 				return true;
@@ -36,20 +43,24 @@ public class Question1 {
 		return true;
 	}
 
-	public static Function<List<Artist>, List<Artist>> getFuncForJohns() {
+	/**
+	 * Find all artist with first name John
+	 * @return
+	 */
+	public static Function<List<Artist>, List<Artist>> getArtistsWithNameJohn() {
 		return (List<Artist> artists) -> {
 			List<Artist> johns = new ArrayList<>();
 			artists.forEach(art -> {
-				if ("John".equals(art.getFirstName())) johns.add(art);
+				if ("John".equalsIgnoreCase(art.getFirstName())) johns.add(art);
 			});
 			return johns;
 		};
 	}
 
-	public static Function<List<Artist>, Artist> getFuncForTheOldestArtist() {
+	public static Function<List<Artist>, Artist> getOldestArtist() {
 		return (List<Artist> artists) -> {
 			for(Artist art : artists){
-				if (isSpecificItem(artists, (Artist artInner) -> artInner.getYearOfBirth() > art.getYearOfBirth())) {
+				if (itemMatchPredicate(artists, (Artist artInner) -> artInner.getYearOfBirth() > art.getYearOfBirth())) {
 					return art;
 				}
 			}
