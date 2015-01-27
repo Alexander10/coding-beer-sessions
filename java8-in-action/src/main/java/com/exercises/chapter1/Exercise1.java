@@ -20,7 +20,7 @@ public class Exercise1 {
 	public static ThreadLocal<SimpleDateFormat> formatter = Exercises.replaceThisWithSolution();
 
 	/**
-	 * Check whether exists some artist with nationality US
+	 * Checks whether the artist comes from US
 	 *
 	 * @return
 	 */
@@ -34,7 +34,7 @@ public class Exercise1 {
 	}
 
 	/**
-	 * Create Lambda expression which will find all artist with first name john
+	 * Creates Lambda expression which will find all artists named john
 	 *
 	 * @return
 	 */
@@ -43,7 +43,7 @@ public class Exercise1 {
 	}
 
 	/**
-	 * Create Lambda expression which will find the oldest artist
+	 * Creates Lambda expression which will find the oldest artist
 	 *
 	 * @return
 	 */
@@ -61,8 +61,13 @@ public class Exercise1 {
 		return Exercises.replaceThisWithSolution();
 	}
 
+
+	public static Function<List<Artist>, String> concate(Function<List<Artist>, List<Artist>> f, Function<List<Artist>,Artist> g){
+		return Exercises.replaceThisWithSolution();
+	}
+
 	/**
-	 * Simple method for checking if item match witch the predicate condition
+	 * Simple method for checking if item match with the predicate condition
 	 *
 	 * @param items
 	 * @param predicate -

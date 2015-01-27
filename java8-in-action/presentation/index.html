@@ -57,7 +57,7 @@
 
 	<p>
 	<ul>
-		<li>Functions in Java</li>
+		<li>Functional Programming in Java</li>
 		<li>Streams</li>
 		<li>Default Methods</li>
 	</ul>
@@ -83,11 +83,23 @@
 	</section>
 	<section>
 		<h2>New view on Java methods</h2>
+
+		<p>Programming using functions</p> <!-- functional programming -->
+		<p>Function corresponds to a mathematical function</p>
+		<!-- it takes zero or more arguments, gives one or more results and has no side effects (none updating instance variable)...-->
+		<p>In practice we can't completely program in pure functional style in Java</p>
+		<!-- Functions may be used like other values: passed as arguments, returned as results and stored in data structures -->
+		<!-- higher-order function is a function that takes at least one or more functions as an input or return another functions (comparing, andThen, compose) -->
+		<p>Function shouldn't throw any exceptions</p>
+		<!-- lambdas constitute in java closures => is an instance of function that can reference nonlocal variables of that function with no restrictions
+			lambdas in java have restriction - because lambda can not change method local variable in which is lambda defined
+			-->
+		<!-- Currying => mean that we can break down a function that takes multiple arguments into a series of function that take a subpart of arguments -->
 		<br/>
 
 		<p>Old View</p>
 
-		<p>New View</p>
+		<p>New View</p><!-- First class function -->
 	</section>
 	<section>
 		<h2>Functional interfaces</h2>
@@ -815,7 +827,81 @@
 		<p>ThaiBuddhistDate, MinguoDate, JapaneseDate, and Hijrah-Date</p>
 	</section>
 </section>
+<section>
+	<section>
+		<h2>Language updates</h2>
 
+		<p>Repeated annotations</p>
+	<pre><code>
+		@interface Author { String name(); }
+		@Author(name="Raoul") @Author(name="Mario") @Author(name="Alan")
+		class Book{ }
+	</code></pre>
+		<!-- This code doesn't compile in java 7, because repeated annotation of same type was restricted -->
+		<p>Pretty ugly solution</p>
+	<pre><code>
+		@interface Author { String name(); }
+		@interface Authors {
+		Author[] value();
+		}
+		@Authors(
+		{ @Author(name="Raoul"), @Author(name="Mario") , @Author(name="Alan")}
+		)
+	</code></pre>
+		<p>Make annotations repeatable</p>
+		<ul>
+			<li>Mark annotation as @Repeatable</li>
+			<li>Provide container annotation</li>
+		</ul>
+	<pre><code>
+		@Repeatable(Authors.class)
+		@interface Author { String name(); }
+		@interface Authors {
+		Author[] value();
+		}
+		@Author(name="Raoul") @Author(name="Mario") @Author(name="Alan")
+		class Book{ }
+	</code></pre>
+		<!-- In java 8 we can use repeated annotations -->
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Type annotations</h2>
+		<ul>
+			<li>@NonNull</li>
+		</ul>
+		<!-- checker framework -> defines several type annotations and lets you enhance type checking using them -->
+		<h2>Target type inference</h2>
+		<pre><code>
+			static void cleanCars(List&lt;Car> cars) {
+			}
+			cleanCars(Collections.emptyList());
+		</code></pre>
+		<!-- This wasn't possible in previous version of Java -->
+	</section>
+</section>
+<section>
+	<section>
+		<h2>Language updates</h2>
+		<p>Collections - new methods</p>
+		<img width="300" height="150" data-src="assets/java8_collections_new_methods.png"/>
+		<p>Concurrency</p>
+		<ul>
+			<li>Parallel Streams</li>
+			<li>CompletableFuture</li>
+			<li>LongAdder, LongAccumulator, Double...</li> <!-- use those classes instead of atomic classes -->
+			<li>ConcurrentHashMap - methods (forEach, reduce, search, mappingCount, keySetView)</li>
+			<!-- was updated => in case when in one bucket is too many records those records are not stored in list O(n) but this list is dynamically replaced with sorted trees O(log(n)) [only for comparable items] -->
+			<li>Arrays - methods (parallelSort, setAll, parallelSetAll, parallelPrefix)</li>
+			<li>Number and Math (sum, min, max, addExact ....)</li>
+			<li>Files - methods (find, walk, list, lines)</li>
+			<!-- all methods produces Stream<Path>; list = list of files in directory [no to depth]; walk =>  is recursive and you can set depth ; find => find file by given predicate -->
+			<li>Reflection</li>
+			<!-- Information about parameters of methods such as names and modifiers can now be accessed from java.lang.reflect.Parameter -->
+			<li>String => String.join(" ", "Raoul", "mario", "alan");</li>
+
+		</ul>
+	</section>
+</section>
 <section data-markdown>
 	<script type="text/template">
 		## Markdown support

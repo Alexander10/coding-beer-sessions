@@ -12,11 +12,6 @@ public class Question3Test {
 
 	@Test
 	public void initTest(){
-		Question3.getNumbOfArtistFromDiffNational();
-		Question3.getCustomGroupedTracks();
-		Question3.getTotalTrackLengthStatsOfManyTrackAlbum();
-		Question3.getTotalLengthOfManyTrackAlbum();
-		Question3.getTheLongestTrackFromManyTrackAlbum();
-		Question3.getGroupedAlbumsByProductionYear();
+
 	}
 }

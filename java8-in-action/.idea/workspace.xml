@@ -26,33 +26,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27221929-df16-4131-8fd2-68e658b44c02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/ExerciseNotCompletedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/Exercises.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" afterPath="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/index.html" afterPath="$PROJECT_DIR$/presentation/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java8-in-action.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422258478057" ignored="false" />
     <file path="$PROJECT_DIR$/../../coding-bear-session/java-8-lambdas-exercises-master/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421768353296" ignored="false" />
-    <file path="/index.html" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422274036648" ignored="false" />
+    <file path="/index.html" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422368558085" ignored="false" />
     <file path="/Question2.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422283858073" ignored="false" />
     <file path="/fragment.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421926062548" ignored="false" />
     <file path="/Question2Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422284963921" ignored="false" />
     <file path="/Question1.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422275930662" ignored="false" />
     <file path="/Album.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421769051341" ignored="false" />
-    <file path="/Question3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421855888297" ignored="false" />
+    <file path="/Question3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422372519635" ignored="false" />
     <file path="/Question3Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421850283869" ignored="false" />
     <file path="/Question2Enhanced.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853309112" ignored="false" />
     <file path="$PROJECT_DIR$/../../coding-beer-session/java-8-lambdas-exercises-master/src/main/java/com/insightfullogic/java8/answers/chapter5/LongestName.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853877420" ignored="false" />
@@ -82,11 +73,12 @@
     <file path="/NextWorkingDay.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422271835341" ignored="false" />
     <file path="/ExerciseNotCompletedException.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422274691123" ignored="false" />
     <file path="/Exercises.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422274814325" ignored="false" />
-    <file path="/Exercise1.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422278711651" ignored="false" />
-    <file path="/Question1Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422280195341" ignored="false" />
+    <file path="/Exercise1.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422373193685" ignored="false" />
+    <file path="/Question1Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422359284489" ignored="false" />
     <file path="/Exercise2.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422284595297" ignored="false" />
     <file path="/SampleData.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422280712281" ignored="false" />
     <file path="/*.regexp" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422281790154" ignored="false" />
+    <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422372930860" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,10 +139,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Question1.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Question1.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="68" selection-start="929" selection-end="929" vertical-scroll-proportion="0.058419243">
+            <state line="68" column="100" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,7 +151,7 @@
       <file leaf-file-name="Exercise1.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="104" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="30" column="106" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,10 +159,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exercise2.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/presentation/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="886" column="76" selection-start="32998" selection-end="32998" vertical-scroll-proportion="-6.607843">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tbody#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tbody#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#code#0;n#pre#0;n#section#2;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#code#0;n#pre#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#section#24;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#code#0;n#pre#0;n#section#26;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#29;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1228" column="33" selection-start="53513" selection-end="53519" vertical-scroll-proportion="11.16">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="123" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="56" column="148" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.43528065">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,13 +200,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NextWorkingDay.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java">
+      <file leaf-file-name="Exercise3.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+            <state line="94" column="7" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question3Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="36" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,7 +223,7 @@
       <file leaf-file-name="Question3.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="82" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="125" column="46" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,44 +231,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionalUtility.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/OptionalUtility.java">
+      <file leaf-file-name="Track.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Track.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+            <state line="8" column="19" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="84" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="17" selection-start="418" selection-end="418" vertical-scroll-proportion="15.64">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question2Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="129" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -245,7 +243,7 @@
       <file leaf-file-name="Question1Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="86" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
+            <state line="54" column="66" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -269,22 +267,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter4/Question4Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java" />
-        <option value="$PROJECT_DIR$/presentation/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/ExerciseNotCompletedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/Exercises.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Question3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" />
+        <option value="$PROJECT_DIR$/presentation/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
       </list>
     </option>
   </component>
@@ -1530,56 +1528,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="37" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/SampleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="42" selection-start="1209" selection-end="1221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/nio/file/Paths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="23" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/stream/Collectors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="463" column="4" selection-start="18673" selection-end="18673" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="123" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1608,15 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="82" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="17" selection-start="418" selection-end="418" vertical-scroll-proportion="15.64">
@@ -1626,25 +1569,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="104" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="86" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="129" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+        <state line="77" column="43" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1653,8 +1580,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="68" selection-start="929" selection-end="929" vertical-scroll-proportion="0.058419243">
+        <state line="68" column="100" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="66" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1228" column="33" selection-start="53513" selection-end="53519" vertical-scroll-proportion="11.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="886" column="76" selection-start="32998" selection-end="32998" vertical-scroll-proportion="-6.607843">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tbody#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tbody#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#code#0;n#pre#0;n#section#2;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#code#0;n#pre#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#section#24;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#code#0;n#pre#0;n#section#26;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#29;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Track.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="46" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="7" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="36" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="106" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="148" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.43528065">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

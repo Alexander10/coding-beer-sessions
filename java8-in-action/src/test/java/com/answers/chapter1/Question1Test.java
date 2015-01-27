@@ -52,7 +52,7 @@ public class Question1Test {
 		//Create another lambda which will be fetching artist year of birth for the oldest man
 		Function<List<Artist>, Artist> oldestNameFunc = Exercise1.getOldestArtist();
 
-		Function<List<Artist>, String> finalFunc = null;
+		Function<List<Artist>, String> finalFunc = Exercise1.concate(johnsFunc, oldestNameFunc);
 
 		assertEquals("John", finalFunc.apply(artists) );
 	}

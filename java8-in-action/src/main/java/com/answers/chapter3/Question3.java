@@ -27,40 +27,76 @@ public class Question3 {
 
 	/**
 	 * Group albums by production year
+	 *
+	 * @param albums
+	 * @return
 	 */
-	public static void getGroupedAlbumsByProductionYear() {
-		Map<Integer, List<Album>> groupedArtists = albumList.stream().collect(Collectors.groupingBy(Album::getProductionYear));
-		System.out.println(groupedArtists.size());
-	}
-
-	public static void getTheLongestTrackFromManyTrackAlbum() {
-		Optional<Track> track = SampleData.manyTrackAlbum.getTrackList().stream().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
-		System.out.println(track.get().getName());
-	}
-
-	public static void getTotalLengthOfManyTrackAlbum() {
-		Integer result = SampleData.manyTrackAlbum.getTrackList().stream().collect(Collectors.summingInt(Track::getLength));
-		System.out.println(result);
-	}
-
-	public static void getTotalTrackLengthStatsOfManyTrackAlbum() {
-		IntSummaryStatistics result = SampleData.manyTrackAlbum.getTrackList().stream().collect(Collectors.summarizingInt(Track::getLength));
-		System.out.println(result);
-	}
-
-	public static void getJoinedTrackNames() {
-		String trackNames = SampleData.manyTrackAlbum.getTrackList().stream().map(t -> t.getName()).collect(Collectors.joining());
-		System.out.println(trackNames);
+	public static Map<Integer, List<Album>> getGroupedAlbumsByProductionYear(List<Album> albums) {
+		Map<Integer, List<Album>> groupedArtists = albums.stream().collect(Collectors.groupingBy(Album::getProductionYear));
+		return groupedArtists;
 	}
 
 	/**
-	 * Classify tracks from manyTrackAlbum by following:
-	 * shorter then 35 min like a SHORT TRACK
+	 * One album has more tracks. For this album sum all track lengths
+	 *
+	 * @param album
+	 * @return
+	 */
+	public static Integer getSumTimeOfAllTracks(Album album) {
+		Integer result = album.getTrackList().stream().collect(Collectors.summingInt(Track::getLength));
+		return result;
+	}
+
+	/**
+	 * For each country count number of artists
+	 *
+	 * @param artists
+	 * @return
+	 */
+	public static Map<String, Long> getCntArtistsByNationalities(List<Artist> artists) {
+		Map<String, Long> nationalitiesCounts = artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
+		return nationalitiesCounts;
+	}
+
+	/**
+	 * Solo artist should be put for key - true
+	 * None solo artist should be put for key - false
+	 *
+	 * @param artists
+	 * @return
+	 */
+	public Map<Boolean, List<Artist>> getSoloAndNoneSoloArtistsGrouped(List<Artist> artists) {
+		return artists.stream().collect(partitioningBy(Artist::isSolo));
+	}
+
+	/**
+	 * What is average count of tracks for one album?
+	 *
+	 * @param albums
+	 * @return
+	 */
+	public double getAvgCntOfTracks(List<Album> albums) {
+		return albums.stream()
+				.collect(averagingInt(album -> album.getTrackList().size()));
+	}
+
+	/**
+	 * @param album
+	 */
+	public static Track findLongestTrack(Album album) {
+		Optional<Track> track = album.getTrackList().stream().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
+		return track.get();
+	}
+
+
+	/**
+	 * Classifies album tracks by following rules:
+	 * Track shorter than 35 min: classify like a SHORT TRACK
 	 * length >=35 && length <=100 MEDIUM TRACK
 	 * length > 100 LONG TRACK
 	 */
-	public static void getCustomGroupedTracks() {
-		Map<String, List<Track>> groupedTracks = SampleData.manyTrackAlbum.getTrackList().stream().collect(
+	public static Map<String, List<Track>> getCustomGroupedTracks(Album album) {
+		Map<String, List<Track>> groupedTracks = album.getTrackList().stream().collect(
 				Collectors.groupingBy(track -> {
 					if (track.getLength() < 35) {
 						return "SHORT TRACK";
@@ -71,21 +107,50 @@ public class Question3 {
 					}
 				})
 		);
-		groupedTracks.forEach((k, v) -> v.forEach(System.out::println));
+		return groupedTracks;
 	}
 
 	/**
-	 * Group artist first by nationalities and second by year of birth
+	 * For album calculates tracks stats: Avg, Min, Max, Sum
+	 *
+	 * @param album
+	 * @return
 	 */
-	public static void getGroupedArtistExtended() {
-		Map<String, Map<Integer, List<Artist>>> groupedArtist = artistList.stream().
-				collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(a -> a.getYearOfBirth())));
+	public static IntSummaryStatistics albumStats(Album album) {
+		IntSummaryStatistics result = album.getTrackList().stream().collect(Collectors.summarizingInt(Track::getLength));
+		return result;
 	}
 
-	public static void getNumbOfArtistFromDiffNational() {
-		Map<String, Long> nationalitiesCounts = artistList.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
-		nationalitiesCounts.forEach((k, v) -> System.out.println(v));
+	/**
+	 * Group artists
+	 * 1) by nationalities
+	 * 2) by year of birth
+	 *
+	 * @param artists
+	 * @return
+	 */
+	public static Map<String, Map<Integer, List<Artist>>> doubleGroupedArtists(List<Artist> artists) {
+		Map<String, Map<Integer, List<Artist>>> groupedArtist = artists.stream().
+				collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(a -> a.getYearOfBirth())));
+		return groupedArtist;
 	}
+
+	/**
+	 * All artists are formatted into one string: The format of output is : [firstName secondName], [firstName secondName],
+	 *
+	 * @param artists
+	 * @return
+	 */
+	public static String formatArtists(List<Artist> artists) {
+
+		String result =
+				artists.stream()
+						.map(a -> a.getFirstName() + " " + a.getSecondName())
+						.collect(Collectors.joining(", ", "[", "]"));
+
+		return result;
+	}
+
 
 	private static Comparator<Artist> byNameLength = comparing(artist -> artist.getFirstName().length());
 
@@ -135,15 +200,6 @@ public class Question3 {
 				mapping(Album::getName, toList())));
 	}
 
-
-	public double averageNumberOfTracks(List<Album> albums) {
-		return albums.stream()
-				.collect(averagingInt(album -> album.getTrackList().size()));
-	}
-
-	public void soloAndNoneSoloArtists() {
-		Map<Boolean, List<Artist>> byContinentDivided = artistList.stream().collect(partitioningBy(Artist::isSolo));
-	}
 
 	public void findOldestArtistForSoloAndNoneSolo() {
 //		Map<Boolean, Artist> oldestArtists = artistList.stream().collect(partitioningBy(Artist::isSolo, maxBy(comparingInt(Artist::getYearOfBirth))));
