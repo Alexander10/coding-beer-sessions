@@ -39,6 +39,8 @@ public class SampleData {
 
 	public static final List<Album> albums = Arrays.asList(aLoveSupreme,sampleShortAlbum,manyTrackAlbum);
 
+
+
 	//public static Stream<Album> albums = Stream.of(aLoveSupreme);
 
 	public static Stream<Artist> threeArtists() {

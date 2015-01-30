@@ -4,10 +4,12 @@ package com.answers.chapter2;
 import com.exercises.chapter2.Exercise2;
 import com.model.Album;
 import com.model.Artist;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -24,7 +26,12 @@ import static org.junit.Assert.*;
 
 public class Question2Test {
 
-
+	private List<Artist> worldStars;
+	@Before
+	public void init(){
+		worldStars = new ArrayList<>(membersOfTheBeatles);
+		worldStars.addAll(slovakStars);
+	}
 
 	@Test
 	public void findsShortAlbums() {
@@ -40,8 +47,6 @@ public class Question2Test {
 
 	@Test
 	public void findArtistMiro() {
-		List<Artist> worldStars = membersOfTheBeatles;
-		worldStars.addAll(slovakStars);
 		assertNotNull(Exercise2.findArtistByFirstName(worldStars, "Miro"));
 
 	}
@@ -65,16 +70,14 @@ public class Question2Test {
 
 	@Test
 	public void findUniqueDatesOfBirth() {
-		List<Artist> worldStars = membersOfTheBeatles;
-		worldStars.addAll(slovakStars);
+
 
 		assertEquals(3, Exercise2.getUniqueDatesOfBirth(worldStars));
 	}
 
 	@Test
 	public void numberOfCharactersInArtistsNames(){
-		List<Artist> worldStars = membersOfTheBeatles;
-		worldStars.addAll(slovakStars);
+
 		List<Integer> lengthOfNames = Exercise2.getLenghtOfNames(worldStars);
 		long sum = lengthOfNames.stream().collect(Collectors.summingInt( a -> a));
 

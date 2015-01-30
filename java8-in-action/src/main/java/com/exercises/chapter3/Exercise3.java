@@ -5,6 +5,7 @@ import com.model.Album;
 import com.model.Artist;
 import com.model.Track;
 
+import java.util.DoubleSummaryStatistics;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
@@ -34,7 +35,7 @@ public class Exercise3 {
 	 * @param album
 	 * @return
 	 */
-	public static Integer getSumTimeOfAllTracks(Album album) {
+	public static Integer getDurationSumOfAllTracks(Album album) {
 		return Exercises.replaceThisWithSolution();
 	}
 
@@ -44,7 +45,7 @@ public class Exercise3 {
 	 * @param artists
 	 * @return
 	 */
-	public static Map<String, Long> getCntArtistsByNationalities(List<Artist> artists) {
+	public static Map<String, Long> cntArtistsByNationalities(List<Artist> artists) {
 		return Exercises.replaceThisWithSolution();
 	}
 
@@ -55,7 +56,7 @@ public class Exercise3 {
 	 * @param artists
 	 * @return
 	 */
-	public Map<Boolean, List<Artist>> getSoloAndNoneSoloArtistsGrouped(List<Artist> artists) {
+	public static Map<Boolean, List<Artist>> findSoloAndNoneSoloArtists(List<Artist> artists) {
 		return Exercises.replaceThisWithSolution();
 	}
 
@@ -65,14 +66,14 @@ public class Exercise3 {
 	 * @param albums
 	 * @return
 	 */
-	public double getAvgCntOfTracks(List<Album> albums) {
+	public static double getAvgCntOfTracks(List<Album> albums) {
 		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
 	 * @param album
 	 */
-	public static Track findLongestTrack(Album album) {
+	public static Track findTheLongestTrack(Album album) {
 		return Exercises.replaceThisWithSolution();
 	}
 
@@ -88,12 +89,12 @@ public class Exercise3 {
 	}
 
 	/**
-	 * For album calculates tracks stats: Avg, Min, Max, Sum
+	 * For album calculate tracks stats: Avg, Min, Max, Sum
 	 *
 	 * @param album
 	 * @return
 	 */
-	public static IntSummaryStatistics albumStats(Album album) {
+	public static DoubleSummaryStatistics calculateStats(Album album) {
 		return Exercises.replaceThisWithSolution();
 	}
 

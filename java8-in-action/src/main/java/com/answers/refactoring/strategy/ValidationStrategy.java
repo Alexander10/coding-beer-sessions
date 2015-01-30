@@ -1,4 +1,4 @@
-package com.exercises.refactoring.strategy;
+package com.answers.refactoring.strategy;
 
 /**
  * User: ban

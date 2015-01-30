@@ -1,4 +1,4 @@
-package com.exercises.refactoring.observer;
+package com.answers.refactoring.observer;
 
 import java.util.ArrayList;
 import java.util.List;

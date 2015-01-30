@@ -26,25 +26,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27221929-df16-4131-8fd2-68e658b44c02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter4/Exercise4.java" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\HeaderTextProcessing.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\ProcessingObject.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\SpellCheckerProcessing.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Feed.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Guardian.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\LeMonde.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\NyTimes.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Observer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Subject.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\IsAllLowerCase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\IsNumeric.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\ValidationStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\Validator.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\answers\chapter4\OptionalUtility.java" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter4/OptionalUtility.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\HeaderTextProcessing.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/chainofresponsibility/HeaderTextProcessing.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\ProcessingObject.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/chainofresponsibility/ProcessingObject.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\chainofresponsibility\SpellCheckerProcessing.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/chainofresponsibility/SpellCheckerProcessing.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Feed.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/Feed.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Guardian.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/Guardian.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\LeMonde.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/LeMonde.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\NyTimes.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/NYTimes.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Observer.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/Observer.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\observer\Subject.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/observer/Subject.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\IsAllLowerCase.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/strategy/IsAllLowerCase.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\IsNumeric.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/strategy/IsNumeric.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\ValidationStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/strategy/ValidationStrategy.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\com\exercises\refactoring\strategy\Validator.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/refactoring/strategy/Validator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" afterPath="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/index.html" afterPath="$PROJECT_DIR$/presentation/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java" afterPath="$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/answers/exercises/refactoring/RefactoringTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/answers/exercises/refactoring/RefactoringTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" afterPath="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java8-in-action.iml" afterPath="$PROJECT_DIR$/java8-in-action.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java8-in-action.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422258478057" ignored="false" />
+    <file path="/Dummy.txt" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451053635" ignored="false" />
     <file path="$PROJECT_DIR$/../../coding-bear-session/java-8-lambdas-exercises-master/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421768353296" ignored="false" />
     <file path="/index.html" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422368558085" ignored="false" />
     <file path="/Question2.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422283858073" ignored="false" />
-    <file path="/fragment.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421926062548" ignored="false" />
-    <file path="/Question2Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422284963921" ignored="false" />
+    <file path="/fragment.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422634031364" ignored="false" />
+    <file path="/Question2Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422460009126" ignored="false" />
     <file path="/Question1.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422275930662" ignored="false" />
     <file path="/Album.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421769051341" ignored="false" />
     <file path="/Question3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422372519635" ignored="false" />
-    <file path="/Question3Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421850283869" ignored="false" />
+    <file path="/Question3Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422633555392" ignored="false" />
     <file path="/Question2Enhanced.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853309112" ignored="false" />
     <file path="$PROJECT_DIR$/../../coding-beer-session/java-8-lambdas-exercises-master/src/main/java/com/insightfullogic/java8/answers/chapter5/LongestName.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853877420" ignored="false" />
     <file path="/Question.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421925864129" ignored="false" />
@@ -76,9 +106,23 @@
     <file path="/Exercise1.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422373193685" ignored="false" />
     <file path="/Question1Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422359284489" ignored="false" />
     <file path="/Exercise2.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422284595297" ignored="false" />
-    <file path="/SampleData.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422280712281" ignored="false" />
+    <file path="/SampleData.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422459918574" ignored="false" />
     <file path="/*.regexp" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422281790154" ignored="false" />
-    <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422372930860" ignored="false" />
+    <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422633259756" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/vcs.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422634076518" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/misc.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451050857" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/compiler.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/modules.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/src/test/java/sk/erni/rap/jpa/test/BasicTest.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422453962056" ignored="false" />
+    <file path="/BasicTest.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422453959565" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/GuestUser_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/User_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/Process_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/ProcessAttribute_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/AdminUser_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/target/generated-sources/annotations/sk/erni/rap/jpa/model/Role_.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451618440" ignored="false" />
+    <file path="/Exercise4.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422633912357" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,83 +183,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Question1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="100" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="106" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/presentation/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="886" column="76" selection-start="32998" selection-end="32998" vertical-scroll-proportion="-6.607843">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tbody#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tbody#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#code#0;n#pre#0;n#section#2;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#code#0;n#pre#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#section#24;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#code#0;n#pre#0;n#section#26;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#29;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1228" column="33" selection-start="53513" selection-end="53519" vertical-scroll-proportion="11.16">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise2.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="148" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.43528065">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exercise3.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="7" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Question3Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="85" column="5" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,7 +197,7 @@
       <file leaf-file-name="Question3.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="46" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0">
+            <state line="90" column="85" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -231,20 +205,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Track.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Track.java">
+      <file leaf-file-name="Question4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+            <state line="19" column="4" selection-start="296" selection-end="1158" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="25" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question1Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java">
+      <file leaf-file-name="Exercise4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter4/Exercise4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="66" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
+            <state line="23" column="48" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question4Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter4/Question4Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="60" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionalUtility.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter4/OptionalUtility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NextWorkingDay.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="27" selection-start="159" selection-end="173" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimeNumberCollector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/forfun/PrimeNumberCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="106" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/forfun/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="126" selection-start="4820" selection-end="4820" vertical-scroll-proportion="0.5337209">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -267,22 +307,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exercises/ExerciseNotCompletedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/Exercises.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Question3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java" />
         <option value="$PROJECT_DIR$/presentation/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/model/SampleData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter4/Exercise4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exercises/chapter4/OptionalUtility.java" />
       </list>
     </option>
   </component>
@@ -666,6 +706,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="chapter4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8-in-action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8-in-action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="chapter3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -735,6 +809,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chapter1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8-in-action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java8-in-action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="answers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="refactoring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -984,6 +1092,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.answers" />
       <recent name="" />
     </key>
   </component>
@@ -1528,128 +1637,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="463" column="4" selection-start="18673" selection-end="18673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/forFun/QuestionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="84" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/OptionalUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter2/Question2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="418" selection-end="418" vertical-scroll-proportion="15.64">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="43" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter1/Question1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="100" selection-start="1577" selection-end="1577" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter1/Question1Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="66" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1228" column="33" selection-start="53513" selection-end="53519" vertical-scroll-proportion="11.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="886" column="76" selection-start="32998" selection-end="32998" vertical-scroll-proportion="-6.607843">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#0;n#table#0;n#section#5;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#0;n#table#0;n#ul#1;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#0;n#pre#0;n#section#2;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#0;n#pre#0;n#div#0;n#section#3;n#section#18;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#section#24;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#0;n#pre#0;n#section#26;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#29;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Track.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="46" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="7" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter1/Exercise1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="106" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
@@ -1659,9 +1646,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_11/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="11" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.39175257">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter2/Exercise2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="148" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.43528065">
+        <state line="19" column="57" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/SampleData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="110" selection-start="1153" selection-end="1172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter2/Question2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="100" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter3/Exercise3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="38" selection-start="2630" selection-end="2643" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter3/Question3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="5" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter3/Question3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="85" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/Question4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="296" selection-end="1158" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter4/Exercise4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="48" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/answers/chapter4/Question4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="60" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exercises/chapter4/OptionalUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/chapter4/NextWorkingDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="159" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/forfun/PrimeNumberCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="106" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/answers/forfun/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="126" selection-start="4820" selection-end="4820" vertical-scroll-proportion="0.5337209">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

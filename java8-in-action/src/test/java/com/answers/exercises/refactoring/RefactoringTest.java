@@ -1,15 +1,15 @@
 package com.answers.exercises.refactoring;
 
-import com.exercises.refactoring.chainofresponsibility.HeaderTextProcessing;
-import com.exercises.refactoring.chainofresponsibility.ProcessingObject;
-import com.exercises.refactoring.chainofresponsibility.SpellCheckerProcessing;
-import com.exercises.refactoring.observer.Feed;
-import com.exercises.refactoring.observer.Guardian;
-import com.exercises.refactoring.observer.LeMonde;
-import com.exercises.refactoring.observer.NYTimes;
-import com.exercises.refactoring.strategy.IsAllLowerCase;
-import com.exercises.refactoring.strategy.IsNumeric;
-import com.exercises.refactoring.strategy.Validator;
+import com.answers.refactoring.chainofresponsibility.HeaderTextProcessing;
+import com.answers.refactoring.chainofresponsibility.ProcessingObject;
+import com.answers.refactoring.chainofresponsibility.SpellCheckerProcessing;
+import com.answers.refactoring.observer.Feed;
+import com.answers.refactoring.observer.Guardian;
+import com.answers.refactoring.observer.LeMonde;
+import com.answers.refactoring.observer.NYTimes;
+import com.answers.refactoring.strategy.IsAllLowerCase;
+import com.answers.refactoring.strategy.IsNumeric;
+import com.answers.refactoring.strategy.Validator;
 import org.junit.Test;
 
 import java.util.function.Function;

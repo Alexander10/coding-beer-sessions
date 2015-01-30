@@ -1,4 +1,4 @@
-package com.exercises.refactoring.chainofresponsibility;
+package com.answers.refactoring.chainofresponsibility;
 
 /**
  * User: ban
