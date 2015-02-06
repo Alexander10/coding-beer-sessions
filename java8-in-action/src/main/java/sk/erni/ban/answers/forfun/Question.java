@@ -25,14 +25,14 @@ import static java.util.stream.Collectors.groupingBy;
 
 public class Question {
 
-	// Question 7
+
 	public static int countLowercaseLetters(String string) {
 		return (int) string.chars()
 				.filter(Character::isLowerCase)
 				.count();
 	}
 
-	// Question 8
+
 	public static Optional<String> mostLowercaseString(List<String> strings) {
 		return strings.stream()
 				.max(Comparator.comparing(Question::countLowercaseLetters));
@@ -44,10 +44,10 @@ public class Question {
 	 * (0, 1), (1, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 13), (13, 21)….
 	 * Your task is to generate the first 20 elements of the series of Fibonacci tuples using the iterate method!
 	 */
-	public static void fibonnacciSeries() {
+	public static List<Integer> fibonnacciSeries() {
 		int init[] = new int[]{0, 1};
 		List<Integer> result = Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(20).map(t -> t[0]).collect(Collectors.toList());
-		result.stream().forEach(System.out::println);
+		return result;
 	}
 
 	/**

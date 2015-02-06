@@ -1,7 +1,5 @@
 package sk.erni.ban.exercises.chapter4;
 
-
-
 import sk.erni.ban.exercises.Exercises;
 import sk.erni.ban.model.Car;
 import sk.erni.ban.model.Insurance;

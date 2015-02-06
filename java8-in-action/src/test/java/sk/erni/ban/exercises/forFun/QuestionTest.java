@@ -1,13 +1,18 @@
 package sk.erni.ban.exercises.forFun;
 
 import org.junit.Test;
+import sk.erni.ban.exercises.forfun.Exercise;
 
-import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalAdjusters;
-import java.util.Locale;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 /**
  * User: ban
@@ -17,73 +22,50 @@ import java.util.Locale;
 
 public class QuestionTest {
 
+
+	private static final String text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut molestie sem. Vivamus finibus eget mi sit amet porta. " +
+			"Etiam aliquet non enim sed ornare. Donec fermentum consequat sem nec aliquet. " +
+			"Maecenas iaculis tempor nunc, quis volutpat orci efficitur non. Suspendisse congue arcu metus, quis sagittis eros tristique id. " +
+			"Curabitur rutrum sodales lectus, at pharetra odio. Pellentesque sapien nunc, consectetur eu diam vitae, rhoncus pulvinar augue. " +
+			"Integer sagittis, lectus eget vehicula pretium, diam elit dictum felis, in volutpat dui elit a tellus.";
+
+
 	@Test
-	public void test() {
-		LocalDate date = LocalDate.of(2014, 3, 18);
-		System.out.println(date.toString());
-		date.withDayOfMonth(10);
-		date = date.withDayOfYear(100);
-		date.with(ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH, 7);
-		date = date.with(TemporalAdjusters.nextOrSame(DayOfWeek.SUNDAY));
-		System.out.println(date.toString());
-		LocalTime time = LocalTime.of(12,12,12);
-		date = date.with(TemporalAdjusters.lastDayOfMonth());
-		System.out.println(date);
-		 time.atDate(date);
-		date.atTime(time);
-
-		LocalDate date1 = LocalDate.of(2014, 3, 18);
-		date1 = date1.with(ChronoField.MONTH_OF_YEAR, 9);
-		date1 = date1.plusYears(2).minusDays(2);
-		date.withYear(2016);
-
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d. MMMM yyyy", Locale.ITALIAN);
-		LocalDate date2 = LocalDate.of(2014, 04, 18);
-		String fomrattedDate = date2.format(formatter);
-
-		DateTimeFormatter italianFormater = new DateTimeFormatterBuilder()
-									.appendText(ChronoField.DAY_OF_MONTH)
-									.appendLiteral(". ")
-									.appendText(ChronoField.DAY_OF_MONTH)
-									.appendLiteral(" ")
-									.appendText(ChronoField.YEAR)
-									.parseCaseInsensitive()
-									.toFormatter(Locale.ITALIAN);
-
-		ZoneId zone = ZoneId.of("Europe/Rome");
-		ZonedDateTime zonedDateTime = date1.atStartOfDay(zone);
-
-
-		//LocalTime time2 = LocalTime.from(ChronoField.t);
+	public void numberOfLowerCaseLettersInString() {
+		assertEquals(100, Exercise.countLowercaseLetters(text));
 	}
 
 	@Test
-	public void numberOfLowerCaseLettersInString(){
+	public void findSentenceWithTheMostLowercaseLetters() {
+		String[] texts = text.split(".");
+		Exercise.mostLowercaseString(Arrays.asList(texts));
 
 	}
 
 	@Test
-	public void whichStringHasTheMostLowercaseLetters(){
+	public void firstFibonacciSeries_20() {
+		List<Integer> fibonacciSerie = Exercise.fibonnacciSeries(20);
+
+		assertThat(fibonacciSerie, is(equalTo(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55))));
+	}
+
+	@Test
+	public void pythagoreanTriples_100() {
+		Stream<int[]> triples = Exercise.generatePythagoreanTriples(100);
+		int sum = triples.map(value -> IntStream.of(value).sum()).reduce(0, Integer::sum);
+	}
+
+	@Test
+	public void numbersDivisiableBy_3() {
+		List<int[]> numbersPair = Exercise.getPairsWhereSumIsDivisibleBy3(100);
+		int sum = numbersPair.stream().map(value -> IntStream.of(value).sum()).reduce(0, Integer::sum);
 
 	}
 
 	@Test
-	public void firstFibonacciSeries_20(){
-
-	}
-
-	@Test
-	public void pythagoreanTriples_100(){
-
-	}
-
-	@Test
-	public void numbersDivisiableBy_3(){
-
-	}
-
-	@Test
-	public void primeNumbersLowerThan_1000(){
-
+	public void primeNumbersLowerThan_1000() {
+		Map<Boolean, List<Integer>> primeAndNonPrimeNumbers = Exercise.getPrimeAndNonPrimeNumbers(1000);
+		List<Integer> primeNumbers = primeAndNonPrimeNumbers.get(true);
+		int sum = primeNumbers.stream().reduce(0, Integer::sum);
 	}
 }

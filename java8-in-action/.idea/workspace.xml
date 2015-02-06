@@ -26,55 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27221929-df16-4131-8fd2-68e658b44c02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/ListTransformerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Question.java" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter1\FourFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter1\Question1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter2\Question2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter3\Question3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter4\ArtistsFixed.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter4\NextWorkingDay.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\chapter4\Question4.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\forfun\PrimeNumberCollector.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\forfun\Question.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\chainofresponsibility\HeaderTextProcessing.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\chainofresponsibility\ProcessingObject.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\chainofresponsibility\SpellCheckerProcessing.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\Feed.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\Guardian.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\LeMonde.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\NYTimes.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\Observer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\observer\Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\strategy\IsAllLowerCase.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\strategy\IsNumeric.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\strategy\ValidationStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\answers\refactoring\strategy\Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\ExerciseNotCompletedException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\Exercises.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter1\Exercise1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter2\Exercise2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter3\Exercise3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter4\Artists.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter4\ArtistsFixed.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter4\Exercise4.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\exercises\chapter4\OptionalUtility.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Album.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Artist.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Car.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Insurance.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Person.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\SampleData.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\model\Track.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\java8-in-action.iml" afterPath="$PROJECT_DIR$/java8-in-action-katas.iml" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\chapter1\Question1Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter1/Question1Test.java" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\chapter2\Question2Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter2/Question2Test.java" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\chapter3\Question3Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter3/Question3Test.java" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\chapter4\Question4Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\exercises\refactoring\RefactoringTest.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/refactoring/RefactoringTest.java" />
-      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\com\answers\forFun\QuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
+      <change type="MOVED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\exercises\forfun\Question.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/JPA_CERT_SUMMARY.docx" afterPath="$PROJECT_DIR$/src/main/resources/JPA_CERT_SUMMARY.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/Question.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/Question.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java8-in-action.iws" />
@@ -91,9 +47,9 @@
     <file path="/Question3Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422633555392" ignored="false" />
     <file path="/Question2Enhanced.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853309112" ignored="false" />
     <file path="$PROJECT_DIR$/../../coding-beer-session/java-8-lambdas-exercises-master/src/main/java/com/insightfullogic/java8/answers/chapter5/LongestName.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421853877420" ignored="false" />
-    <file path="/Question.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423067887105" ignored="false" />
+    <file path="/Question.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423226306907" ignored="false" />
     <file path="/PrimeNumberCollector.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421920017515" ignored="false" />
-    <file path="/QuestionTest.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423068439041" ignored="false" />
+    <file path="/QuestionTest.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423227746510" ignored="false" />
     <file path="/ValidationStrategy.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421934236654" ignored="false" />
     <file path="/IsNumeric.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421934290127" ignored="false" />
     <file path="/IsAllLowerCase.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1421934321245" ignored="false" />
@@ -124,7 +80,7 @@
     <file path="/*.regexp" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422281790154" ignored="false" />
     <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422633259756" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/vcs.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
-    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423068446110" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423227946630" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/misc.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451050857" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/compiler.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/modules.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
@@ -142,6 +98,9 @@
     <file path="/ListTransformer.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423041095479" ignored="false" />
     <file path="/ListTransformerTest.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423066349520" ignored="false" />
     <file path="/Artist.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423066775120" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/src/test/resources/META-INF/persistence.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423145274335" ignored="false" />
+    <file path="/persistence.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423145269647" ignored="false" />
+    <file path="/Exercise.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423227601714" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +164,7 @@
       <file leaf-file-name="Question.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/Question.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="42" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,10 +172,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Question.java">
+      <file leaf-file-name="Exercise.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="61" selection-start="1619" selection-end="1634" vertical-scroll-proportion="0.0">
+            <state line="39" column="57" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,10 +183,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Exercise3.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artists.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Artists.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArtistsFixed.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/ArtistsFixed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="58" selection-start="169" selection-end="169" vertical-scroll-proportion="0.22350994">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise1.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter1/Exercise1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="74" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.67600894">
+            <state line="32" column="94" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,71 +253,7 @@
       <file leaf-file-name="ListTransformerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/ListTransformerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="84" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question4.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="84" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrimeNumberCollector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/PrimeNumberCollector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistsFixed.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/ArtistsFixed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question3.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter3/Question3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="74" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter2/Question2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter1/Question1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="15" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.0">
+            <state line="32" column="18" selection-start="701" selection-end="711" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -326,9 +279,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/SampleData.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Track.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/ArtistsFixed.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Artists.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java" />
@@ -341,7 +292,9 @@
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter1/Question1.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java" />
         <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" />
       </list>
     </option>
   </component>
@@ -764,264 +717,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="refactoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strategy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="refactoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="observer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="refactoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chainofresponsibility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forfun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1508,11 +1203,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1528,7 +1224,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26040554" sideWeight="0.75528365" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3004269" sideWeight="0.75528365" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3004269" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24471635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1539,7 +1235,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1620,60 +1315,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter1/Exercise1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/refactoring/strategy/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/refactoring/strategy/ValidationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/refactoring/observer/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/ArtistsFixed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter3/Question3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="74" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1691,7 +1335,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter1/Question1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="15" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.0">
+        <state line="90" column="6" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1700,7 +1344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="84" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
+        <state line="43" column="25" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1714,9 +1358,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newSong.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="556" selection-start="0" selection-end="556" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/forfun/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1725,16 +1379,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/ListTransformerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="84" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="61" selection-start="1619" selection-end="1634" vertical-scroll-proportion="0.0">
+        <state line="32" column="18" selection-start="701" selection-end="711" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1743,8 +1388,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="74" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.67600894">
+        <state line="32" column="94" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="57" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter1/Exercise1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Artists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/ArtistsFixed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="58" selection-start="169" selection-end="169" vertical-scroll-proportion="0.22350994">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
