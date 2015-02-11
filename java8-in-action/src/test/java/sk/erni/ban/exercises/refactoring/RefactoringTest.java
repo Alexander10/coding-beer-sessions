@@ -1,15 +1,15 @@
 package sk.erni.ban.exercises.refactoring;
 
-import sk.answers.refactoring.chainofresponsibility.HeaderTextProcessing;
-import sk.answers.refactoring.chainofresponsibility.ProcessingObject;
-import sk.answers.refactoring.chainofresponsibility.SpellCheckerProcessing;
-import sk.answers.refactoring.observer.Feed;
-import sk.answers.refactoring.observer.Guardian;
-import sk.answers.refactoring.observer.LeMonde;
-import sk.answers.refactoring.observer.NYTimes;
-import sk.answers.refactoring.strategy.IsAllLowerCase;
-import sk.answers.refactoring.strategy.IsNumeric;
-import sk.answers.refactoring.strategy.Validator;
+import sk.erni.ban.answers.refactoring.chainofresponsibility.HeaderTextProcessing;
+import sk.erni.ban.answers.refactoring.chainofresponsibility.ProcessingObject;
+import sk.erni.ban.answers.refactoring.chainofresponsibility.SpellCheckerProcessing;
+import sk.erni.ban.answers.refactoring.observer.Feed;
+import sk.erni.ban.answers.refactoring.observer.Guardian;
+import sk.erni.ban.answers.refactoring.observer.LeMonde;
+import sk.erni.ban.answers.refactoring.observer.NYTimes;
+import sk.erni.ban.answers.refactoring.strategy.IsAllLowerCase;
+import sk.erni.ban.answers.refactoring.strategy.IsNumeric;
+import sk.erni.ban.answers.refactoring.strategy.Validator;
 import org.junit.Test;
 
 import java.util.function.Function;

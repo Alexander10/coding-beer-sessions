@@ -44,9 +44,9 @@ public class Question {
 	 * (0, 1), (1, 1), (1, 2), (2, 3), (3, 5), (5, 8), (8, 13), (13, 21)….
 	 * Your task is to generate the first 20 elements of the series of Fibonacci tuples using the iterate method!
 	 */
-	public static List<Integer> fibonnacciSeries() {
+	public static List<Integer> fibonnacciSeries(int limit) {
 		int init[] = new int[]{0, 1};
-		List<Integer> result = Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(20).map(t -> t[0]).collect(Collectors.toList());
+		List<Integer> result = Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(limit).map(t -> t[0]).collect(Collectors.toList());
 		return result;
 	}
 
@@ -61,7 +61,7 @@ public class Question {
 								.filter(b -> Math.sqrt(a * a + b * b) % 1 == 0)
 								.mapToObj(b -> new int[]{a, b, (int) Math.sqrt(a * a + b * b)})
 				);
-		triples.forEach(t -> System.out.println(t[0] + " " + t[1] + " " + t[2]));
+
 		return triples;
 		//better solution sqrt is calculated only once
 //		Stream<double[]> pythagoreanTriples2 =
@@ -90,13 +90,11 @@ public class Question {
 	 * given a list [1, 2, 3] and a list [3, 4] you should return [(1, 3), (1, 4), (2, 3), (2, 4), (3,3), (3, 4)].
 	 * For simplicity, you can represent a pair as an array with two elements + return only pairs whose sum is divisible by 3
 	 */
-	public static void getPairsWhereSumIsDivisibleBy3() {
-		List<Integer> numbers1 = Arrays.asList(1, 2, 3);
-		List<Integer> numbers2 = Arrays.asList(3, 4);
+	public static List<int[]> getPairsWhereSumIsDivisibleBy3(List<Integer> numbers1, List<Integer> numbers2) {
 
 		List<int[]> result = numbers1.stream().flatMap(n1 -> numbers2.stream().map(n2 -> new int[]{n1, n2})).filter((n1) -> (n1[0] + n1[1]) % 3 == 0).collect(Collectors.toList());
 //		List<int[]> result2 = numbers1.stream().flatMap( n1 -> numbers2.stream().filter( n2 -> (n1+n2)%3==0).map( n2 -> new int[] {n1,n2})).collect(Collectors.toList());
-		System.out.println(result.size());
+		return result;
 	}
 
 	/**

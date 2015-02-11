@@ -18,6 +18,11 @@ public class Artists {
 		this.artists = artists;
 	}
 
+	/**
+	 *
+	 * @param index
+	 * @return
+	 */
 	public Artist getArtist(int index) {
 		if (index < 0 || index >= artists.size()) {
 			indexException(index);

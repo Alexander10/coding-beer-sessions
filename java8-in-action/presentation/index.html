@@ -902,6 +902,51 @@
 		</ul>
 	</section>
 </section>
+<section>
+	<section>
+		<h2>Nashorn</h2> <!-- Javascript engine based on ECMAScript 5.1 -will include support for 6-->
+		<!-- Scripts run natively on the JVM -->
+		<pre><code>
+$ cd /usr/bin
+$ ln -s $JAVA_HOME/bin/jjs jjs
+$ jjs
+jjs> print("Hello world");
+		</code></pre>
+		<pre><code>
+ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+engine.eval("print('Hello world!');");
+		</code></pre>
+		<p>Java classes can be referenced from javascript via the Java.type</p>
+		<!-- Primitive js types are converted to appropriate java wrapper class -->
+		<!-- Native js types are represented by internal adapter classes -->
+		<p>Types conversions</p>
+		<!-- Underlying representation of js object -->
+		<p>ScriptObjectMirror -> callMember</p>
+		<p>Language Extensions</p>
+		<ul>
+			<li>Typed Arrays</li> <!-- String will be automatically converted to int -->
+			<li>Collections and For Each</li>
+			<!-- you can use standard java collections in js
+				var ArrayList = Java.type('java.util.ArrayList');
+				var map = new java.util.HashMap(); -->
+			<li>Lambda expressions and Streams</li>
+			<!-- instead of using -> use function literals-->
+			<li>Extending classes</li>
+			<li>Parameter overloading</li>
+			<!-- var System = Java.type('java.lang.System');
+				 System.out.println(10);              // 10
+				 System.out["println"](11.0);         // 11.0
+				 System.out["println(double)"](12); -->
+			<li>Import scopes</li>
+			<!-- var imports = new JavaImporter(java.io, java.lang);
+				 with(imports){.....} -->
+			<li>Command line scripts</li>
+			<!-- There is needed Nake => simplified make for Java 8 Nashorn (tasks are written in js
+				and run in Nashorns scripting mode-->
+		</ul>
+
+	</section>
+</section>
 <section data-markdown>
 	<script type="text/template">
 		## Markdown support

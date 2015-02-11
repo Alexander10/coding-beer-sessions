@@ -32,9 +32,8 @@ public class Question3 {
 	 * @param albums
 	 * @return
 	 */
-	public static Map<Integer, List<Album>> getGroupedAlbumsByProductionYear(List<Album> albums) {
-		Map<Integer, List<Album>> groupedArtists = albums.stream().collect(Collectors.groupingBy(Album::getProductionYear));
-		return groupedArtists;
+	public static Map<Integer, List<Album>> groupAlbumsByProductionYear(List<Album> albums) {
+		return albums.stream().collect(Collectors.groupingBy(Album::getProductionYear));
 	}
 
 	/**
@@ -43,9 +42,8 @@ public class Question3 {
 	 * @param album
 	 * @return
 	 */
-	public static Integer getSumTimeOfAllTracks(Album album) {
-		Integer result = album.getTrackList().stream().collect(Collectors.summingInt(Track::getLength));
-		return result;
+	public static Integer getSumDurationOfAllTracks(Album album) {
+		return album.getTracks().map(track -> track.getLength()).reduce(0, Integer::sum);
 	}
 
 	/**
@@ -54,20 +52,19 @@ public class Question3 {
 	 * @param artists
 	 * @return
 	 */
-	public static Map<String, Long> getCntArtistsByNationalities(List<Artist> artists) {
-		Map<String, Long> nationalitiesCounts = artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
-		return nationalitiesCounts;
+	public static Map<String, Long> cntArtistsByNationalities(List<Artist> artists) {
+		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
 	}
 
 	/**
-	 * Solo artist should be put for key - true
-	 * None solo artist should be put for key - false
+	 * Solo artist should be - true
+	 * Band should be  - false
 	 *
 	 * @param artists
 	 * @return
 	 */
-	public Map<Boolean, List<Artist>> getSoloAndNoneSoloArtistsGrouped(List<Artist> artists) {
-		return artists.stream().collect(partitioningBy(Artist::isSolo));
+	public static Map<Boolean, List<Artist>> findSoloArtistsAndBands(List<Artist> artists) {
+		return artists.stream().collect(Collectors.partitioningBy(Artist::isSolo));
 	}
 
 	/**
@@ -76,16 +73,15 @@ public class Question3 {
 	 * @param albums
 	 * @return
 	 */
-	public double getAvgCntOfTracks(List<Album> albums) {
-		return albums.stream()
-				.collect(averagingInt(album -> album.getTrackList().size()));
+	public static double getAvgCntOfTracks(List<Album> albums) {
+		return albums.stream().collect(Collectors.averagingDouble(album -> album.getTrackList().size()));
 	}
 
 	/**
 	 * @param album
 	 */
-	public static Track findLongestTrack(Album album) {
-		Optional<Track> track = album.getTrackList().stream().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
+	public static Track findTheLongestTrack(Album album) {
+		Optional<Track> track = album.getTracks().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
 		return track.get();
 	}
 
@@ -111,15 +107,15 @@ public class Question3 {
 		return groupedTracks;
 	}
 
+
 	/**
-	 * For album calculates tracks stats: Avg, Min, Max, Sum
+	 * For album calculate tracks stats (for duration): Avg, Min, Max, Sum
 	 *
 	 * @param album
 	 * @return
 	 */
-	public static IntSummaryStatistics albumStats(Album album) {
-		IntSummaryStatistics result = album.getTrackList().stream().collect(Collectors.summarizingInt(Track::getLength));
-		return result;
+	public static IntSummaryStatistics calculateStats(Album album) {
+		return album.getTracks().collect(Collectors.summarizingInt(Track::getLength));
 	}
 
 	/**
@@ -131,26 +127,26 @@ public class Question3 {
 	 * @return
 	 */
 	public static Map<String, Map<Integer, List<Artist>>> doubleGroupedArtists(List<Artist> artists) {
-		Map<String, Map<Integer, List<Artist>>> groupedArtist = artists.stream().
-				collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(a -> a.getYearOfBirth())));
-		return groupedArtist;
+		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(Artist::getYearOfBirth)));
 	}
 
+
 	/**
-	 * All artists are formatted into one string: The format of output is : [firstName secondName], [firstName secondName],
+	 * All artists are formatted to the one string: The format of output is : [firstName secondName, firstName secondName ...]
 	 *
 	 * @param artists
 	 * @return
 	 */
 	public static String formatArtists(List<Artist> artists) {
-
-		String result =
-				artists.stream()
-						.map(a -> a.getFirstName() + " " + a.getSecondName())
-						.collect(Collectors.joining(", ", "[", "]"));
-
-		return result;
+		return artists.stream()
+				.map(a -> a.getFirstName() + " " + a.getSecondName())
+				.collect(Collectors.joining(", ", "[", "]"));
 	}
+
+
+	/**
+	 * ************************************************ QUESTIONS END ************************************
+	 */
 
 
 	private static Comparator<Artist> byNameLength = comparing(artist -> artist.getFirstName().length());

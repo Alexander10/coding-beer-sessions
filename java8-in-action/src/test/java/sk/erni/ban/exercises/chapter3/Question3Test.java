@@ -1,17 +1,16 @@
 package sk.erni.ban.exercises.chapter3;
 
-import sk.exercises.chapter3.Exercise3;
-import sk.model.Album;
-import sk.model.Artist;
-import sk.model.Track;
+import org.junit.Before;
 import org.junit.Test;
+import sk.erni.ban.model.Album;
+import sk.erni.ban.model.Artist;
+import sk.erni.ban.model.Track;
 
-import java.util.ArrayList;
-import java.util.DoubleSummaryStatistics;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static sk.erni.ban.model.SampleData.*;
 
 /**
  * User: ban
@@ -23,7 +22,7 @@ public class Question3Test {
 
 	private List<Artist> worldStars = new ArrayList<>(membersOfTheBeatles);
 
-	@Test
+	@Before
 	public void init() {
 		worldStars.addAll(slovakStars);
 		worldStars.add(johnColtrane);
@@ -35,15 +34,14 @@ public class Question3Test {
 		List<Album> albumsRecorded1980 = groupedAlbums.get(1980);
 		List<Album> albumsRecorded1990 = groupedAlbums.get(1990);
 
-		assertEquals(2, albumsRecorded1980);
-		assertEquals(1, albumsRecorded1990);
+		assertEquals(2, albumsRecorded1980.size());
+		assertEquals(1, albumsRecorded1990.size());
 
 	}
 
 	@Test
 	public void sumOfTracksDurationForAlbum() {
-		long duration = Exercise3.getDurationSumOfAllTracks(manyTrackAlbum);
-
+		long duration = Exercise3.getSumDurationOfAllTracks(manyTrackAlbum);
 		assertEquals(275, duration);
 	}
 
@@ -62,41 +60,73 @@ public class Question3Test {
 	}
 
 	@Test
-	public void soloAndNonSoloArtists(){
-		Map<Boolean, List<Artist>> soloNonSoloArtists = Exercise3.findSoloAndNoneSoloArtists(worldStars);
+	public void soloArtistsAndBands() {
+		List<Artist> artists = new ArrayList<>();
+		artists.addAll(worldStars);
+		artists.add(theBeatles);
+
+		Map<Boolean, List<Artist>> soloArtistsAndBands = Exercise3.findSoloArtistsAndBands(artists);
+		List<Artist> soloArtists = soloArtistsAndBands.get(true); //solo artists
+		List<Artist> bands = soloArtistsAndBands.get(false);
+
+		assertEquals(7, soloArtists.size());
+		assertEquals(1, bands.size());
 
 	}
 
 
 	@Test
-	public void averageCountOfTracksForOneAlbum(){
+	public void averageCountOfTracksForOneAlbum() {
 		double avg = Exercise3.getAvgCntOfTracks(albums);
+		assertEquals(267, Math.round(avg * 100));
 	}
 
 	@Test
-	public void findTheLongestTrackFromAlbum(){
+	public void findTheLongestTrackFromAlbum() {
 		Track track = Exercise3.findTheLongestTrack(manyTrackAlbum);
+		assertEquals("long track 5", track.getName());
+		assertEquals(105, track.getLength());
 	}
 
 	@Test
-	public void customGroupedTracks(){
+	public void customGroupedTracks() {
 		Map<String, List<Track>> groupedTracks = Exercise3.getCustomGroupedTracks(manyTrackAlbum);
 
+		assertEquals(1, groupedTracks.get("LONG TRACK").size());
+		assertEquals(1, groupedTracks.get("MEDIUM TRACK").size());
+		assertEquals(3, groupedTracks.get("SHORT TRACK").size());
+
 	}
 
 	@Test
-	public void calculateAlbumStatsForAllTracks(){
-		DoubleSummaryStatistics stats = Exercise3.calculateStats(manyTrackAlbum);
+	public void calculateAlbumStatsForAllTracks() {
+		IntSummaryStatistics stats = Exercise3.calculateStats(manyTrackAlbum);
+
+		assertEquals(5, stats.getCount());
+		assertEquals(275, stats.getSum());
+		assertEquals(30, stats.getMin());
+		assertEquals(105, stats.getMax());
 	}
 
 	@Test
-	public void groupedArtistsByNationalitiesAndByDateOfBirth(){
+	public void groupedArtistsByNationalitiesAndByDateOfBirth() {
+		worldStars.add(new Artist("John","Lennon2",1940, "UK"));
 		Map<String, Map<Integer, List<Artist>>> groupedArtists = Exercise3.doubleGroupedArtists(worldStars);
+		Map<Integer, List<Artist>> artistsFromUK = groupedArtists.get("UK");
+		Map<Integer, List<Artist>> artistsFromSK = groupedArtists.get("SK");
+		Map<Integer, List<Artist>> artistsFromUS = groupedArtists.get("US");
+
+		List<Artist> artistFromUKBornAt1942 = artistsFromUK.get(1940);
+		assertEquals(2, artistFromUKBornAt1942.size());
+		assertEquals(2, artistsFromSK.size());
+		assertEquals(1, artistsFromUS.size());
 	}
 
 	@Test
-	public void formatAllArtistsInList(){
+	public void formatAllArtistsInList() {
 		String formattedArtists = Exercise3.formatArtists(worldStars);
+		String expectedResult = "[John Lennon, Paul McCartney, George Harrison, Ringo Starr, Pavol Hamel, Miro Zbirka, John Coltrane]";
+		assertEquals(expectedResult, formattedArtists);
 	}
 
 

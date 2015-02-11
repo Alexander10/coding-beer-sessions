@@ -1,11 +1,12 @@
 package sk.erni.ban.exercises.forFun;
 
 import org.junit.Test;
-import sk.erni.ban.exercises.forfun.Exercise;
+import sk.erni.ban.answers.forfun.Question;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -32,40 +33,49 @@ public class QuestionTest {
 
 	@Test
 	public void numberOfLowerCaseLettersInString() {
-		assertEquals(100, Exercise.countLowercaseLetters(text));
+		assertEquals(446, Question.countLowercaseLetters(text));
 	}
 
 	@Test
 	public void findSentenceWithTheMostLowercaseLetters() {
-		String[] texts = text.split(".");
-		Exercise.mostLowercaseString(Arrays.asList(texts));
+		String[] texts = text.split("\\.");
+		Optional<String> result = Question.mostLowercaseString(Arrays.asList(texts));
+		String expectedResult = "Integer sagittis, lectus eget vehicula pretium, diam elit dictum felis, in volutpat dui elit a tellus";
+		assertEquals(expectedResult, result.get().trim());
 
 	}
 
 	@Test
 	public void firstFibonacciSeries_20() {
-		List<Integer> fibonacciSerie = Exercise.fibonnacciSeries(20);
+		List<Integer> fibonacciSerie = Question.fibonnacciSeries(20);
 
-		assertThat(fibonacciSerie, is(equalTo(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55))));
+		assertThat(fibonacciSerie, is(equalTo(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181))));
 	}
 
 	@Test
 	public void pythagoreanTriples_100() {
-		Stream<int[]> triples = Exercise.generatePythagoreanTriples(100);
+		Stream<int[]> triples = Question.generatePythagoreanTriples(100);
 		int sum = triples.map(value -> IntStream.of(value).sum()).reduce(0, Integer::sum);
+		assertEquals(19776, sum);
 	}
 
 	@Test
-	public void numbersDivisiableBy_3() {
-		List<int[]> numbersPair = Exercise.getPairsWhereSumIsDivisibleBy3(100);
-		int sum = numbersPair.stream().map(value -> IntStream.of(value).sum()).reduce(0, Integer::sum);
+	public void numbersPairDivisibleBy_3() {
+		List<Integer> numbers1 = Arrays.asList(1, 2, 3, 5, 6);
+		List<Integer> numbers2 = Arrays.asList(3, 4, 8, 10);
 
+		List<int[]> numbersPair = Question.getPairsWhereSumIsDivisibleBy3(numbers1, numbers2);
+
+		int sum = numbersPair.stream().map(value -> IntStream.of(value).sum()).reduce(0, Integer::sum);
+		assertEquals(66, sum);
 	}
 
 	@Test
 	public void primeNumbersLowerThan_1000() {
-		Map<Boolean, List<Integer>> primeAndNonPrimeNumbers = Exercise.getPrimeAndNonPrimeNumbers(1000);
+		Map<Boolean, List<Integer>> primeAndNonPrimeNumbers = Question.partitionPrimes(1000);
 		List<Integer> primeNumbers = primeAndNonPrimeNumbers.get(true);
 		int sum = primeNumbers.stream().reduce(0, Integer::sum);
+		assertEquals(76127, sum);
+
 	}
 }

@@ -23,10 +23,79 @@ import static java.util.stream.Collectors.groupingBy;
 
 public class Question1 {
 
-	public static ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("dd.MMM.yyyy"));
+
+	public static ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("dd.MMM.yyyy")) ;
 
 	/**
-	 * Simple method for checking if item match witch the predicate condition
+	 * Checks whether the artist comes from US
+	 *
+	 * @return
+	 */
+	public static boolean isSomeArtistFromUS(List<Artist> artists) {
+		return itemMatchPredicate(artists, (artist) -> artist.isFrom("US"));
+	}
+
+	public static boolean existJohnBornAt1943(List<Artist> artists) {
+		return itemMatchPredicate(artists, (artist) -> artist.getFirstName().equals("John") && artist.getYearOfBirth() == 1943);
+
+	}
+
+	/**
+	 * Creates Lambda expression which will find all artists with first name John
+	 *
+	 * @return
+	 */
+	public static Function<List<Artist>, List<Artist>> getArtistsWithFirstNameJohn() {
+		return (artists) -> {
+			List<Artist> johns = new ArrayList<>();
+			artists.forEach( artist -> {
+				if(artist.getFirstName().equalsIgnoreCase("John")){
+					johns.add(artist);
+				}
+			});
+			return  johns;
+		};
+	}
+
+	/**
+	 * Creates Lambda expression which will find the oldest artist
+	 *
+	 * @return
+	 */
+	public static Function<List<Artist>, Artist> getOldestArtist() {
+		return (List<Artist> artists) -> {
+			for (Artist art : artists) {
+				if (itemMatchPredicate(artists, (Artist artInner) -> artInner.getYearOfBirth() > art.getYearOfBirth())) {
+					return art;
+				}
+			}
+			return null;
+		};
+	}
+
+
+	/**
+	 * Method creates new Artist object, but by using constructor reference !!! => Artist::new
+	 *
+	 * @return
+	 */
+	public static Artist createArtist(String firstName, String secondName, Integer yearOfBirth, String nationality) {
+		FourFunction<String, String,Integer,String, Artist> function = Artist::new;
+		return function.apply("Palko", "Habera", 1965, "SK");
+	}
+
+	/**
+	 *
+	 * @param f
+	 * @param g
+	 * @return
+	 */
+	public static Function<List<Artist>, Artist> concat(Function<List<Artist>, List<Artist>> f, Function<List<Artist>, Artist> g){
+		return f.andThen(g);
+	}
+
+	/**
+	 * Simple method for checking if item match with the predicate condition
 	 *
 	 * @param items
 	 * @param predicate -
@@ -42,47 +111,15 @@ public class Question1 {
 		return true;
 	}
 
+	/**************************************************** END OF QUESTIONS ***********************************************/
+
 	/**
-	 * Find all artist with first name John
 	 *
+	 * @param albums
 	 * @return
 	 */
-	public static Function<List<Artist>, List<Artist>> getArtistsWithNameJohn() {
-		return (List<Artist> artists) -> {
-			List<Artist> johns = new ArrayList<>();
-			artists.forEach(art -> {
-				if ("John".equalsIgnoreCase(art.getFirstName())) johns.add(art);
-			});
-			return johns;
-		};
-	}
-
-	public static Function<List<Artist>, Artist> getOldestArtist() {
-		return (List<Artist> artists) -> {
-			for (Artist art : artists) {
-				if (itemMatchPredicate(artists, (Artist artInner) -> artInner.getYearOfBirth() > art.getYearOfBirth())) {
-					return art;
-				}
-			}
-			return null;
-		};
-	}
-
 	public Map<Artist, List<Album>> albumsByArtist(Stream<Album> albums) {
 		return albums.collect(groupingBy(Album::getMainMusician));
-	}
-
-
-	/**
-	 * Method creates new Artist object, but by using following syntax Artist::new
-	 * you have to create proper Functional interface
-	 *
-	 * @return
-	 */
-	public static Artist createArtistWithLambdas() {
-
-		FourFunction<String, String, Integer, String, Artist> fourFunctions = Artist::new;
-		return fourFunctions.apply("Meky", "Zbirka", 1960, "SK");
 	}
 
 	/**

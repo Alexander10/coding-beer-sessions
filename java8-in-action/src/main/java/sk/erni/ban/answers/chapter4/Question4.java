@@ -53,12 +53,6 @@ public class Question4 {
 				.orElse("Unknown");
 	}
 
-	public static void initDuration(){
-		Properties props = new Properties();
-		props.setProperty("a", "5");
-		props.setProperty("b", "true");
-		props.setProperty("c", "-3");
-	}
 
 	/**
 	 * Please write new method for reading duration by using Optional class

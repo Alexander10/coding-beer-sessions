@@ -1,11 +1,10 @@
 package sk.erni.ban.exercises.chapter4;
 
-import sk.answers.chapter4.ArtistsFixed;
-import sk.answers.chapter4.Question4;
-import sk.exercises.chapter4.Exercise4;
-import sk.model.Artist;
-import sk.model.SampleData;
 import org.junit.Test;
+import sk.erni.ban.answers.chapter4.ArtistsFixed;
+import sk.erni.ban.answers.chapter4.Question4;
+import sk.erni.ban.model.Artist;
+import sk.erni.ban.model.SampleData;
 
 import java.util.Optional;
 import java.util.Properties;
@@ -52,8 +51,10 @@ public class Question4Test {
 
 	@Test
 	public void durationsForOldStyleAndNewStyleMethods() {
-		Question4.initDuration();
 		Properties param = new Properties();
+		param.setProperty("a", "5");
+		param.setProperty("b", "true");
+		param.setProperty("c", "-3");
 
 		assertEquals(5, Exercise4.readDurationOldApproach(param, "a"));
 		assertEquals(0, Exercise4.readDurationOldApproach(param, "b"));

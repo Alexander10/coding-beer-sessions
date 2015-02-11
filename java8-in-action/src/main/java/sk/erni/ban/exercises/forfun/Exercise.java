@@ -2,6 +2,7 @@ package sk.erni.ban.exercises.forfun;
 
 import sk.erni.ban.exercises.Exercises;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -19,7 +20,11 @@ public class Exercise {
 		return Exercises.replaceThisWithSolution();
 	}
 
-
+	/**
+	 *
+	 * @param strings - with most lowercase letters
+	 * @return
+	 */
 	public static Optional<String> mostLowercaseString(List<String> strings) {
 		return Exercises.replaceThisWithSolution();
 	}
@@ -45,11 +50,10 @@ public class Exercise {
 
 	/**
 	 * Given two lists of numbers, how would you return all pairs of numbers? For example,
-	 * given a list [1, 2, 3] and a list [3, 4] you should return [(1, 3), (1, 4), (2, 3), (2, 4), (3,3), (3, 4)].
+	 * given a list [1, 2, 3] and a list [3, 4] method should return [(1, 3), (1, 4), (2, 3), (2, 4), (3,3), (3, 4)].
 	 * For simplicity, you can represent a pair as an array with two elements + return only pairs whose sum is divisible by 3
-	 * @param upperBound -
 	 */
-	public static List<int[]> getPairsWhereSumIsDivisibleBy3(int upperBound) {
+	public static List<int[]> getPairsWhereSumIsDivisibleBy3(List<Integer> numbers1, List<Integer> numbers2) {
 		return Exercises.replaceThisWithSolution();
 	}
 

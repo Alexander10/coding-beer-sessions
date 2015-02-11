@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - The HTML Presentation Framework</title>
+
+	<meta name="description" content="Coding Beer Session Java 8">
+	<meta name="author" content="Roman Badura">
+
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section>
+	<h1>Java 8 in Action</h1>
+	<img width="300" height="200" data-src="assets/java8.png" alt="Up arrow" style="background: transparent;">
+
+	<h3>Coding Beer Session</h3>
+
+	<p>
+		<a href="https://github.com/Alexander10/coding-beer-sessions">GitHub</a>
+	</p>
+	<p>
+		<small>Created by <a href="#">Roman Badura</a></small>
+	</p>
+
+
+</section>
+
+<section style="text-align: left;">
+	<h2>Content</h2>
+
+	<p>Functional Programming in Java
+	<p>Streams & Collectors</p>
+	<p>Optional & Nashorn & </p>
+	<p></p>
+
+</section>
+
+<!-- Example of nested vertical slides -->
+<section>
+	<section>
+		<h2>Functional Programming in Java</h2>
+
+		<p>Java methods and functional programming</p>
+
+		<p>Lambdas</p>
+
+		<p>Functional interfaces</p> <!-- functional interface is an interface that declares exactly one abstract method. -->
+
+		<!-- A lambda expression can be understood as a kind of anonymous function: it
+		doesn’t have a name, but it has a list of parameters, a body, a return type, and
+			also possibly a list of exceptions that can be thrown.
+			Lambda expressions can be used only where a functional interface is expected.-->
+		<p>Method references</p>
+
+	</section>
+	<section>
+		<h2>Java methods and functional programming</h2>
+		<!-- whole point of a programming language is to manipulate values (first-class values)
+		 and on the other hand exists structures methods, classes are second class citizens
+		  Java 8 add function as new forms of value-->
+		<p>First class citizens and Second class citizens</p>
+		<p>Function corresponds to a mathematical function</p>
+		<!-- it takes zero or more arguments, gives one or more results and has no side effects (none updating instance variable)...-->
+
+		<!-- Functions may be used like other values: passed as arguments, returned as results and stored in data structures -->
+		<!-- higher-order function is a function that takes at least one or more functions as an input or return another functions (comparing, andThen, compose) -->
+
+	</section>
+	<section>
+		<h2>Lambdas</h2>
+		<img width="450" height="160" data-src="assets/lambda_body.png" alt="Up arrow">
+		<br/>
+		<ul>
+			<li>Anonymous</li>
+			<!-- it doesn't have explicit name like a method-->
+			<li>Function</li>
+			<!-- lambda isn't associated with a particular class like a method -->
+			<li>Passed Around</li>
+			<!-- can be passed as argument to a method or stored in variable -->
+			<li>Concise</li>
+			<!-- not so much boilerplate code like for anonymous classes -->
+		</ul>
+	</section>
+	<section>
+		<h2>Functional interfaces</h2>
+
+		<p>Only one abstract method</p>
+		<pre><code data-trim>
+@FunctionalInterface
+public interface MyFunction&lt;T, R> {
+	R apply(T t);
+}
+		</code></pre>
+
+		<p>Annotation is not required</p>
+
+		<p>Interface can contain also default methods</p>
+
+		<p>They can be instantiated using lambdas</p>
+		<pre><code data-trim >
+() -> System.out.println("Hello");
+		</code></pre>
+
+	</section>
+	<section>
+		<h2>Functional interfaces</h2>
+		<pre><code data-trim>
+public Funciton&lt;T, R> { R apply(T t); }
+Function&lt;Integer, Integer> square = x -> x * x;
+		</code></pre>
+		<pre><code data-trim>
+public Predicate&lt;T> { boolean test(T t);
+Prediacate&lt;Integer> makeIsDivisibleBy (int y) { return x -> x % y == 0; }
+		</code></pre>
+		<pre><code data-trim>
+public Consumer&lt;T> { void accept(T t); }
+		</code></pre>
+		<pre><code data-trim>
+public Supplier&lt;T> { T get(); }
+		</code></pre>
+		<pre><code data-trim>
+public BiFunction&lt;T, U, R> { R apply(T t, U u); }
+		</code></pre>
+		<p>In package: java.util.function (42-43)</p>
+		<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">http://docs.oracle.com/...</a>.
+	</section>
+	<section>
+		<h2>Method references</h2>
+
+		<p>Reuse existing method definitions</p>
+		<!--and pass them just like a lambdas , when lambda does notthing but call existing method-->
+		<p>More readable</p>
+		<br/>
+		<br/>
+		<!-- it is actually not calling the method (it is a shorthand for lambda expression) -->
+		<table style="font-size: 22px;">
+			<thead>
+			<tr>
+				<th>Lambda</th>
+				<th>Method reference equivalent</th>
+			</tr>
+			</thead>
+			<tbody style="font-size: 18px">
+			<tr>
+				<td>(Apple a) -> a.getWeight()</td>
+				<td>Apple::getWeight</td>
+			<tr>
+			<tr>
+				<td>(str, i) -> str.substring(i)</td>
+				<td>String::substring</td>
+			<tr>
+			<tr>
+				<td>(String s) -> System.out.println(s)</td>
+				<td>System.out::println</td>
+			<tr>
+			</tbody>
+		</table>
+	</section>
+	<section>
+		<h2>How to construct method references</h2>
+
+		<p>A MR to a static method</p>
+		<pre><code data-trim >
+			Integer::parseInt
+		</code></pre>
+		<p>A MR to an instance of an arbitrary type</p>
+		<pre><code data-trim>
+			String::length
+		</code></pre>
+		<p>A MR to an instance method of an existing object</p>
+		<pre><code data-trim>
+			Transaction expTransaction = Transaction::new;
+			expTransaction::getValue
+		</code></pre>
+		<p>Reference to constructor</p>
+		<pre><code data-trim >
+			ClassName::new
+		</code></pre>
+		<br>
+
+	</section>
+</section>
+<section>
+	<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+		<h2>Streams</h2>
+
+		<p>
+			Fancy iterators over a collection of data
+			<!-- update of java Api that lets you manipulate collections of data in a declarative way ( you express query rather than code an ad hoc implementation for it -->
+		</p>
+		<p>Pipelining</p>
+		<!-- many stream operations return themselves => operations can be chained (operations can be view like a database-like query) -->
+		<p>Internal iteration</p><!-- iteration is behind the scene , Sofia example-->
+		<p>Declarative</p> <!-- More concise and readable -->
+		<p>Composable</p> <!-- Greater flexibility -->
+		<p>Parallelizable</p> <!-- Better perfomance -->
+		<!-- Stream can be consumed only once -->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65">
+		<h2>Comparision Streams Vs Collections</h2>
+
+		<p>Collections are about data</p> <!-- collection are eagerly constructed -->
+		<p>Collection is an in-memory</p>
+		<!--you can add values, remove ... ; elements are computing before becoming part of the collection -->
+		<p>Streams are about computation</p>
+
+		<p>Streams is a fixed data structure whose elements are computed on demand</p>
+		<!--  you can't add or remove data from it , stream is like a lazy constructed collection-->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Java 7</h2>
+		<!-- return names of dishes that are low in calories, sorted by number of calories -->
+		<!-- 1 filter the elements 2. sort 3. process sorted list to select names of dishes -->
+		<pre><code data-trim contenteditable>
+			List&lt;Dish> lowCaloricDishes = new ArrayList<>();
+for(Dish d: menu){
+	if(d.getCalories() < 400){
+		lowCaloricDishes.add(d);
+	}
+}
+Collections.sort(lowCaloricDishes, new Comparator&lt;Dish>() {
+	public int compare(Dish d1, Dish d2){
+		return Integer.compare(d1.getCalories(), d2.getCalories());
+	}
+});
+List&lt;String> lowCaloricDishesName = new ArrayList<>();
+for(Dish d: lowCaloricDishes){
+	lowCaloricDishesName.add(d.getName());
+}
+		</code></pre>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Java 8</h2>
+		<pre><code data-trim contenteditable>
+			List&lt;String> lowCaloricDishesName =
+			menu.stream()
+			.filter(d -> d.getCalories() < 400)
+			.sorted(comparing(Dish::getCalories))
+			.map(Dish::getName)
+			.collect(toList());
+		</code></pre>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Stream pipeline</h2>
+
+		<p>Intermediate operations</p>
+		<!-- can be pipelined , they don't performe any operations until a terminal operation is invoked (they are lazy) -->
+		<p>Terminal operations
+		<ul>
+			<li>Result is any non-stream value (List, Integer, void ...)</li>
+		</ul>
+		</p>
+		<img width="550" height="160" data-src="assets/stream_pipeline.png" >
+
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Filtering</h2>
+		<pre><code data-trim contenteditable>
+			Stream&lt;T> filter(Predicate<? super T> predicate);
+		</code></pre>
+		<pre><code data-trim>
+			dishes.stream().filter(d -> d.getCalories() > 300).skip(2)
+		</code></pre>
+		<!-- it depends on equals implementation of elements -->
+
+		<!-- also works for unordered lists (for sets we don't know exactly which elements will be returned -->
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Mapping</h2>
+
+		<p>Select information from certain objects</p> <!-- in sql you can select particular column from a table -->
+		<p>Can be chained</p>
+		<pre><code data-trim>
+			&lt;R> Stream&lt;R> map(Function&lt;? super T, ? extends R> mapper);
+		</code></pre>
+		<pre><code data-trim>
+			dishes.stream.map(Dish::getCalories).collect(Collectors.toList());
+		</code></pre>
+		<p>Flat map</p>
+		<!-- lets you replace each value of a stream with another stream and then concatenates all the generated streams into a single stream -->
+		<pre><code data-trim>
+			&lt;R> Stream&lt;R> flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R>> mapper);
+		</code> </pre>
+
+	</section>
+	<section data-transition="slide" data-background="#4d7e65">
+		<h2>Finding and Matching</h2>
+
+		<p>Another data processing idiom is finding whether some elements in a set of data match a given property</p>
+
+		<!-- All operations are short circuiting (also limit) -->
+		<ul>
+			<li>allMatch</li>
+			<!-- check to see if all the elements of the stream match the given predicate (Short circuiting)-->
+			<li>anyMatch</li>
+			<!-- Return boolean and it is terminal operations. Is there an element in the stream matching the given predicate? (Short circuiting) -->
+			<li>noneMatch</li>
+			<!-- oposite to allMatch (Short circuiting) -->
+			<li>findFirst</li>
+			<!-- By parallelism -->
+			<li>findAny</li>
+			<!-- By parallelism -->
+
+		</ul>
+	</section>
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Primitive stream specializations</h2>
+
+		<p>Avoid hidden boxing costs</p>
+
+		<p>When stream is empty return 0</p>
+
+		<p>IntStream 	| mapToInt </p>
+
+		<p>DoubleStream | mapToDouble</p>
+
+		<p>LongStream 	| mapToLong</p>
+	</section>
+	<!-- you can also create stream with explicit values by using the static method Stream.of or create empty stream by using Stream.empty() -->
+	<section data-transition="slide" data-background="#4d7e65" >
+		<h2>Creation of streams</h2>
+		<ul>
+			<li>From explicit values - static method Stream.of</li>
+			<li>From array - Arrays.stream(arr)</li>
+			<li>From files - Files.lines(Paths.get("file.txt"))</li>
+			<li>From functions - Stream.iterate and Stream.generate</li>
+			<li>Empty stream - Stream.empty</li>
+		</ul>
+		<!-- with those two we can create infinite stream, because values are produced on demand and can be computed forever - Stream.iterate(0, n -> n + 2) -->
+	</section>
+
+</section>
+<section style="text-align: left">
+	<section data-background="#b5533c" >
+		<h2>Collecting data with streams : Collectors</h2>
+			<!-- collect is a terminal operation that takes as argument various recipes (called collectors)
+				for accumulating the elements of a stream into a summary result. -->
+			<p>Parameters to Stream method collect</p>
+			<p>Reducing and summarizing stream elements to a single value</p>
+			<p>Grouping elements</p>
+			<p>Partitioning elements</p>
+		</ul>
+	</section>
+	<section data-transition="slide" data-background="#b5533c">
+		<h2>Reducing and summarizing</h2>
+
+		<p>Finding max and min</p>
+		<ul>
+			<li>Collectors.counting()</li>
+			<li>Collectors.maxBy</li>
+			<li>Collectors.minBy</li>
+		</ul>
+		<p>Summarization</p>
+		<ul>
+			<li>Collectors.summing [Int, Double, Long]</li>
+			<li>Collectors.averaging [Int, Double, Long]</li>
+			<li>Collectors.summarizingIng [Int, Double, Long]</li>
+			<!-- return all statistics average, min, max, count; return type is [Int, Double, Long] SummaryStatistics -->
+		</ul>
+		<p>Joining Strings</p>
+		<ul>
+			<li>Collectors.joining()</li>
+		</ul>
+		<!-- All operations above can be replaced with reduce method but there is a problem with readability -->
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>Null references</h2>
+
+		<p>Introduced by Tony Hoare in 1965</p><!-- Because it was so simple to implement -->
+		<blockquote cite>&ldquo;My billion-dollar mistake"</blockquote>
+		<!-- Java always hides pointers from developers except in one case: the null pointer -->
+		<p>Groovy (def variable = person?.car?.insurance?.name</p> <!-- miracle letter ? :) -->
+		<p>Haskel (Maybe type)</p>
+		<p>Scala (Option[T])</p>
+	</section>
+	<section data-transition="slide" >
+		<h2>Optional</h2>
+		<!-- model if some object can be or can not be null class Car{} class Person{ private Optional<Car> car;} person can has or can not has a car -->
+		<!-- You can think of Optional like a stream with at most a single element -->
+		<div style="text-align: left;">
+		<p>Optional represents the existence or absence of a value</p><!--Is a container class to-->
+
+		<p>Optional helps design more comprehensible API</p>
+		<p>Doesn't implement Serializable</p>
+
+		<p>Primitive specialized version</p><!-- OptionalInt, OptionalDouble, OptionalLong -->
+
+		</div>
+	</section>
+	<section data-transition="slide" >
+		<h2>Optional class</h2>
+		<ul>
+			<li>isPresent</li>
+			<!-- returns true if Optional contains a value, false otherwise -->
+			<li>ifPresent(Consumer&lt;T> block)</li>
+			<!-- Executes the given block if a value is present -->
+			<li>get()</li>
+			<!-- return the value if present; otherwise it throws a NoSuchElementException, it is not good idea to use this method -->
+			<li>orElse(T other)</li>
+			<!--return the value if present, otherwise it returns default value -->
+			<li>map(Function&lt;? super T, ? extends U> mapper))</li>
+			<!-- if value is present return value if value is not present return empty -->
+			<li>flatMap(Function&lt;? super T, Optional&lt;U>> mapper)</li>
+			<!-- Optional<Optional<Car>> statement flatten to Optional<Car> statement -->
+			<li>filter(Predicate&lt;? super T> predicate)</li>
+		</ul>
+		<pre><code data-trim>
+Optional&lt;Insurance> optInsurance = ...;
+optInsurance.filter(insurance -> "alianz".equals(insurance.getName()))
+.ifPresent(x -> System.out.println("ok"));
+		</code></pre>
+		<!-- The sum example was convenient because it has a default value: 0. But if you want to calculate the maximum element in an IntStream, you need something different because 0 is a wrong result -->
+	</section>
+	<section data-transition="slide" >
+		<h2>Creating Optional objects</h2>
+		<ul>
+			<li>Empty optional
+				<pre><code data-trim>
+					Optional&lt;Car> optCar = Optional.empty();
+				</code></pre>
+			</li>
+			<li>Optional from a non-null value
+				<pre><code data-trim>
+					Optional&lt;Car> optCar = Optional.of(car);
+				</code></pre>
+				<!-- if car == null => NPE -->
+			</li>
+			<li>Optional from null
+				<pre><code data-trim >
+					Optional&lt;Car> optCar = Optional.ofNullable(car);
+
+				</code></pre>
+				<!-- if car == null => the Optional object would be empty -->
+			</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section>
+		<h2>Nashorn</h2> <!-- Javascript engine based on ECMAScript 5.1 -will include support for 6-->
+		<!-- Scripts run natively on the JVM -->
+		<p>Javascript engine</p>
+		<pre><code data-trim>
+$ cd /usr/bin
+$ ln -s $JAVA_HOME/bin/jjs jjs
+$ jjs
+jjs> print("Hello world");
+		</code></pre>
+		<pre><code data-trim>
+			ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+			engine.eval("print('Hello world!');");
+		</code></pre>
+		<p>Java classes can be referenced from javascript via the Java.type</p>
+		<!-- Primitive js types are converted to appropriate java wrapper class -->
+		<!-- Native js types are represented by internal adapter classes -->
+		<p>Types conversions</p>
+		<!-- Underlying representation of js object -->
+		<p>ScriptObjectMirror -> callMember</p>
+	</section>
+	<section>
+		<p>Language Extensions</p>
+		<ul>
+			<li>Typed Arrays</li> <!-- String will be automatically converted to int -->
+			<li>Collections and For Each</li>
+			<!-- you can use standard java collections in js
+				var ArrayList = Java.type('java.util.ArrayList');
+				var map = new java.util.HashMap(); -->
+			<li>Lambda expressions and Streams</li>
+			<!-- instead of using -> use function literals-->
+			<li>Extending classes</li>
+			<li>Parameter overloading</li>
+			<!-- var System = Java.type('java.lang.System');
+				 System.out.println(10);              // 10
+				 System.out["println"](11.0);         // 11.0
+				 System.out["println(double)"](12); -->
+			<li>Import scopes</li>
+			<!-- var imports = new JavaImporter(java.io, java.lang);
+				 with(imports){.....} -->
+			<li>Command line scripts</li>
+			<!-- There is needed Nake => simplified make for Java 8 Nashorn (tasks are written in js
+				and run in Nashorns scripting mode-->
+		</ul>
+	</section>
+
+</section>
+<section>
+	<section>
+		<h2>Interface changes</h2>
+		<div style="text-align: left">
+
+			<p>Static methods are allows in interface</p>
+				<!-- Collection and Collections, now Collections class is not needed because we can move all methods from this class to interface -->
+			<p>Default methods - allows you to provide default implementation for methods in an interface</p>
+
+			<pre><code data-trim>
+				default void sort(Comparator&lt;? super E> c){
+				Collections.sort(this, c);
+				}
+			</code></pre>
+			<p>Class can inherit more than one methods with the same signature</p>
+			<!-- two interfaces have methods with the same signature, which method should be used?
+				1) Classes always win. (method declaration in the class or a superclass takes priority)
+				2) Sub-interface win. (method in most-specific interface win)
+				3) It it is still not clear, Class has to explicitly select (overriding method and calling method from proper interface )
+			-->
+			<p>New syntax: X.super.method()</p>
+			<!-- X is super interface -->
+			<p>For interface is not possible to implement methods from Object</p>
+			<!-- toString(); equals;.... because this method are about state and interface has no state-->
+		</div>
+	</section>
+
+</section>
+<section>
+	<section>
+		<h2>Date and Time API</h2>
+
+		<p>LocalDate </p>
+		<!-- immutable date without time part, it doesn't carry any information about time zone
+			 You can also obtain the current date from system clock LocalDate.now-->
+		<p>TemporalField</p><!-- interface defining how to access the value of a specific field of a temporal object -->
+		<p>ChronoField</p><!-- enumaration which implements TemporalField interface, with chronoField we can obtain
+							via get all values date.get(ChronoField.Year); -->
+		<p>LocalTime</p><!-- represents time of day. you can create it using of methods -->
+		<!-- both localDate and localTime can be created from string -->
+		<p>LocalDateTime</p> <!-- composite class of LocalDate and LocalTime, withou time zone  -->
+
+	</section>
+	<section>
+		<h2>Date and Time API</h2>
+		<p>Instant</p> <!-- number of seconds pass from 1970 january 1 januar -->
+		<p>Duration</p> <!-- not allow to mix LocalDateTime with Instant -->
+		<p>Period</p>
+
+		<p>TemporalAdjusters</p>
+		<!-- allow you to manipulate a date in a more complex way than just changing one of its values, custom date transformations -->
+		<p>DateTimeFormatter</p>
+
+		<p>DateTimeFormatterBuilder</p><!-- case insensitive parsing, lanient parsing (not precisely match) -->
+	</section>
+	<section>
+		<h2>Different Time Zones and Calendars</h2>
+
+		<p>java.time.ZoneId</p>
+		<img width="300" height="150" data-src="assets/date_time.png"/>
+		<!-- replacement for old java.util.TimeZone
+			 specific ZoneId is identified by a region Id
+			 Convert old TimeZone to ZoneId => ZoneId zoneId = TimeZone.getDefault().toZoneId();
+			 Zone works with LocalDate, LocalTime via ZoneLocalDate, ZoneLocalTime
+			 ZonedDateTime zonedDateTime = date1.atStartOfDay(zone);
+			-->
+		<p>ZoneOffset</p>
+
+		<p>ThaiBuddhistDate, MinguoDate, JapaneseDate, and Hijrah-Date</p>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Language updates</h2>
+
+		<div style="text-align: left;">
+			<p>CompletableFuture</p>
+			<p>LongAdder, LongAccumulator, Double...</p> <!-- use those classes instead of atomic classes -->
+			<p>ConcurrentHashMap - methods (forEach, reduce, search...</p>
+			<!-- was updated => in case when in one bucket is too many records those records are not stored in list O(n) but this list is dynamically replaced with sorted trees O(log(n)) [only for comparable items] -->
+			<p>Arrays - methods (parallelSort, setAll, parallelSetAll...)</p>
+			<p>Number and Math (sum, min, max, addExact ....)</p>
+			<p>Files - methods (find, walk, list, lines)</p>
+			<!-- all methods produces Stream<Path>; list = list of files in directory [no to depth]; walk =>  is recursive and you can set depth ; find => find file by given predicate -->
+			<p>Reflection</p>
+			<!-- Information about parameters of methods such as names and modifiers can now be accessed from java.lang.reflect.Parameter -->
+			<p>String => String.join(" ", "Raoul", "mario", "alan");</p>
+		</div>
+	</section>
+	<section>
+		<h2>Collections - new methods</h2>
+		<img width="500" height="250" data-src="assets/java8_collections_new_methods.png"/>
+	</section>
+</section>
+
+<section style="text-align: left;">
+	<h1>THE END</h1>
+
+	<!-- 1) Class can extend only from one abstract class, but class can implement multiple interfaces
+		 2) Abstract class can enforce common state through instance variables -->
+	<p>
+
+		- <a href="https://github.com/Alexander10/coding-beer-sessions">Source code</a>
+	</p>
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function () {
+				return !document.body.classList;
+			} },
+			{ src: 'plugin/markdown/marked.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			} },
+			{ src: 'plugin/markdown/markdown.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			} },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+				return !!document.querySelector('pre code');
+			}, callback: function () {
+				hljs.initHighlightingOnLoad();
+			} },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+</script>
+
+</body>
+</html>

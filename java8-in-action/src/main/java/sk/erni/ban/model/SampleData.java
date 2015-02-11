@@ -35,7 +35,7 @@ public class SampleData {
 
 	public static final Album sampleShortAlbum = new Album("sample Short Album", 1980, asList(new Track("short track", 30)), asList(johnColtrane));
 
-	public static final Album manyTrackAlbum = new Album("sample Short Album", 1990, asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("long track 4", 80), new Track("long track 5", 105)), asList(johnLennon));
+	public static final Album manyTrackAlbum = new Album("sample Short Album", 1990, asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("long track 4", 80), new Track("long track 5", 105)), asList(theBeatles,johnLennon));
 
 	public static final List<Album> albums = Arrays.asList(aLoveSupreme,sampleShortAlbum,manyTrackAlbum);
 

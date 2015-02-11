@@ -20,10 +20,22 @@ public class ArtistsFixed {
 		this.artists = artists;
 	}
 
+	/**
+	 * Rewrite:
+	 * @see Artists#getArtist(int)
+	 * @param index
+	 * @return
+	 */
 	public Optional<Artist> getArtist(int index) {
 		return Exercises.replaceThisWithSolution();
 	}
 
+	/**
+	 * Rewrite:
+	 * @see Artists#getArtistFirstName(int)
+	 * @param index
+	 * @return
+	 */
 	public String getArtistFirstName(int index) {
 		return Exercises.replaceThisWithSolution();
 	}

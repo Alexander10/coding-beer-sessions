@@ -1,13 +1,11 @@
 package sk.erni.ban.exercises.chapter3;
 
-import sk.erni.ban.exercises.Exercises;
 import sk.erni.ban.model.Album;
 import sk.erni.ban.model.Artist;
 import sk.erni.ban.model.Track;
 
-import java.util.DoubleSummaryStatistics;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * User: ban
@@ -25,7 +23,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<Integer, List<Album>> groupAlbumsByProductionYear(List<Album> albums) {
-		return Exercises.replaceThisWithSolution();
+		return albums.stream().collect(Collectors.groupingBy(Album::getProductionYear));
 	}
 
 	/**
@@ -34,8 +32,8 @@ public class Exercise3 {
 	 * @param album
 	 * @return
 	 */
-	public static Integer getDurationSumOfAllTracks(Album album) {
-		return Exercises.replaceThisWithSolution();
+	public static Integer getSumDurationOfAllTracks(Album album) {
+		return album.getTracks().map(track -> track.getLength()).reduce(0, Integer::sum);
 	}
 
 	/**
@@ -45,18 +43,18 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<String, Long> cntArtistsByNationalities(List<Artist> artists) {
-		return Exercises.replaceThisWithSolution();
+		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
 	}
 
 	/**
-	 * Solo artist should be put for key - true
-	 * None solo artist should be put for key - false
+	 * Solo artist should be - true
+	 * Band should be  - false
 	 *
 	 * @param artists
 	 * @return
 	 */
-	public static Map<Boolean, List<Artist>> findSoloAndNoneSoloArtists(List<Artist> artists) {
-		return Exercises.replaceThisWithSolution();
+	public static Map<Boolean, List<Artist>> findSoloArtistsAndBands(List<Artist> artists) {
+		return artists.stream().collect(Collectors.partitioningBy(Artist::isSolo));
 	}
 
 	/**
@@ -66,14 +64,15 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static double getAvgCntOfTracks(List<Album> albums) {
-		return Exercises.replaceThisWithSolution();
+		return albums.stream().collect(Collectors.averagingDouble(album -> album.getTrackList().size()));
 	}
 
 	/**
 	 * @param album
 	 */
 	public static Track findTheLongestTrack(Album album) {
-		return Exercises.replaceThisWithSolution();
+		Optional<Track> track = album.getTracks().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
+		return track.get();
 	}
 
 
@@ -84,17 +83,29 @@ public class Exercise3 {
 	 * length > 100 LONG TRACK
 	 */
 	public static Map<String, List<Track>> getCustomGroupedTracks(Album album) {
-		return Exercises.replaceThisWithSolution();
+		Map<String, List<Track>> groupedTracks = album.getTrackList().stream().collect(
+				Collectors.groupingBy(track -> {
+					if (track.getLength() < 35) {
+						return "SHORT TRACK";
+					} else if (track.getLength() >= 35 && track.getLength() <= 100) {
+						return "MEDIUM TRACK";
+					} else {
+						return "LONG TRACK";
+					}
+				})
+		);
+		return groupedTracks;
 	}
 
+
 	/**
-	 * For album calculate tracks stats: Avg, Min, Max, Sum
+	 * For album calculate tracks stats (for duration): Avg, Min, Max, Sum
 	 *
 	 * @param album
 	 * @return
 	 */
-	public static DoubleSummaryStatistics calculateStats(Album album) {
-		return Exercises.replaceThisWithSolution();
+	public static IntSummaryStatistics calculateStats(Album album) {
+		return album.getTracks().collect(Collectors.summarizingInt(Track::getLength));
 	}
 
 	/**
@@ -106,17 +117,19 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<String, Map<Integer, List<Artist>>> doubleGroupedArtists(List<Artist> artists) {
-		return Exercises.replaceThisWithSolution();
+		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(Artist::getYearOfBirth)));
 	}
 
 
 	/**
-	 * All artists are formatted into one string: The format of output is : [firstName secondName], [firstName secondName],
+	 * All artists are formatted to the one string: The format of output is : [firstName secondName, firstName secondName ...]
 	 *
 	 * @param artists
 	 * @return
 	 */
 	public static String formatArtists(List<Artist> artists) {
-		return Exercises.replaceThisWithSolution();
+		return artists.stream()
+				.map(a -> a.getFirstName() + " " + a.getSecondName())
+				.collect(Collectors.joining(", ", "[", "]"));
 	}
 }

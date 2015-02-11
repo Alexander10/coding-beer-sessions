@@ -32,19 +32,19 @@ public class Exercise4 {
 	}
 
 	/**
-	 * Please rewrite {@link #readDurationOldApproach(java.util.Properties, String)}  by using Optional class
-	 *
+	 * Please rewrite {@link #readDurationOldApproach(java.util.Properties, String)}  by using {@code Optional} Java 8 feature
+	 * Consider using {@link OptionalUtility#stringToInt(String)}
 	 * @param props
 	 * @param name
-	 * @return value when is greater than 1 otherwise return 0
+	 * @return
 	 */
 	public static int readDuration(Properties props, String name) {
 		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
-	 * Finding a car’s insurance company name with Optionals
-	 * if Car insurance name doesn't exist return Unknown
+	 * Use {@code Optional}
+	 * if car insurance name doesn't exist return Unknown
 	 * rewrite {@link #getCarInsuranceNameOldStyle(sk.erni.ban.model.Person)}
 	 */
 	public String getCarInsuranceName(Optional<Person> person) {

@@ -34,7 +34,7 @@ public class Exercise1 {
 	}
 
 	/**
-	 * Creates Lambda expression which will find all artists named john
+	 * Creates Lambda expression which will find all artists with first name John
 	 *
 	 * @return
 	 */
@@ -61,8 +61,14 @@ public class Exercise1 {
 		return Exercises.replaceThisWithSolution();
 	}
 
-
-	public static Function<List<Artist>, String> concate(Function<List<Artist>, List<Artist>> f, Function<List<Artist>,Artist> g){
+	/**
+	 * concatenation of two functions
+	 *
+	 * @param f
+	 * @param g
+	 * @return
+	 */
+	public static Function<List<Artist>, Artist> concat(Function<List<Artist>, List<Artist>> f, Function<List<Artist>, Artist> g) {
 		return Exercises.replaceThisWithSolution();
 	}
 

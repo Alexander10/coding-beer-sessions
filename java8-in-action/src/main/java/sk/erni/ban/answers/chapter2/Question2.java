@@ -8,6 +8,7 @@ import sk.erni.ban.model.SampleData;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -22,14 +23,19 @@ import static java.util.stream.Collectors.toList;
  */
 
 public class Question2 {
+
 	private static List<Artist> artistList = SampleData.membersOfTheBeatles;
 	private static List<Album> albumList = SampleData.albums;
 
 
-	public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> input) {
-		return input.stream()
-				.filter(album -> album.getTrackList().size() <= 3)
-				.collect(toList());
+	/**
+	 * number of tracks <= 3
+	 *
+	 * @param albums
+	 * @return
+	 */
+	public static List<Album> getAlbumsWithAtMostThreeTracks(List<Album> albums) {
+		return albums.stream().filter((album) -> album.getTrackList().size() <= 3).collect(Collectors.toList());
 	}
 
 	public static int countBandMembersInternal(List<Artist> artists) {
@@ -38,6 +44,80 @@ public class Question2 {
 				.reduce(0L, Long::sum)
 				.intValue();
 	}
+
+	/**
+	 * @param artists
+	 * @param name
+	 * @return first founded artist by first name
+	 */
+	public static Artist findArtistByFirstName(List<Artist> artists, String name) {
+		return artists.stream().filter(artist -> artist.getFirstName().equals(name)).findFirst().get();
+	}
+
+	/**
+	 * @param artists return unique dates of birth
+	 */
+	public static List<Integer> getUniqueDatesOfBirth(List<Artist> artists) {
+		return artists.stream().map(art -> art.getYearOfBirth()).distinct().collect(Collectors.toList());
+	}
+
+	/**
+	 * @param album
+	 * @return origin (nationality) for bands (album has a stream of musicians)
+	 */
+	public static List<String> originsOfBands(Album album) {
+		return album.getMusicianList().stream().filter(art -> !art.isSolo()).map(art -> art.getNationality()).distinct().collect(Collectors.toList());
+	}
+
+	/**
+	 * @param albums
+	 * @return names of tracks which are longer than 60 minutes
+	 */
+	public static List<String> getNamesForLongTracks(List<Album> albums) {
+		return albums.stream().flatMap(album -> album.getTracks()).filter(track -> track.getLength() > 60).map(track -> track.getName()).collect(Collectors.toList());
+	}
+
+	/**
+	 * @param artists
+	 * @return list of integers where each integer represent length of artist first name
+	 */
+	public static List<Integer> getLenghtOfFirstNames(List<Artist> artists) {
+		return artists.stream().map(artist -> artist.getFirstName().length()).collect(Collectors.toList());
+	}
+
+
+	/**
+	 * Please find a way how to read file to Stream<String>
+	 *
+	 * @param path
+	 * @return
+	 */
+	public static long numberOfUniqueWordsInSong(Path path) {
+		long uniqueWords = 0;
+		try (Stream<String> lines = Files.lines(Paths.get("src/main/resources/newSong.txt"), Charset.defaultCharset())) {
+			uniqueWords = lines.flatMap(f -> Arrays.stream(f.split("\\s"))).distinct().count();
+		} catch (IOException e) {
+			System.out.println("Some problems with newSong file: " + e.toString());
+		}
+		System.out.println("unique words" + uniqueWords);
+		return uniqueWords;
+	}
+
+	/**
+	 * i. e.
+	 * 0 - John Coltrane
+	 * 1 - US
+	 *
+	 * @param artists
+	 * @return - list of items where first item will be firstName + secondName followed by nationality for every artist
+	 */
+	public static List<String> getNamesAndOrigins(List<Artist> artists) {
+		return artists.stream().flatMap(art -> Stream.of(art.getFirstName() + " " + art.getSecondName(), art.getNationality())).collect(Collectors.toList());
+	}
+
+
+
+	 /********************************************************* Questions END **************************************************************/
 
 
 	public static Artist findArtistByName(String name) {
@@ -51,31 +131,6 @@ public class Question2 {
 		List<Integer> result = artistList.stream().map((a) -> a.getYearOfBirth()).distinct().collect(Collectors.toList());
 		result.forEach(System.out::println);
 		return null;
-	}
-
-	public static List<String> getNamesAndOrigins(List<Artist> artists) {
-		return artists.stream()
-				.flatMap(artist -> Stream.of(artist.getFirstName() + " " + artist.getSecondName(), artist.getNationality()))
-				.collect(toList());
-	}
-
-
-	public List<String> originsOfBands(Album album) {
-
-		List<String> origins = album.getMusicians()
-				.filter(artist -> artist.getFirstName().startsWith("The"))
-				.map(artist -> artist.getNationality())
-				.collect(toList());
-
-		return origins;
-	}
-
-	public List<String> findLongTracks(List<Album> albums) {
-		return albums.stream()
-				.flatMap(album -> album.getTracks())
-				.filter(track -> track.getLength() > 60)
-				.map(track -> track.getName())
-				.collect(toList());
 	}
 
 
@@ -121,25 +176,6 @@ public class Question2 {
 	public static void getAllAlbumsInOne() {
 		String str = albumList.stream().map(a -> a.getName() + ";").reduce(String::concat).orElse("");
 		System.out.println(str);
-	}
-
-	/**
-	 * Get album with only one track
-	 */
-	public static void getUniqueAlbumsWithOneArtist() {
-//		Album album = albumList.stream().filter( a -> a.getTrackList().size() > 0);
-	}
-
-
-	public static long getNumberOfUniqueWordsInNewSong() {
-		long uniqueWords = 0;
-		try (Stream<String> lines = Files.lines(Paths.get("src/main/resources/newSong.txt"), Charset.defaultCharset())) {
-			uniqueWords = lines.flatMap(f -> Arrays.stream(f.split("\\s"))).distinct().count();
-		} catch (IOException e) {
-			System.out.println("Some problems with newSong file: " + e.toString());
-		}
-		System.out.println("unique words" + uniqueWords);
-		return uniqueWords;
 	}
 
 

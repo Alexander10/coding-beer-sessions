@@ -1,11 +1,10 @@
 package sk.erni.ban.exercises.chapter2;
 
 
-import sk.exercises.chapter2.Exercise2;
-import sk.model.Album;
-import sk.model.Artist;
 import org.junit.Before;
 import org.junit.Test;
+import sk.erni.ban.model.Album;
+import sk.erni.ban.model.Artist;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -15,7 +14,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
+import static sk.erni.ban.model.SampleData.*;
 
 /**
  * User: ban
@@ -26,8 +28,9 @@ import static org.junit.Assert.*;
 public class Question2Test {
 
 	private List<Artist> worldStars;
+
 	@Before
-	public void init(){
+	public void init() {
 		worldStars = new ArrayList<>(membersOfTheBeatles);
 		worldStars.addAll(slovakStars);
 	}
@@ -47,7 +50,17 @@ public class Question2Test {
 	@Test
 	public void findArtistMiro() {
 		assertNotNull(Exercise2.findArtistByFirstName(worldStars, "Miro"));
+	}
 
+	@Test
+	public void findUniqueDatesOfBirth() {
+		assertThat(Exercise2.getUniqueDatesOfBirth(worldStars), is(equalTo(Arrays.asList(1940, 1942, 1943, 1945))));
+	}
+
+	@Test
+	public void findOriginsOfBands() {
+		List<String> origins = Exercise2.originsOfBands(manyTrackAlbum);
+		assertEquals("UK", origins.get(0));
 	}
 
 	@Test
@@ -61,38 +74,26 @@ public class Question2Test {
 
 	}
 
+
 	@Test
-	public void findOriginsOfBands() {
-		List<String> origins = Exercise2.originsOfBands(aLoveSupreme);
-		assertEquals("US", origins.get(0));
+	public void numberOfCharactersInArtistsNames() {
+
+		List<Integer> lengthOfNames = Exercise2.getLenghtOfFirstNames(worldStars);
+		long sum = lengthOfNames.stream().collect(Collectors.summingInt(a -> a));
+
+		assertEquals(28, sum);
 	}
 
 	@Test
-	public void findUniqueDatesOfBirth() {
+	public void numberOfUniqueWordsInNewSong() {
+		Path path = Paths.get("/src/main/resources/newSong.txt");
 
-
-		assertEquals(3, Exercise2.getUniqueDatesOfBirth(worldStars));
-	}
-
-	@Test
-	public void numberOfCharactersInArtistsNames(){
-
-		List<Integer> lengthOfNames = Exercise2.getLenghtOfNames(worldStars);
-		long sum = lengthOfNames.stream().collect(Collectors.summingInt( a -> a));
-
-		assertEquals(344,sum);
-	}
-
-	@Test
-	public void numberOfUniqueWordsInNewSong(){
-		Path path = Paths.get("src/main/resources/newSong.txt");
-
-		assertEquals(289, Exercise2.countOfUniqueWordsInSong(path));
+		assertEquals(239, Exercise2.numberOfUniqueWordsInSong(path));
 	}
 
 	@Test
 	public void extractsNamesAndOriginsOfArtists() {
 		List<String> namesAndOrigins = Exercise2.getNamesAndOrigins(membersOfTheBeatles);
-		assertEquals(asList("John Coltrane", "US", "John Lennon", "UK", "The Beatles", "UK"), namesAndOrigins);
+		assertEquals(asList("John Lennon", "UK", "Paul McCartney", "UK", "George Harrison", "UK", "Ringo Starr", "UK"), namesAndOrigins);
 	}
 }
