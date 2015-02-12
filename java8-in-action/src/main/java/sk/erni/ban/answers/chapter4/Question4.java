@@ -23,14 +23,14 @@ public class Question4 {
 	 * Finding a car’s insurance company name with Optionals
 	 * if Car insurance name doesn't exist return Unknown
 	 */
-	public String getCarInsuranceName(Optional<Person> person) {
+	public static String getCarInsuranceName(Optional<Person> person) {
 		return person.flatMap(Person::getCar)
 				.flatMap(Car::getInsurance)
 				.map(Insurance::getName)
 				.orElse("Unknown");
 	}
 
-	public String getCarInsuranceNameOldStyle(Person person) {
+	public static String getCarInsuranceNameOldStyle(Person person) {
 		if (person != null) {
 			Car car = person.getCarNoneOptional();
 			if(car != null){

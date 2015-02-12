@@ -1,4 +1,4 @@
-package sk.erni.ban.answers.chapter5;
+package sk.erni.ban.exercises.chapter5;
 
 import jdk.nashorn.api.scripting.NashornScriptEngine;
 import jdk.nashorn.api.scripting.ScriptObjectMirror;
@@ -13,11 +13,12 @@ import java.io.FileReader;
 
 /**
  * User: ban
- * Date: 11.2.2015
- * Time: 11:54
+ * Date: 12.2.2015
+ * Time: 11:38
  */
 
-public class Question5 {
+public class Exercise5 {
+
 
 	private static NashornScriptEngine engine;
 	private static String productInfo = "";
@@ -34,26 +35,24 @@ public class Question5 {
 		}
 	}
 
-
-
-
 	/**
 	 * Create person object with js function
 	 * @param name
 	 * @param age
 	 * @return
 	 * @throws NoSuchMethodException
-	 * @throws ScriptException
+	 * @throws javax.script.ScriptException
 	 */
-	public static Person createPerson(String name, int age) throws NoSuchMethodException, ScriptException{
+	public static Person createPerson(String name, int age) throws NoSuchMethodException, ScriptException {
 		String jsScript = "createPerson";
 		Invocable invocable = engine;
 		Person person = (Person)invocable.invokeFunction(jsScript,name,age);
 		return person;
 	}
 
+
 	/**
-	 * Method check whether name of created person is longer or equal then nameLength param
+	 * Method check whether name of created person is longer or equal 4
 	 *
 	 * @param name
 	 * @throws ScriptException
@@ -64,13 +63,20 @@ public class Question5 {
 		Invocable invocable = engine;
 
 		Person person = new Person();
-		person.setName("name");
+		person.setName(name);
 
-		String predicate = Exercises.replaceThisWithSolution(); //;"obj.getLengthOfName() >= 4";
+		String predicate = Exercises.replaceThisWithSolution();
 		Object result = invocable.invokeFunction("runJavaMethod", predicate, person);
 		return (boolean) result;
 	}
 
+
+	/**
+	 * Return product in string form
+	 * @return
+	 * @throws ScriptException
+	 * @throws NoSuchMethodException
+	 */
 	public static String getProductName() throws ScriptException, NoSuchMethodException {
 		init();
 		Invocable invocable = engine;
@@ -79,17 +85,16 @@ public class Question5 {
 	}
 
 	/**
-	 * Method is called from js
+	 * Method is called by js
 	 * @param mirror - js object
 	 */
 	public static void fillData(ScriptObjectMirror mirror){
 
-		String productName = (String) mirror.callMember("getName");
-		String productPrice = (String) mirror.callMember("getPrice");
-		String stock = (String) mirror.callMember("getStock");
+		String productName = Exercises.replaceThisWithSolution();
+		String productPrice = Exercises.replaceThisWithSolution();
+		String stock = Exercises.replaceThisWithSolution();
 
 		productInfo = productName + " " + productPrice + " " + stock;
 
 	}
-
 }

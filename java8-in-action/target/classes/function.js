@@ -1,50 +1,41 @@
-var fun1 = function(name) {
-	print('Hi there from Javascript, ' + name);
-	return "greetings from javascript";
+function runJavaMethod(predicate, obj) {
+	return !!(eval(predicate));
 };
 
-var fun2 = function (object) {
-	print("JS Class Definition: " + Object.prototype.toString.call(object));
-};
+/**
+ * function creates person java object
+ * @param name
+ * @param age
+ * @returns {*}
+ */
+function createPerson(name, age) {
 
-var MyJavaClass = Java.type("sk.erni.ban.answers.chapter5.Question5");
-var result = MyJavaClass.helloWorld("John Doe");
-print(result);
+	return null;
 
+}
 
-MyJavaClass.fun2(123);
+function Product(name, price, stock) {
+	this.name = name;
+	this.price = price;
+	this.stock = stock;
 
-MyJavaClass.fun2(49.99);
+	this.getName = function () {
+		return this.name;
+	}
 
-MyJavaClass.fun2(true);
+	this.getPrice = function() {
+		return this.price;
+	}
 
-MyJavaClass.fun2("hi there")
+	this.getStock = function() {
+		return this.stock;
+	}
 
-MyJavaClass.fun2(new Number(23));
+}
 
-MyJavaClass.fun2(new Date());
+function createProduct() {
+	var product = new Product("Beer", "2", "BA");
+	var Question = Java.type('sk.erni.ban.answers.chapter5.Question5');
+	Question.fillData(product);
+}
 
-MyJavaClass.fun2(new RegExp());
-
-MyJavaClass.fun2({foo: 'bar'});
-
-
-var list2 = new java.util.ArrayList();
-list2.add("ddd2");
-list2.add("aaa2");
-list2.add("bbb1");
-list2.add("aaa1");
-list2.add("bbb3");
-list2.add("ccc");
-list2.add("bbb2");
-list2.add("ddd1");
-
-list2
-	.stream()
-	.filter(function(el) {
-		return el.startsWith("aaa");
-	})
-	.sorted()
-	.forEach(function(el) {
-		print(el);
-	});

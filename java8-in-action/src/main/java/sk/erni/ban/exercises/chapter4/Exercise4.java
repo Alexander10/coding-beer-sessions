@@ -47,11 +47,11 @@ public class Exercise4 {
 	 * if car insurance name doesn't exist return Unknown
 	 * rewrite {@link #getCarInsuranceNameOldStyle(sk.erni.ban.model.Person)}
 	 */
-	public String getCarInsuranceName(Optional<Person> person) {
+	public static String getCarInsuranceName(Optional<Person> person) {
 		return Exercises.replaceThisWithSolution();
 	}
 
-	public String getCarInsuranceNameOldStyle(Person person) {
+	public static String getCarInsuranceNameOldStyle(Person person) {
 		if (person != null) {
 			Car car = person.getCarNoneOptional();
 			if (car != null) {

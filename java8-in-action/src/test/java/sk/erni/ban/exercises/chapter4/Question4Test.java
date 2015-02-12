@@ -1,10 +1,9 @@
 package sk.erni.ban.exercises.chapter4;
 
+import junit.framework.Assert;
 import org.junit.Test;
-import sk.erni.ban.answers.chapter4.ArtistsFixed;
 import sk.erni.ban.answers.chapter4.Question4;
-import sk.erni.ban.model.Artist;
-import sk.erni.ban.model.SampleData;
+import sk.erni.ban.model.*;
 
 import java.util.Optional;
 import java.util.Properties;
@@ -70,6 +69,24 @@ public class Question4Test {
 
 	@Test
 	public void insuranceCompanyNameOldStyleAndNewStyleMethods() {
+		Person person = new Person();
+		String oldApproachName = Exercise4.getCarInsuranceNameOldStyle(person);
 
+		Optional<Person> optPerson = Optional.of(person);
+		String newApproachName = Exercise4.getCarInsuranceName(optPerson);
+
+		assertEquals(oldApproachName, newApproachName);
+
+	}
+
+	@Test
+	public void innerNullCheck(){
+		Person person = new Person(new Car());
+		String oldApproachName = Exercise4.getCarInsuranceNameOldStyle(person);
+
+		Optional<Person> optPerson = Optional.of(person);
+		String newApproachName = Exercise4.getCarInsuranceName(optPerson);
+
+		assertEquals(oldApproachName, newApproachName);
 	}
 }

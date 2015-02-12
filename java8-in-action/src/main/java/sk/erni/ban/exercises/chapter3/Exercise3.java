@@ -1,11 +1,13 @@
 package sk.erni.ban.exercises.chapter3;
 
+import sk.erni.ban.exercises.Exercises;
 import sk.erni.ban.model.Album;
 import sk.erni.ban.model.Artist;
 import sk.erni.ban.model.Track;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.IntSummaryStatistics;
+import java.util.List;
+import java.util.Map;
 
 /**
  * User: ban
@@ -23,7 +25,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<Integer, List<Album>> groupAlbumsByProductionYear(List<Album> albums) {
-		return albums.stream().collect(Collectors.groupingBy(Album::getProductionYear));
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
@@ -33,7 +35,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Integer getSumDurationOfAllTracks(Album album) {
-		return album.getTracks().map(track -> track.getLength()).reduce(0, Integer::sum);
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
@@ -43,7 +45,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<String, Long> cntArtistsByNationalities(List<Artist> artists) {
-		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.counting()));
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
@@ -54,7 +56,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<Boolean, List<Artist>> findSoloArtistsAndBands(List<Artist> artists) {
-		return artists.stream().collect(Collectors.partitioningBy(Artist::isSolo));
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
@@ -64,15 +66,14 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static double getAvgCntOfTracks(List<Album> albums) {
-		return albums.stream().collect(Collectors.averagingDouble(album -> album.getTrackList().size()));
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
 	 * @param album
 	 */
 	public static Track findTheLongestTrack(Album album) {
-		Optional<Track> track = album.getTracks().collect(Collectors.maxBy(Comparator.comparingInt(Track::getLength)));
-		return track.get();
+		return Exercises.replaceThisWithSolution();
 	}
 
 
@@ -83,18 +84,7 @@ public class Exercise3 {
 	 * length > 100 LONG TRACK
 	 */
 	public static Map<String, List<Track>> getCustomGroupedTracks(Album album) {
-		Map<String, List<Track>> groupedTracks = album.getTrackList().stream().collect(
-				Collectors.groupingBy(track -> {
-					if (track.getLength() < 35) {
-						return "SHORT TRACK";
-					} else if (track.getLength() >= 35 && track.getLength() <= 100) {
-						return "MEDIUM TRACK";
-					} else {
-						return "LONG TRACK";
-					}
-				})
-		);
-		return groupedTracks;
+		return Exercises.replaceThisWithSolution();
 	}
 
 
@@ -105,7 +95,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static IntSummaryStatistics calculateStats(Album album) {
-		return album.getTracks().collect(Collectors.summarizingInt(Track::getLength));
+		return Exercises.replaceThisWithSolution();
 	}
 
 	/**
@@ -117,7 +107,7 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static Map<String, Map<Integer, List<Artist>>> doubleGroupedArtists(List<Artist> artists) {
-		return artists.stream().collect(Collectors.groupingBy(Artist::getNationality, Collectors.groupingBy(Artist::getYearOfBirth)));
+		return Exercises.replaceThisWithSolution();
 	}
 
 
@@ -128,8 +118,6 @@ public class Exercise3 {
 	 * @return
 	 */
 	public static String formatArtists(List<Artist> artists) {
-		return artists.stream()
-				.map(a -> a.getFirstName() + " " + a.getSecondName())
-				.collect(Collectors.joining(", ", "[", "]"));
+		return Exercises.replaceThisWithSolution();
 	}
 }

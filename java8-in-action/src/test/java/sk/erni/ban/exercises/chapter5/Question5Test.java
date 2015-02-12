@@ -1,13 +1,17 @@
 package sk.erni.ban.exercises.chapter5;
 
+import junit.framework.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import sk.erni.ban.answers.chapter5.Question5;
+import sk.erni.ban.model.Person;
 
-import javax.script.Invocable;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 /**
  * User: ban
@@ -17,28 +21,67 @@ import java.io.FileReader;
 
 public class Question5Test {
 
+	@Before
+	public void init() {
+		Exercise5.init();
+	}
+
 	@Test
-	public void test(){
-		ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+	public void checkPersonCreation() {
 		try {
-			engine.eval("print('Hello world!');");
-			engine.eval(new FileReader("src/main/resources/function.js"));
+			Person person = Exercise5.createPerson("jano maly", 3);
 
-			Invocable invocable = (Invocable) engine;
-			Object result = invocable.invokeFunction("fun1","Peter parker");
+			assertNotNull(person);
+			assertEquals("jano maly", person.getName());
+			assertTrue(3 == person.getAge());
 
-			System.out.println(result);
-			System.out.println(result.getClass());
-
-
-
-		} catch (ScriptException e) {
-			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
 		} catch (NoSuchMethodException e) {
-			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-
+			e.printStackTrace();
+		} catch (ScriptException e) {
+			e.printStackTrace();
 		}
 	}
+
+
+	@Test
+	public void checkPersonLongName(){
+		try {
+			boolean isLongName = Exercise5.isLongName("Sofonias");
+			assertTrue(isLongName);
+
+		} catch (ScriptException e) {
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void checkPersonShortName(){
+		try {
+			boolean isLongName = Exercise5.isLongName("Jan");
+			assertFalse(isLongName);
+
+		} catch (ScriptException e) {
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	@Test
+	public void checkProductCreatedInJs() {
+		try {
+			String expectedResult = "Beer 2 BA";
+			String storeStr = Exercise5.getProductName();
+			assertEquals(expectedResult, storeStr);
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (ScriptException e) {
+			e.printStackTrace();
+		}
+	}
+
+
 }

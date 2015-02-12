@@ -10,20 +10,39 @@ import java.util.Optional;
 
 public class Person {
 
-	private Optional<Car> car;
+	private String name;
 	private Integer age;
-	private Car	carNoneOptional;
+	private Car car;
 
+	public Person() {
+
+	}
+
+	public Person(Car car) {
+		this.car = car;
+	}
 
 	public Optional<Car> getCar() {
-		return car;
+		return Optional.ofNullable(car);
 	}
 
 	public Car getCarNoneOptional() {
-		return carNoneOptional;
+		return car;
 	}
 
-	public Integer getAge(){
+	public Integer getAge() {
 		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }

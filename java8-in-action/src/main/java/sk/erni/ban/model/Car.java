@@ -10,14 +10,14 @@ import java.util.Optional;
 
 public class Car {
 
-	private Optional<Insurance> insurance;
-	private Insurance insuranceNoneOptional;
+
+	private Insurance insurance;
 
 	public Optional<Insurance> getInsurance() {
-		return insurance;
+		return Optional.ofNullable(insurance);
 	}
 
 	public Insurance getInsuranceNoneOptional() {
-		return insuranceNoneOptional;
+		return insurance;
 	}
 }
