@@ -2,7 +2,6 @@ Java 8 In Action - Katas
 ===========
 
 Coding beer session for mastering basic Java 8 features ;)
-Please don't hesitate and learn the basic Java 8 features using Katas form.
 
 # Preconditions
 - IDE with JDK 8 and Maven support

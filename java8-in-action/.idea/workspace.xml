@@ -26,163 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27221929-df16-4131-8fd2-68e658b44c02" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\book\Java_8_in_Action.epub" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\book\Java_8_in_Action.pdf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\collectors.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\concurrency_vs_parallelism.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\date_time.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\intermediate_and_terminal_operations.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8_collections_new_methods.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\lambda_body.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\lambda_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\list_Of_collectors1.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\list_Of_collectors2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\stream_pipeline.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\streams_vs_collections.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\print\paper.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\print\pdf.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\reveal.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\reveal.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\beige.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\black.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\blood.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\league.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\moon.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\night.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\serif.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\simple.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\sky.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\solarized.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\beige.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\black.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\blood.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\league.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\moon.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\night.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\serif.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\simple.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\sky.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\solarized.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\white.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\settings.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\white.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\js\reveal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\css\zenburn.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\classList.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\head.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\highlight\highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\leap\leap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\example.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\example.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\marked.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\math\math.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\client.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\master.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\client.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\notes.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes\notes.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes\notes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\print-pdf\print-pdf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\remotes\remotes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\search\search.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\zoom-js\zoom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\reveal.js-master.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\assets\image1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\assets\image2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\barebones.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\embedded-media.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\math.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\slide-backgrounds.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\qunit-1.12.0.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\qunit-1.12.0.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-element-attributes.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-element-attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-slide-attributes.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-slide-attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-pdf.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-pdf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter1\FourFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter1\Question1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter2\Question2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter3\Question3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\ArtistsFixed.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\NextWorkingDay.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\Question4.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter5\Question5.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\forfun\PrimeNumberCollector.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\forfun\Question.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\HeaderTextProcessing.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\ProcessingObject.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\SpellCheckerProcessing.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Feed.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Guardian.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\LeMonde.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\NYTimes.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Observer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Subject.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\IsAllLowerCase.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\IsNumeric.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\ValidationStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\resources\JPA_CERT_SUMMARY.docx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\resources\~$A_CERT_SUMMARY.docx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\sk\erni\ban\exercises\refactoring\RefactoringTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java8-in-action.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,7 +75,7 @@
     <file path="/*.regexp" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748369175" ignored="false" />
     <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748061024" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/vcs.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
-    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423752905975" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423753090040" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/misc.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451050857" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/compiler.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/modules.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
@@ -381,10 +225,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Exercise5.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Exercise5.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.4871795">
+            <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -455,10 +299,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="77" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+            <state line="16" column="75" selection-start="383" selection-end="383" vertical-scroll-proportion="0.41025642">
               <folding />
             </state>
           </provider>
@@ -1759,13 +1603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="77" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="49" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
@@ -1777,10 +1614,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.4871795">
+        <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="75" selection-start="383" selection-end="383" vertical-scroll-proportion="0.41025642">
+          <folding />
         </state>
       </provider>
     </entry>
