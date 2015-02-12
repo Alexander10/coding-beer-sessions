@@ -1,9 +1,10 @@
 package sk.erni.ban.exercises.chapter4;
 
-import junit.framework.Assert;
 import org.junit.Test;
-import sk.erni.ban.answers.chapter4.Question4;
-import sk.erni.ban.model.*;
+import sk.erni.ban.model.Artist;
+import sk.erni.ban.model.Car;
+import sk.erni.ban.model.Person;
+import sk.erni.ban.model.SampleData;
 
 import java.util.Optional;
 import java.util.Properties;
@@ -80,7 +81,7 @@ public class Question4Test {
 	}
 
 	@Test
-	public void innerNullCheck(){
+	public void innerNullCheck() {
 		Person person = new Person(new Car());
 		String oldApproachName = Exercise4.getCarInsuranceNameOldStyle(person);
 

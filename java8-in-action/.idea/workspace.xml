@@ -26,19 +26,162 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27221929-df16-4131-8fd2-68e658b44c02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Car.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Person.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\book\Java_8_in_Action.epub" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\book\Java_8_in_Action.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\collectors.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\concurrency_vs_parallelism.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\date_time.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\intermediate_and_terminal_operations.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8_collections_new_methods.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\java8_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\lambda_body.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\lambda_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\list_Of_collectors1.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\list_Of_collectors2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\stream_pipeline.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\assets\streams_vs_collections.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\print\paper.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\print\pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\beige.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\black.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\blood.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\league.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\moon.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\night.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\serif.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\simple.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\sky.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\black.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\blood.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\league.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\night.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\source\white.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\template\theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\css\theme\white.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\js\reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\css\zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\league-gothic\league-gothic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibold.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro-semibolditalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\font\source-sans-pro\source-sans-pro.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\classList.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\lib\js\html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\highlight\highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\leap\leap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\example.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\example.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\markdown\marked.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\math\math.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\multiplex\master.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes-server\notes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes\notes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\notes\notes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\print-pdf\print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\remotes\remotes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\search\search.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\plugin\zoom-js\zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\reveal.js-master.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\assets\image1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\assets\image2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\barebones.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\embedded-media.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\math.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\examples\slide-backgrounds.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\qunit-1.12.0.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\qunit-1.12.0.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-element-attributes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-element-attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-slide-attributes.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown-slide-attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-pdf.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\presentation\test\test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter1\FourFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter1\Question1.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter2\Question2.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter3\Question3.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\ArtistsFixed.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\NextWorkingDay.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter4\Question4.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\chapter5\Question5.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\forfun\PrimeNumberCollector.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\forfun\Question.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\HeaderTextProcessing.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\ProcessingObject.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\chainofresponsibility\SpellCheckerProcessing.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Feed.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Guardian.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\LeMonde.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\NYTimes.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Observer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\observer\Subject.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\IsAllLowerCase.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\IsNumeric.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\ValidationStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\java\sk\erni\ban\answers\refactoring\strategy\Validator.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\resources\JPA_CERT_SUMMARY.docx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\main\resources\~$A_CERT_SUMMARY.docx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\Projects\coding-beer-sessions\java8-in-action\src\test\java\sk\erni\ban\exercises\refactoring\RefactoringTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" afterPath="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" afterPath="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/function.js" afterPath="$PROJECT_DIR$/src/main/resources/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation_final/index.html" afterPath="$PROJECT_DIR$/presentation_final/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java8-in-action.iws" />
@@ -88,7 +231,7 @@
     <file path="/*.regexp" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748369175" ignored="false" />
     <file path="/Exercise3.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748061024" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/vcs.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
-    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423749846589" ignored="false" />
+    <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/workspace.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423752905975" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/misc.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422451050857" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/compiler.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
     <file path="$PROJECT_DIR$/../../JPA_CERT/OcejpadTests/.idea/modules.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1422450771617" ignored="false" />
@@ -110,10 +253,10 @@
     <file path="/persistence.xml" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423145269647" ignored="false" />
     <file path="/Exercise.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423646658129" ignored="false" />
     <file path="/ListTransforme.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423651858280" ignored="false" />
-    <file path="/Question5Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748535693" ignored="false" />
+    <file path="/Question5Test.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423750981459" ignored="false" />
     <file path="/Question5.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748426034" ignored="false" />
     <file path="/function.js" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423745828669" ignored="false" />
-    <file path="/README.md" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423671568004" ignored="false" />
+    <file path="/README.md" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423751268385" ignored="false" />
     <file path="/Exercise5.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748492361" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Person.java" changelist="27221929-df16-4131-8fd2-68e658b44c02" time="1423748294029" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -183,7 +326,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" line="90" class="sk.erni.ban.answers.chapter5.Question5" package="sk.erni.ban.answers.chapter5">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" line="72" class="sk.erni.ban.exercises.chapter5.Question5Test" package="sk.erni.ban.exercises.chapter5">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -198,52 +341,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" line="77" class="sk.erni.ban.answers.chapter5.Question5" package="sk.erni.ban.answers.chapter5">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" line="76" class="sk.erni.ban.exercises.chapter5.Question5Test" package="sk.erni.ban.exercises.chapter5">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" line="77" class="sk.erni.ban.exercises.chapter5.Question5Test" package="sk.erni.ban.exercises.chapter5">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" line="75" class="sk.erni.ban.answers.chapter5.Question5" package="sk.erni.ban.answers.chapter5">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" line="73" class="sk.erni.ban.exercises.chapter5.Question5Test" package="sk.erni.ban.exercises.chapter5">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -273,21 +371,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java" line="26" class="sk.erni.ban.answers.chapter4.Question4" package="sk.erni.ban.answers.chapter4">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -298,21 +381,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Exercise5.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Exercise5.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="58" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question5.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="65" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.0">
+            <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.4871795">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -323,16 +395,25 @@
       <file leaf-file-name="QuestionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="63" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.0">
+            <state line="21" column="3" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Question4Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="306" selection-end="336" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/presentation_final/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="623" column="53" selection-start="22793" selection-end="22793" vertical-scroll-proportion="0.71634614">
+            <state line="623" column="53" selection-start="22793" selection-end="22793" vertical-scroll-proportion="-17.192308">
               <folding>
                 <element signature="n#style#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -366,10 +447,19 @@
       <file leaf-file-name="Question5Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="74" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
+            <state line="44" column="49" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="77" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -387,15 +477,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="55" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question2Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter2/Question2Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="32" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -419,22 +500,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Person.java" />
         <option value="$PROJECT_DIR$/src/main/resources/function.js" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter4/Question4.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Car.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter3/Exercise3.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter2/Exercise2.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java" />
         <option value="$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
         <option value="$PROJECT_DIR$/presentation_final/index.html" />
+        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -472,6 +553,9 @@
         </PATH_ELEMENT>
       </PATH>
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -525,36 +609,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="refactoring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -982,7 +1036,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
+              <option name="myItemId" value="exercises" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1012,157 +1070,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ban" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="answers" />
+              <option name="myItemId" value="exercises" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chapter1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation_final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation_final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java8-in-action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1209,34 +1121,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.QuestionTest">
-    <configuration default="false" name="Question5Test" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sk.erni.ban.exercises.chapter5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="java8-in-action-katas" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sk.erni.ban.exercises.chapter5" />
-      <option name="MAIN_CLASS_NAME" value="sk.erni.ban.exercises.chapter5.Question5Test" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Question3Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1299,18 +1183,46 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Question1Test" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="Question4Test" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="sk.erni.ban.exercises.chapter1.*" />
+          <option name="PATTERN" value="sk.erni.ban.exercises.chapter4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="java8-in-action-katas" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sk.erni.ban.exercises.chapter1" />
-      <option name="MAIN_CLASS_NAME" value="sk.erni.ban.exercises.chapter1.Question1Test" />
+      <option name="PACKAGE_NAME" value="sk.erni.ban.exercises.chapter4" />
+      <option name="MAIN_CLASS_NAME" value="sk.erni.ban.exercises.chapter4.Question4Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Question5Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sk.erni.ban.exercises.chapter5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java8-in-action-katas" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sk.erni.ban.exercises.chapter5" />
+      <option name="MAIN_CLASS_NAME" value="sk.erni.ban.exercises.chapter5.Question5Test" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1583,19 +1495,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Question5Test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Question3Test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Question2Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Question1Test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Question3Test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Question2Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Question4Test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Question5Test" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.QuestionTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.QuestionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Question1Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Question2Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Question5Test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Question4Test" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.Question3Test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Question5Test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Question2Test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1749,15 +1661,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="64" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter4/Exercise4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="17" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
@@ -1821,9 +1724,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/answers/chapter5/Question5.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="65" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.0">
+        <state line="65" column="72" selection-start="1844" selection-end="1870" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presentation_final/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="623" column="53" selection-start="22793" selection-end="22793" vertical-scroll-proportion="-17.192308">
+          <folding>
+            <element signature="n#style#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#section#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter4/Question4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="306" selection-end="336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="77" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="49" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1832,46 +1777,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/chapter5/Exercise5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="58" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
+        <state line="19" column="49" selection-start="477" selection-end="477" vertical-scroll-proportion="0.4871795">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/chapter5/Question5Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="74" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sk/erni/ban/exercises/forfun/Exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="72" selection-start="1844" selection-end="1870" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sk/erni/ban/exercises/forFun/QuestionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="63" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/presentation_final/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="623" column="53" selection-start="22793" selection-end="22793" vertical-scroll-proportion="0.71634614">
-          <folding>
-            <element signature="n#style#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

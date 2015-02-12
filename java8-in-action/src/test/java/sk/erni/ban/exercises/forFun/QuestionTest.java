@@ -1,7 +1,6 @@
 package sk.erni.ban.exercises.forFun;
 
 import org.junit.Test;
-import sk.erni.ban.answers.forfun.Question;
 import sk.erni.ban.exercises.forfun.Exercise;
 
 import java.util.Arrays;

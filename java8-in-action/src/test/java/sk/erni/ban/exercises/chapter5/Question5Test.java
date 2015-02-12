@@ -1,16 +1,12 @@
 package sk.erni.ban.exercises.chapter5;
 
-import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import sk.erni.ban.answers.chapter5.Question5;
 import sk.erni.ban.model.Person;
 
 import javax.script.ScriptException;
 
-import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -44,7 +40,7 @@ public class Question5Test {
 
 
 	@Test
-	public void checkPersonLongName(){
+	public void checkPersonLongName() {
 		try {
 			boolean isLongName = Exercise5.isLongName("Sofonias");
 			assertTrue(isLongName);
@@ -57,7 +53,7 @@ public class Question5Test {
 	}
 
 	@Test
-	public void checkPersonShortName(){
+	public void checkPersonShortName() {
 		try {
 			boolean isLongName = Exercise5.isLongName("Jan");
 			assertFalse(isLongName);
